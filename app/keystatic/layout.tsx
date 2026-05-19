@@ -1,4 +1,5 @@
-import { makeLayout } from '@keystatic/next/ui/app'
-import keystaticConfig from '../../keystatic.config'
+import KeystaticApp from './keystatic'
 
-export default makeLayout(keystaticConfig)
+export default function Layout() {
+  return <KeystaticApp />
+}
