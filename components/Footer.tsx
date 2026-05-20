@@ -15,9 +15,17 @@ export default function Footer() {
           <div>
             <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Navigate</h4>
             <nav className="flex flex-col gap-2">
-              {['Our Story', 'Services', 'Data Science', 'Projects', 'Reading Room', 'Offices'].map(label => (
-                <a key={label} href={`#${label.toLowerCase().replace(/\s/g, '-')}`} className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors">
-                  {label}
+              {[
+                { label: 'Our Story', href: '#our-story' },
+                { label: 'Services', href: '#services' },
+                { label: 'Data Science', href: '#data-science' },
+                { label: 'Projects', href: '#projects' },
+                { label: 'News', href: '/news' },
+                { label: 'Reading Room', href: '/reading-room' },
+                { label: 'Offices', href: '#offices' },
+              ].map(link => (
+                <a key={link.label} href={link.href} className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors">
+                  {link.label}
                 </a>
               ))}
             </nav>
@@ -37,7 +45,7 @@ export default function Footer() {
             &copy; {year} The McDevitt Company. All rights reserved.
           </p>
           <p className="font-sans text-[10px] tracking-wider text-white/30">
-            Philadelphia &middot; New York &middot; Westport &middot; Washington DC &middot; Chicago &middot; Los Angeles &middot; Nashville &middot; London &middot; Amsterdam
+            Philadelphia &middot; Greenwich &middot; Nashville &middot; West Palm Beach &middot; Chicago &middot; Los Angeles &middot; London &middot; Amsterdam
           </p>
         </div>
       </div>

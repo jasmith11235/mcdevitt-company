@@ -8,7 +8,8 @@ const navLinks = [
   { label: 'Services', href: '#services' },
   { label: 'Data Science', href: '#data-science' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Reading Room', href: '#reading-room' },
+  { label: 'News', href: '/news' },
+  { label: 'Reading Room', href: '/reading-room' },
   { label: 'Offices', href: '#offices' },
   { label: 'Contact', href: '#contact' },
 ]

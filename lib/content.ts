@@ -27,4 +27,26 @@ export function getClientPortal() { return readJson('content/pages/client-portal
 export function getTestimonials() { return readCollection('content/testimonials'); }
 export function getProjects() { return readCollection('content/projects'); }
 export function getOffices() { return readCollection('content/offices'); }
-export function getNews() { return readCollection('content/news'); }
+export function getNews() {
+  const fullDir = path.join(process.cwd(), 'content/news');
+  if (!fs.existsSync(fullDir)) return [];
+  return fs.readdirSync(fullDir)
+    .filter(f => f.endsWith('.json'))
+    .map(f => ({
+      slug: f.replace('.json', ''),
+      ...JSON.parse(fs.readFileSync(path.join(fullDir, f), 'utf-8')),
+    }))
+    .sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+export function getReadingRoom() {
+  const fullDir = path.join(process.cwd(), 'content/reading-room');
+  if (!fs.existsSync(fullDir)) return [];
+  return fs.readdirSync(fullDir)
+    .filter(f => f.endsWith('.json'))
+    .map(f => ({
+      slug: f.replace('.json', ''),
+      ...JSON.parse(fs.readFileSync(path.join(fullDir, f), 'utf-8')),
+    }))
+    .sort((a: any, b: any) => (a.order || 0) - (b.order || 0));
+}

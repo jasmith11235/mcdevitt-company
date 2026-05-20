@@ -1,4 +1,4 @@
-import { getHero, getAbout, getServices, getDataScience, getClientPortal, getTestimonials, getProjects, getOffices, getNews } from '@/lib/content'
+import { getHero, getAbout, getServices, getDataScience, getClientPortal, getTestimonials, getProjects, getOffices, getNews, getReadingRoom } from '@/lib/content'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import OurStory from '@/components/OurStory'
@@ -6,6 +6,7 @@ import Services from '@/components/Services'
 import DataScience from '@/components/DataScience'
 import Projects from '@/components/Projects'
 import Testimonials from '@/components/Testimonials'
+import News from '@/components/News'
 import ReadingRoom from '@/components/ReadingRoom'
 import Offices from '@/components/Offices'
 import ClientPortal from '@/components/ClientPortal'
@@ -23,6 +24,7 @@ export default function Home() {
   const projects = getProjects()
   const offices = getOffices()
   const news = getNews()
+  const readingRoom = getReadingRoom()
 
   return (
     <>
@@ -37,7 +39,8 @@ export default function Home() {
         <Projects projects={projects} />
         <Testimonials testimonials={testimonials} />
         <WoodblockDivider src="/graphics/woodblock-4.jpg" />
-        <ReadingRoom news={news} />
+        <News news={news} limit={3} />
+        <ReadingRoom items={readingRoom} limit={3} />
         <Offices offices={offices} />
         <ClientPortal {...(clientPortal || { heading: '', description: '', buttonText: '', buttonUrl: '' })} />
         <Footer />
