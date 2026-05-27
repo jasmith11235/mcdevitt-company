@@ -1,0 +1,34 @@
+# The McDevitt Company
+
+> A full-service retail real estate advisory firm providing strategic vision, data-driven insight, and global reach since 1997.
+
+The McDevitt Company is a retail property advisory firm led by Managing Partner Wade McDevitt. The firm specializes in tenant representation, landlord representation, and mixed-use development consulting for premier retail and hospitality brands worldwide.
+
+## Core Services
+
+- **Tenant Representation**: Strategic site selection and lease negotiation for retailers, restaurants, and consumer brands expanding domestically and internationally.
+- **Landlord Representation**: Leasing strategy, merchandising plans, and tenant curation for owners and developers of retail destinations.
+- **Development Consulting**: Advisory services for mixed-use and retail-anchored developments, from concept through delivery.
+
+## Data Science & Analytics
+
+The firm operates an in-house data science practice covering market analytics, consumer behavior modeling, trade area analysis, competitive intelligence, location scoring, and scenario planning.
+
+## Global Presence
+
+Offices in Philadelphia, Greenwich, Nashville, West Palm Beach, Chicago, Los Angeles, London, and Amsterdam.
+
+## Select Clients & Projects
+
+The McDevitt Company has represented tenants and landlords across notable properties including Anthropologie at Rockefeller Center, Free People in London, Pastis Nashville, Terrain at Bethesda, and Simon Pearce, among others.
+
+## Contact
+
+- Website: https://mcdevittco.com
+- Email: info@mcdevittco.com
+
+## Pages
+
+- [Home](https://mcdevittco.com/)
+- [News](https://mcdevittco.com/news)
+- [Reading Room](https://mcdevittco.com/reading-room)
