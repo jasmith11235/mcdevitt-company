@@ -28,7 +28,7 @@ export default function DataScience({ heading, intro, proprietaryIntro }: DataSc
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {capabilities.map((cap, i) => (
-            <div key={i} className="fade-in border border-white/15 p-6 hover:border-[#3D9B82]/50 transition-colors duration-300">
+            <div key={i} className="fade-in border border-white/15 p-6 card-glow">
               <h3 className="font-sans text-xs tracking-widest uppercase text-[#3D9B82] mb-4">{cap.title}</h3>
               <p className="text-sm text-white/70 leading-relaxed">{cap.desc}</p>
             </div>

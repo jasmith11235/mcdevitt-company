@@ -24,7 +24,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {projects.map((project) => (
-            <div key={project.slug} className="fade-in group relative overflow-hidden bg-stone-100 aspect-[3/4]">
+            <div key={project.slug} className="fade-in group relative overflow-hidden bg-stone-100 aspect-[3/4] cursor-pointer">
               {project.image && (
                 <Image
                   src={project.image}

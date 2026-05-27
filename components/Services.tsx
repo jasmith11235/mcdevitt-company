@@ -27,7 +27,7 @@ export default function Services(props: ServicesProps) {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {cards.map((card, i) => (
-            <div key={i} className="fade-in bg-white border-t-[3px] border-[#3D9B82] p-8">
+            <div key={i} className="fade-in bg-white border-t-[3px] border-[#3D9B82] p-8 card-lift">
               <h3 className="font-sans text-sm tracking-widest uppercase text-[#1D2B45] mb-6">{card.title}</h3>
               <p className="text-base leading-relaxed text-[#1D2B45]/75">{card.desc}</p>
             </div>

@@ -7,8 +7,9 @@ interface ClientPortalProps {
 
 export default function ClientPortal({ heading, description, buttonText, buttonUrl }: ClientPortalProps) {
   return (
-    <section className="py-20 md:py-24 bg-[#3D9B82]">
-      <div className="max-w-3xl mx-auto px-6 text-center">
+    <section className="relative py-20 md:py-24 bg-[#3D9B82] overflow-hidden">
+      <div className="absolute inset-0 bg-cover bg-center opacity-[0.06] mix-blend-overlay" style={{ backgroundImage: "url('/graphics/woodblock-3.jpg')" }} />
+      <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
         <h2 className="font-sans text-2xl md:text-3xl font-light text-white mb-4">{heading}</h2>
         <p className="text-base text-white/80 mb-8 max-w-xl mx-auto">{description}</p>
         <a

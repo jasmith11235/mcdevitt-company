@@ -20,8 +20,8 @@ export default function Offices({ offices }: { offices: Office[] }) {
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 md:gap-12">
-          {offices.map((office) => (
-            <div key={office.slug} className="fade-in">
+          {offices.map((office, i) => (
+            <div key={office.slug} className="fade-in" style={{ transitionDelay: `${i * 80}ms` }}>
               <h3 className="font-sans text-sm tracking-widest uppercase text-[#1D2B45] mb-3">{office.city}</h3>
               <p className="text-sm text-[#1D2B45]/70 leading-relaxed whitespace-pre-line mb-2">{office.address}</p>
               <a href={`tel:${office.phone.replace(/\./g, '')}`} className="font-sans text-xs tracking-wider text-[#3D9B82] hover:text-[#1D2B45] transition-colors">
