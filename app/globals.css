@@ -19,7 +19,11 @@ h1, h2, h3, h4, h5, h6, nav, button, .font-sans {
   font-family: 'Montserrat', system-ui, sans-serif;
 }
 
-/* Smooth fade-in animation */
+/* Scroll-triggered fade-in (paired with components/ScrollAnimator.tsx).
+   Use only for stable, non-filterable elements that are present on first
+   mount. Items that mount/unmount via interactive state (filters, etc.)
+   must use `.enter-fade` instead, since the global observer registers
+   nodes only once. */
 .fade-in {
   opacity: 0;
   transform: translateY(24px);
@@ -29,6 +33,24 @@ h1, h2, h3, h4, h5, h6, nav, button, .font-sans {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Self-contained enter animation. Runs once on mount, no JS observer
+   needed, so it stays reliable across re-renders triggered by filters
+   or other client-side state changes. */
+@keyframes enterFade {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.enter-fade {
+  animation: enterFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .enter-fade {
+    animation: none;
+  }
 }
 
 /* Woodblock divider */
