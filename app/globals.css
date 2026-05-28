@@ -91,15 +91,20 @@ h1, h2, h3, h4, h5, h6, nav, button, .font-sans {
   background-color: #3D9B82;
 }
 
-/* ── Hero Ken Burns slideshow ── */
-@keyframes kenBurns {
-  0%   { transform: scale(1) translate(0, 0); }
-  50%  { transform: scale(1.15) translate(-2%, -1%); }
-  100% { transform: scale(1) translate(0, 0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-video {
+    display: none;
+  }
 }
 
-.hero-ken-burns {
-  animation: kenBurns 20s ease-in-out infinite;
+.hero-text-shadow {
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45),
+               0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.hero-text-shadow svg {
+  filter: drop-shadow(0 2px 16px rgba(0, 0, 0, 0.45));
 }
 
 /* ── Hero entrance animations ── */
