@@ -2,21 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
   color: #1D2B45;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6, nav, button, .font-sans {
-  font-family: 'Montserrat', system-ui, sans-serif;
+  font-family: 'Mona Sans Variable', system-ui, -apple-system, sans-serif;
 }
 
 /* Scroll-triggered fade-in (paired with components/ScrollAnimator.tsx).
@@ -76,7 +74,7 @@ h1, h2, h3, h4, h5, h6, nav, button, .font-sans {
 
 .pull-quote::before {
   content: '\201C';
-  font-family: Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 4rem;
   color: #3D9B82;
   position: absolute;
