@@ -1,4 +1,15 @@
+import Link from 'next/link'
 import Logo from './Logo'
+
+const footerNavLinks = [
+  { label: 'Our Story', href: '/#our-story' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Data Science', href: '/#data-science' },
+  { label: 'Projects', href: '/#projects' },
+  { label: 'News', href: '/news' },
+  { label: 'Reading Room', href: '/reading-room' },
+  { label: 'Offices', href: '/#offices' },
+]
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -15,18 +26,14 @@ export default function Footer() {
           <div>
             <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Navigate</h4>
             <nav className="flex flex-col gap-2">
-              {[
-                { label: 'Our Story', href: '#our-story' },
-                { label: 'Services', href: '#services' },
-                { label: 'Data Science', href: '#data-science' },
-                { label: 'Projects', href: '#projects' },
-                { label: 'News', href: '/news' },
-                { label: 'Reading Room', href: '/reading-room' },
-                { label: 'Offices', href: '#offices' },
-              ].map(link => (
-                <a key={link.label} href={link.href} className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors">
+              {footerNavLinks.map(link => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors"
+                >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>

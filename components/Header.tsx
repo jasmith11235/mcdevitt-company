@@ -1,16 +1,17 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import Logo from './Logo'
 
 const navLinks = [
-  { label: 'Our Story', href: '#our-story' },
-  { label: 'Services', href: '#services' },
-  { label: 'Data Science', href: '#data-science' },
-  { label: 'Projects', href: '#projects' },
+  { label: 'Our Story', href: '/#our-story' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Data Science', href: '/#data-science' },
+  { label: 'Projects', href: '/#projects' },
   { label: 'News', href: '/news' },
   { label: 'Reading Room', href: '/reading-room' },
-  { label: 'Offices', href: '#offices' },
+  { label: 'Offices', href: '/#offices' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -28,18 +29,18 @@ export default function Header() {
     <>
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'header-glass shadow-md' : 'bg-white'}`}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0" aria-label="The McDevitt Company — home">
             <Logo color="fathom" className="h-12 w-12 md:h-16 md:w-16" />
-          </a>
+          </Link>
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map(link => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="font-sans text-xs tracking-widest uppercase text-[#1D2B45] hover:text-[#3D9B82] transition-colors duration-200"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <button
@@ -57,14 +58,14 @@ export default function Header() {
       <div className={`fixed inset-0 z-40 bg-[#1D2B45] transition-transform duration-500 lg:hidden ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="flex flex-col items-center justify-center h-full gap-8">
           {navLinks.map(link => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
               className="font-sans text-sm tracking-widest uppercase text-white hover:text-[#3D9B82] transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
