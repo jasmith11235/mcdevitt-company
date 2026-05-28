@@ -15,7 +15,7 @@ export default function ClientPortal({ heading, description, buttonText, buttonU
         <a
           href={buttonUrl}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
           className="inline-block font-sans text-xs tracking-[0.25em] uppercase bg-white text-[#1D2B45] px-10 py-4 hover:bg-[#1D2B45] hover:text-white transition-colors duration-300"
         >
           {buttonText}
