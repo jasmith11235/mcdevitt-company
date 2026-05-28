@@ -2,6 +2,7 @@
 
 import { Suspense, useMemo, type ReactNode } from 'react'
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
+import TransitionLink from './TransitionLink'
 import { MARKETS, MARKET_LABELS, isMarketValue, type MarketValue } from '@/lib/markets'
 
 interface ReadingRoomItem {
@@ -62,7 +63,7 @@ function SectionHeader() {
     <div className="fade-in mb-16">
       <div className="accent-rule mb-6" />
       <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Reading Room</h2>
-      <p className="text-2xl md:text-3xl font-sans font-light text-[#1D2B45] max-w-2xl">
+      <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-[#1D2B45] max-w-2xl">
         Curiosities about the businesses that occupy buildings, and what they signal for the buildings themselves.
       </p>
     </div>
@@ -76,12 +77,12 @@ function SimpleList({ items, limit }: { items: ReadingRoomItem[]; limit: number 
       <ArticleList items={displayed} />
       {items.length > limit && (
         <div className="enter-fade mt-12 text-center">
-          <a
+          <TransitionLink
             href="/reading-room"
             className="inline-block font-sans text-xs tracking-[0.2em] uppercase text-[#3D9B82] border border-[#3D9B82] px-8 py-3 hover:bg-[#3D9B82] hover:text-white transition-colors duration-300"
           >
             Enter the Reading Room
-          </a>
+          </TransitionLink>
         </div>
       )}
     </>
@@ -305,7 +306,7 @@ function Article({ item, index }: { item: ReadingRoomItem; index: number }) {
               href={item.externalUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#3D9B82] transition-colors"
+              className="hover:text-[#3D9B82] transition-colors duration-300"
             >
               {item.title}
             </a>
@@ -331,7 +332,7 @@ function Article({ item, index }: { item: ReadingRoomItem; index: number }) {
             href={item.externalUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-6 font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82] hover:text-[#1D2B45] transition-colors"
+            className="inline-block mt-6 font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82] hover:text-[#1D2B45] transition-colors duration-300"
           >
             Read the original &rarr;
           </a>
@@ -357,7 +358,7 @@ function EmptyState({ canClear, onClear }: { canClear: boolean; onClear: () => v
         <button
           type="button"
           onClick={onClear}
-          className="font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82] hover:text-[#1D2B45] transition-colors"
+          className="font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82] hover:text-[#1D2B45] transition-colors duration-300"
         >
           Clear filters &rarr;
         </button>

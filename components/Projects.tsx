@@ -18,7 +18,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
         <div className="fade-in mb-16">
           <div className="accent-rule mb-6" />
           <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Select Projects</h2>
-          <p className="text-2xl md:text-3xl font-sans font-light text-[#1D2B45] max-w-2xl">
+          <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-[#1D2B45] max-w-2xl">
             We collaborate with select landlords and developers to create unique and distinctive retail destinations.
           </p>
         </div>

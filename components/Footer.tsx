@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import Logo from './Logo'
+import TransitionLink from './TransitionLink'
 
 const footerNavLinks = [
   { label: 'Our Story', href: '/#our-story' },
@@ -27,22 +27,22 @@ export default function Footer() {
             <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Navigate</h4>
             <nav className="flex flex-col gap-2">
               {footerNavLinks.map(link => (
-                <Link
+                <TransitionLink
                   key={link.label}
                   href={link.href}
-                  className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors"
+                  className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300"
                 >
                   {link.label}
-                </Link>
+                </TransitionLink>
               ))}
             </nav>
           </div>
           <div>
             <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Contact</h4>
-            <a href="mailto:info@mcdevittco.com" className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors block mb-2">
+            <a href="mailto:info@mcdevittco.com" className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300 block mb-2">
               info@mcdevittco.com
             </a>
-            <a href="https://mcdevittco.com" className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors block">
+            <a href="https://mcdevittco.com" className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300 block">
               mcdevittco.com
             </a>
           </div>

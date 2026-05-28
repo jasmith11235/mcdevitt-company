@@ -1,3 +1,5 @@
+import TransitionLink from './TransitionLink'
+
 interface NewsItem {
   slug: string
   title: string
@@ -24,7 +26,7 @@ export default function News({ news, limit }: { news: NewsItem[]; limit?: number
         <div className="fade-in mb-16">
           <div className="accent-rule mb-6" />
           <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">News</h2>
-          <p className="text-2xl md:text-3xl font-sans font-light text-[#1D2B45] max-w-2xl">
+          <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-[#1D2B45] max-w-2xl">
             Industry developments shaping retail real estate.
           </p>
         </div>
@@ -42,7 +44,7 @@ export default function News({ news, limit }: { news: NewsItem[]; limit?: number
                 <time className="block font-sans text-[10px] tracking-wider text-[#1D2B45]/40 mb-3">
                   {new Date(item.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                 </time>
-                <h3 className="font-sans text-lg font-medium text-[#1D2B45] mb-3 group-hover:text-[#3D9B82] transition-colors">
+                <h3 className="font-sans text-lg font-medium text-[#1D2B45] mb-3 group-hover:text-[#3D9B82] transition-colors duration-300">
                   {item.externalUrl ? (
                     <a href={item.externalUrl} target="_blank" rel="noopener noreferrer">{item.title}</a>
                   ) : (
@@ -56,12 +58,12 @@ export default function News({ news, limit }: { news: NewsItem[]; limit?: number
         </div>
         {limit && news.length > limit && (
           <div className="fade-in mt-12 text-center">
-            <a
+            <TransitionLink
               href="/news"
               className="inline-block font-sans text-xs tracking-[0.2em] uppercase text-[#3D9B82] border border-[#3D9B82] px-8 py-3 hover:bg-[#3D9B82] hover:text-white transition-colors duration-300"
             >
               All News
-            </a>
+            </TransitionLink>
           </div>
         )}
       </div>

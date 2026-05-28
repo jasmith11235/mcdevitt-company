@@ -15,7 +15,7 @@ export default function Offices({ offices }: { offices: Office[] }) {
         <div className="fade-in mb-16">
           <div className="accent-rule mb-6" />
           <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Offices</h2>
-          <p className="text-2xl md:text-3xl font-sans font-light text-[#1D2B45]">
+          <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-[#1D2B45]">
             Nine offices providing integrated national and international coverage.
           </p>
         </div>
@@ -24,7 +24,7 @@ export default function Offices({ offices }: { offices: Office[] }) {
             <div key={office.slug} className="fade-in" style={{ transitionDelay: `${i * 80}ms` }}>
               <h3 className="font-sans text-sm tracking-widest uppercase text-[#1D2B45] mb-3">{office.city}</h3>
               <p className="text-sm text-[#1D2B45]/70 leading-relaxed whitespace-pre-line mb-2">{office.address}</p>
-              <a href={`tel:${office.phone.replace(/\./g, '')}`} className="font-sans text-xs tracking-wider text-[#3D9B82] hover:text-[#1D2B45] transition-colors">
+              <a href={`tel:${office.phone.replace(/\./g, '')}`} className="font-sans text-xs tracking-wider text-[#3D9B82] hover:text-[#1D2B45] transition-colors duration-300">
                 {office.phone}
               </a>
             </div>

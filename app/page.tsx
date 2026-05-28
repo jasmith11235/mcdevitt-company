@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="page-enter">
         <Hero tagline={hero?.tagline || ''} subtitle={hero?.subtitle || ''} />
         <OurStory {...(about || {})} />
         <WoodblockDivider src="/graphics/woodblock-3.jpg" />
