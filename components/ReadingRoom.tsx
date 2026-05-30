@@ -79,9 +79,10 @@ function SimpleList({ items, limit }: { items: ReadingRoomItem[]; limit: number 
         <div className="enter-fade mt-12 text-center">
           <TransitionLink
             href="/reading-room"
-            className="inline-block font-sans text-xs tracking-[0.2em] uppercase text-[#3D9B82] border border-[#3D9B82] px-8 py-3 hover:bg-[#3D9B82] hover:text-white transition-colors duration-300"
+            className="group inline-flex items-center font-sans text-xs tracking-[0.2em] uppercase text-[#3D9B82] border border-[#3D9B82] px-8 py-3 hover:bg-[#3D9B82] hover:text-white transition-colors duration-300"
           >
-            Enter the Reading Room
+            <span>Enter the Reading Room</span>
+            <span aria-hidden className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
           </TransitionLink>
         </div>
       )}
@@ -249,7 +250,7 @@ function FilterChip({ active, count, onClick, children }: FilterChipProps) {
       className={`font-sans text-[10px] tracking-[0.2em] uppercase px-4 py-2 border transition-all duration-200 ${
         active
           ? 'bg-[#1D2B45] text-white border-[#1D2B45]'
-          : `text-[#1D2B45]/60 border-[#1D2B45]/20 hover:border-[#1D2B45]/40 ${isEmpty ? 'opacity-40' : ''}`
+          : `text-[#1D2B45]/60 border-[#1D2B45]/20 hover:border-[#1D2B45]/40 hover:text-[#1D2B45] ${isEmpty ? 'opacity-40' : ''}`
       }`}
     >
       <span>{children}</span>
@@ -274,8 +275,8 @@ function Article({ item, index }: { item: ReadingRoomItem; index: number }) {
   })
 
   return (
-    <article className="enter-fade" style={{ animationDelay: `${Math.min(index, 5) * 60}ms` }}>
-      <div className="border-t-[3px] border-[#3D9B82] pt-8 max-w-4xl">
+    <article className="enter-fade group" style={{ animationDelay: `${Math.min(index, 5) * 60}ms` }}>
+      <div className="border-t-[3px] border-[#3D9B82] pt-8 max-w-4xl transition-colors duration-500 group-hover:border-[#1D2B45]">
         <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-4">
           <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82]">
             {DOMAIN_LABELS[item.domain] ?? item.domain}
@@ -332,9 +333,10 @@ function Article({ item, index }: { item: ReadingRoomItem; index: number }) {
             href={item.externalUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-6 font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82] hover:text-[#1D2B45] transition-colors duration-300"
+            className="group/cta inline-flex items-center mt-6 py-2 font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82] hover:text-[#1D2B45] transition-colors duration-300"
           >
-            Read the original &rarr;
+            <span>Read the original</span>
+            <span aria-hidden className="ml-2 inline-block transition-transform duration-300 group-hover/cta:translate-x-1">&rarr;</span>
           </a>
         )}
       </div>
@@ -358,9 +360,10 @@ function EmptyState({ canClear, onClear }: { canClear: boolean; onClear: () => v
         <button
           type="button"
           onClick={onClear}
-          className="font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82] hover:text-[#1D2B45] transition-colors duration-300"
+          className="group inline-flex items-center py-2 font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82] hover:text-[#1D2B45] transition-colors duration-300"
         >
-          Clear filters &rarr;
+          <span>Clear filters</span>
+          <span aria-hidden className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
         </button>
       )}
     </div>

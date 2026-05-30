@@ -16,9 +16,10 @@ export default function ClientPortal({ heading, description, buttonText, buttonU
           href={buttonUrl}
           target="_blank"
           rel="noopener"
-          className="inline-block font-sans text-xs tracking-widest uppercase bg-white text-[#1D2B45] px-10 py-4 hover:bg-[#1D2B45] hover:text-white transition-colors duration-300"
+          className="group inline-flex items-center font-sans text-xs tracking-widest uppercase bg-white text-[#1D2B45] px-10 py-4 hover:bg-[#1D2B45] hover:text-white transition-colors duration-300"
         >
-          {buttonText}
+          <span>{buttonText}</span>
+          <span aria-hidden className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
         </a>
       </div>
     </section>

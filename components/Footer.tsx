@@ -30,7 +30,7 @@ export default function Footer() {
                 <TransitionLink
                   key={link.label}
                   href={link.href}
-                  className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300"
+                  className="link-underline self-start font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300"
                 >
                   {link.label}
                 </TransitionLink>
@@ -39,10 +39,11 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Contact</h4>
-            <a href="mailto:info@mcdevittco.com" className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300 block mb-2">
+            <a href="mailto:info@mcdevittco.com" className="link-underline font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300 inline-block mb-2">
               info@mcdevittco.com
             </a>
-            <a href="https://mcdevittco.com" className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300 block">
+            <br />
+            <a href="https://mcdevittco.com" className="link-underline font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300 inline-block">
               mcdevittco.com
             </a>
           </div>

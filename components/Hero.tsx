@@ -54,7 +54,7 @@ export default function Hero({ tagline, subtitle }: HeroProps) {
   }, [activeIdx])
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#1D2B45] overflow-hidden">
+    <section className="relative min-h-screen min-h-[100svh] flex flex-col items-center justify-center bg-[#1D2B45] overflow-hidden">
       {CLIPS.map((clip, i) => (
         <video
           key={clip.src}
