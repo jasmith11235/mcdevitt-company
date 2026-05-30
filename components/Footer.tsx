@@ -1,4 +1,15 @@
 import Logo from './Logo'
+import TransitionLink from './TransitionLink'
+
+const footerNavLinks = [
+  { label: 'Our Story', href: '/#our-story' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Data Science', href: '/#data-science' },
+  { label: 'Projects', href: '/#projects' },
+  { label: 'News', href: '/news' },
+  { label: 'Reading Room', href: '/reading-room' },
+  { label: 'Offices', href: '/#offices' },
+]
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -15,27 +26,24 @@ export default function Footer() {
           <div>
             <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Navigate</h4>
             <nav className="flex flex-col gap-2">
-              {[
-                { label: 'Our Story', href: '#our-story' },
-                { label: 'Services', href: '#services' },
-                { label: 'Data Science', href: '#data-science' },
-                { label: 'Projects', href: '#projects' },
-                { label: 'News', href: '/news' },
-                { label: 'Reading Room', href: '/reading-room' },
-                { label: 'Offices', href: '#offices' },
-              ].map(link => (
-                <a key={link.label} href={link.href} className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors">
+              {footerNavLinks.map(link => (
+                <TransitionLink
+                  key={link.label}
+                  href={link.href}
+                  className="link-underline self-start font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300"
+                >
                   {link.label}
-                </a>
+                </TransitionLink>
               ))}
             </nav>
           </div>
           <div>
             <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Contact</h4>
-            <a href="mailto:info@mcdevittco.com" className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors block mb-2">
+            <a href="mailto:info@mcdevittco.com" className="link-underline font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300 inline-block mb-2">
               info@mcdevittco.com
             </a>
-            <a href="https://mcdevittco.com" className="font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors block">
+            <br />
+            <a href="https://mcdevittco.com" className="link-underline font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300 inline-block">
               mcdevittco.com
             </a>
           </div>

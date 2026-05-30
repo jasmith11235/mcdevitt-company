@@ -16,7 +16,7 @@ export default function ReadingRoomPage() {
   return (
     <>
       <Header />
-      <main className="pt-24">
+      <main className="pt-24 page-enter">
         <ReadingRoom items={items} />
       </main>
       <Footer />

@@ -4,6 +4,13 @@
   "author": "",
   "date": "2026-03-22",
   "domain": "culture-demographics",
+  "markets": [
+    "philadelphia",
+    "amsterdam",
+    "london",
+    "los-angeles",
+    "chicago"
+  ],
   "verdict": "The neighborhoods that retained residents during work-from-home are now commanding a walkability premium.",
   "evidence": "Foot traffic data from 2020 through 2025 reveals that neighborhoods with high Walk Scores and a diverse mix of daily-needs retail experienced significantly less daytime population loss during the remote work shift than car-dependent suburbs. More notably, those same neighborhoods have since seen residential values appreciate at roughly twice the metro average, driven by demand from workers who discovered they preferred living in places where errands, dining, and socializing were all within walking distance. The pattern holds across markets from Philadelphia to Portland, with the strongest effects in neighborhoods that already had a grocery store, a coffee shop, and a park within a ten-minute walk.",
   "frame": "The 15-minute city was a planning concept before the pandemic. Now it is a pricing reality. For real estate principals, the lesson is that neighborhood completeness is no longer a soft amenity; it is a measurable driver of residential and commercial value. Properties in walkable, service-rich neighborhoods carry lower vacancy risk and attract tenants willing to pay for convenience. The owners and developers who invested in ground-floor retail programming during the downturn are now sitting on the premium that everyone else is trying to reverse-engineer.",

@@ -21,9 +21,9 @@ export default function DataScience({ heading, intro, proprietaryIntro }: DataSc
       <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/graphics/woodblock-blue-bg.jpg')" }} />
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="fade-in mb-16">
-          <div className="w-[60px] h-[3px] bg-[#3D9B82] mb-6" />
-          <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-8">{heading}</h2>
-          <p className="text-2xl md:text-3xl font-sans font-light text-white max-w-3xl mb-6">{intro}</p>
+          <div className="accent-rule mb-6" />
+          <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{heading}</h2>
+          <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-white max-w-3xl mb-6">{intro}</p>
           <p className="text-base text-white/70 max-w-2xl">{proprietaryIntro}</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

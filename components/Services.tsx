@@ -16,12 +16,17 @@ export default function Services(props: ServicesProps) {
   ]
 
   return (
-    <section id="services" className="py-24 md:py-32 bg-stone-50">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="services" className="relative py-24 md:py-32 bg-stone-50 overflow-hidden">
+      <div
+        aria-hidden
+        className="absolute inset-0 bg-cover bg-center opacity-[0.04] mix-blend-multiply pointer-events-none"
+        style={{ backgroundImage: "url('/graphics/watercolor-gray.jpg')" }}
+      />
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="fade-in mb-16">
           <div className="accent-rule mb-6" />
           <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{props.heading}</h2>
-          <p className="text-2xl md:text-3xl font-sans font-light text-[#1D2B45] max-w-2xl">
+          <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-[#1D2B45] max-w-2xl">
             Skilled placemakers with the ability to curate compelling merchandising plans with unique and market-relevant leasing vision.
           </p>
         </div>
