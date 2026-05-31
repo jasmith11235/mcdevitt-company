@@ -9,6 +9,7 @@ const nextConfig = {
       './scripts/**/*',
       './public/graphics/**/*',
       './public/images/**/*',
+      './public/videos/**/*',
       './.next/cache/**/*',
     ],
   },
