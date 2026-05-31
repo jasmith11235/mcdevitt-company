@@ -12,8 +12,8 @@ const config: Config = {
         shallows: '#3D9B82',
       },
       fontFamily: {
-        sans: ['Montserrat', 'system-ui', 'sans-serif'],
-        serif: ['Georgia', 'Times New Roman', 'serif'],
+        sans: ['"Mona Sans Variable"', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['var(--font-serif)', 'Georgia', '"Times New Roman"', 'serif'],
       },
       letterSpacing: {
         widest: '0.25em',

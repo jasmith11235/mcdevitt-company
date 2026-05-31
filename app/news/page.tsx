@@ -16,7 +16,7 @@ export default function NewsPage() {
   return (
     <>
       <Header />
-      <main className="pt-24">
+      <main className="pt-24 page-enter">
         <News news={news} />
       </main>
       <Footer />

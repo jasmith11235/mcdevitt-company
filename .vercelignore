@@ -1,0 +1,11 @@
+# Keep these out of the Vercel deployment upload entirely. Excluding them
+# here is more reliable than outputFileTracingExcludes (which Next.js 14
+# silently ignores in some cases).
+.git
+.next/cache
+node_modules/.cache
+scripts
+
+# Python crawler artifacts — only used locally to seed content
+scripts/__pycache__
+*.pyc

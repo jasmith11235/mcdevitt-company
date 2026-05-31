@@ -1,5 +1,14 @@
 import type { Metadata } from 'next'
+import { Fraunces } from 'next/font/google'
+import '@fontsource-variable/mona-sans'
 import './globals.css'
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-serif',
+  axes: ['opsz'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'The McDevitt Company',
@@ -19,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={fraunces.variable}>
       <body>{children}</body>
     </html>
   )

@@ -1,4 +1,5 @@
 import { config, fields, collection, singleton } from '@keystatic/core';
+import { MARKETS } from './lib/markets';
 
 export default config({
   storage: {
@@ -8,6 +9,7 @@ export default config({
     hero: singleton({
       label: 'Hero Section',
       path: 'content/pages/hero',
+      format: { data: 'json' },
       schema: {
         tagline: fields.text({ label: 'Tagline', description: 'Main hero tagline' }),
         subtitle: fields.text({ label: 'Subtitle', multiline: true }),
@@ -16,6 +18,7 @@ export default config({
     about: singleton({
       label: 'Our Story',
       path: 'content/pages/about',
+      format: { data: 'json' },
       schema: {
         heading: fields.text({ label: 'Section Heading' }),
         foundedYear: fields.text({ label: 'Founded Year' }),
@@ -28,6 +31,7 @@ export default config({
     services: singleton({
       label: 'Services Section',
       path: 'content/pages/services',
+      format: { data: 'json' },
       schema: {
         heading: fields.text({ label: 'Section Heading' }),
         tenantRepTitle: fields.text({ label: 'Tenant Rep Title' }),
@@ -41,6 +45,7 @@ export default config({
     dataScience: singleton({
       label: 'Data Science Section',
       path: 'content/pages/data-science',
+      format: { data: 'json' },
       schema: {
         heading: fields.text({ label: 'Section Heading' }),
         intro: fields.text({ label: 'Introduction', multiline: true }),
@@ -50,6 +55,7 @@ export default config({
     clientPortal: singleton({
       label: 'Client Portal',
       path: 'content/pages/client-portal',
+      format: { data: 'json' },
       schema: {
         heading: fields.text({ label: 'Heading' }),
         description: fields.text({ label: 'Description', multiline: true }),
@@ -63,6 +69,8 @@ export default config({
       label: 'Testimonials',
       slugField: 'name',
       path: 'content/testimonials/*',
+      format: { data: 'json' },
+      columns: ['title', 'company', 'order'],
       schema: {
         name: fields.slug({ name: { label: 'Name' } }),
         title: fields.text({ label: 'Title/Role' }),
@@ -75,6 +83,8 @@ export default config({
       label: 'Select Projects',
       slugField: 'name',
       path: 'content/projects/*',
+      format: { data: 'json' },
+      columns: ['location', 'assetType', 'order'],
       schema: {
         name: fields.slug({ name: { label: 'Project Name' } }),
         location: fields.text({ label: 'City, State' }),
@@ -90,6 +100,8 @@ export default config({
       label: 'Offices',
       slugField: 'city',
       path: 'content/offices/*',
+      format: { data: 'json' },
+      columns: ['phone', 'order'],
       schema: {
         city: fields.slug({ name: { label: 'City' } }),
         address: fields.text({ label: 'Street Address', multiline: true }),
@@ -101,6 +113,8 @@ export default config({
       label: 'News',
       slugField: 'title',
       path: 'content/news/*',
+      format: { data: 'json' },
+      columns: ['source', 'category', 'date'],
       schema: {
         title: fields.slug({ name: { label: 'Headline' } }),
         source: fields.text({ label: 'Publication', description: 'e.g. Commercial Observer, CoStar News' }),
@@ -123,6 +137,8 @@ export default config({
       label: 'Reading Room',
       slugField: 'title',
       path: 'content/reading-room/*',
+      format: { data: 'json' },
+      columns: ['source', 'domain', 'date', 'order'],
       schema: {
         title: fields.slug({ name: { label: 'Article Title' } }),
         source: fields.text({ label: 'Publication' }),
@@ -138,6 +154,12 @@ export default config({
             { label: 'Design / Placemaking', value: 'design-placemaking' },
           ],
           defaultValue: 'retail-consumer',
+        }),
+        markets: fields.multiselect({
+          label: 'Markets',
+          description:
+            'Tag with one or more office markets when the piece is locally relevant. Leave empty for general / macro trend articles.',
+          options: MARKETS.map(m => ({ label: m.label, value: m.value })),
         }),
         verdict: fields.text({ label: 'Verdict', multiline: true, description: 'One sentence. The so-what for a real estate principal.' }),
         evidence: fields.text({ label: 'Evidence', multiline: true, description: 'Supporting paragraph. What the article actually found or reported.' }),

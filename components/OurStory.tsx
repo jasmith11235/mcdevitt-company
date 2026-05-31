@@ -13,8 +13,8 @@ export default function OurStory({ heading, foundedYear, intro, mission, vision,
       <div className="max-w-4xl mx-auto px-6">
         <div className="fade-in">
           <div className="accent-rule mb-6" />
-          <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-8">{heading}</h2>
-          <p className="text-3xl md:text-4xl font-sans font-light leading-tight text-[#1D2B45] mb-12">
+          <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{heading}</h2>
+          <p className="text-3xl md:text-4xl font-sans font-light leading-tight tracking-tight text-[#1D2B45] mb-12">
             A full service retail property firm since {foundedYear}.
           </p>
         </div>
@@ -22,7 +22,7 @@ export default function OurStory({ heading, foundedYear, intro, mission, vision,
           <p>{intro}</p>
           <p>{mission}</p>
         </div>
-        <div className="fade-in mt-16 border-l-[3px] border-[#3D9B82] pl-8">
+        <div className="fade-in mt-16 border-l-[3px] border-[#3D9B82] pl-8 py-1">
           <p className="text-xl md:text-2xl font-sans font-light leading-relaxed text-[#1D2B45] italic">
             {vision}
           </p>
