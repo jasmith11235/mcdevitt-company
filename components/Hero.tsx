@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Logo from './Logo'
+import { heroVideo } from '@/lib/videos'
 
 interface HeroProps {
   tagline: string
@@ -15,12 +16,12 @@ interface HeroClip {
 }
 
 const CLIPS: HeroClip[] = [
-  { src: '/videos/la-sunset.mp4',     durationSec: 10 },
-  { src: '/videos/amsterdam.mp4',     durationSec: 7  },
-  { src: '/videos/nashville.mp4',     durationSec: 10 },
-  { src: '/videos/chicago.mp4',       durationSec: 10, startAt: 25 },
-  { src: '/videos/philadelphia.mp4',  durationSec: 10 },
-  { src: '/videos/london.mp4',        durationSec: 10 },
+  { src: heroVideo('la-sunset.mp4'),     durationSec: 10 },
+  { src: heroVideo('amsterdam.mp4'),     durationSec: 7  },
+  { src: heroVideo('nashville.mp4'),     durationSec: 10 },
+  { src: heroVideo('chicago.mp4'),       durationSec: 10, startAt: 25 },
+  { src: heroVideo('philadelphia.mp4'),  durationSec: 10 },
+  { src: heroVideo('london.mp4'),        durationSec: 10 },
 ]
 
 const CROSSFADE_MS = 1500

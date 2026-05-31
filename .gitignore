@@ -32,3 +32,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# hero videos (hosted on CDN, see lib/videos.ts — never commit to repo)
+/public/videos/
