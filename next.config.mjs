@@ -3,14 +3,14 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
+
   outputFileTracingExcludes: {
-    '/*': [
-      './.git/**/*',
-      './scripts/**/*',
-      './public/graphics/**/*',
-      './public/images/**/*',
-      './public/videos/**/*',
-      './.next/cache/**/*',
+    '**/*': [
+      'public/**',
+      '.next/cache/**',
+      '.git/**',
+      'scripts/**',
+      'node_modules/.cache/**',
     ],
   },
 };
