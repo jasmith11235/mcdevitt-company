@@ -4,6 +4,13 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
 
+  serverComponentsExternalPackages: [
+    '@keystatic/core',
+    '@keystatic/next',
+    '@markdoc/markdoc',
+    'isomorphic-git',
+    '@isomorphic-git/lightning-fs',
+  ],
   outputFileTracingExcludes: {
     '**/*': [
       'public/**',
@@ -11,6 +18,8 @@ const nextConfig = {
       '.git/**',
       'scripts/**',
       'node_modules/.cache/**',
+      'node_modules/@keystatic/**',
+      'node_modules/isomorphic-git/**',
     ],
   },
 };
