@@ -16,7 +16,34 @@
     "tagline": "Una società immobiliare retail a servizio completo dal {year}."
   },
   "services": {
-    "subtitle": "Placemaker esperti, capaci di curare piani di merchandising convincenti con una visione di locazione unica e in linea con il mercato."
+    "subtitle": "Placemaker esperti, capaci di curare piani di merchandising convincenti con una visione di locazione unica e in linea con il mercato.",
+    "explore": "Esplora"
+  },
+  "practice": {
+    "back": "Servizi",
+    "caseLabels": {
+      "vendor": "Venditore",
+      "purchaser": "Acquirente",
+      "assets": "Asset",
+      "lfa": "SLP",
+      "location": "Località",
+      "price": "Prezzo",
+      "year": "Anno della transazione"
+    },
+    "capital": {
+      "eyebrow": "Capital Markets",
+      "segmentsHeading": "I nostri specialisti offrono consulenza su questi segmenti",
+      "retailLabel": "Retail",
+      "expertiseHeading": "La nostra competenza",
+      "trackRecordHeading": "Track record e case study",
+      "accreditationCaption": "Regolamentato da RICS. Paesi Bassi.",
+      "accreditationAlt": "Regolamentato da RICS, Royal Institution of Chartered Surveyors.",
+      "ricsRegulated": "Regolamentato da RICS",
+      "teamHeading": "Team",
+      "intelCta": "Esplora la Data Science",
+      "metaTitle": "Capital Markets | The McDevitt Company",
+      "metaDescription": "Cessioni e acquisizioni orientate all'investimento su tutte le classi di asset immobiliari retail, regolamentato da RICS nei Paesi Bassi."
+    }
   },
   "dataScience": {
     "capabilities": {

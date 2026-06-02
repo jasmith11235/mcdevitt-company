@@ -16,7 +16,34 @@
     "tagline": "Een full-service retailvastgoedbureau sinds {year}."
   },
   "services": {
-    "subtitle": "Bedreven placemakers die overtuigende merchandisingplannen samenstellen met een unieke en marktrelevante verhuurvisie."
+    "subtitle": "Bedreven placemakers die overtuigende merchandisingplannen samenstellen met een unieke en marktrelevante verhuurvisie.",
+    "explore": "Ontdek"
+  },
+  "practice": {
+    "back": "Diensten",
+    "caseLabels": {
+      "vendor": "Verkoper",
+      "purchaser": "Koper",
+      "assets": "Objecten",
+      "lfa": "LFA",
+      "location": "Locatie",
+      "price": "Prijs",
+      "year": "Transactiejaar"
+    },
+    "capital": {
+      "eyebrow": "Capital Markets",
+      "segmentsHeading": "Specialisten adviseren over deze segmenten",
+      "retailLabel": "Retail",
+      "expertiseHeading": "Onze expertise",
+      "trackRecordHeading": "Track record & casestudies",
+      "accreditationCaption": "Gereguleerd door RICS. Nederland.",
+      "accreditationAlt": "Gereguleerd door RICS, Royal Institution of Chartered Surveyors.",
+      "ricsRegulated": "Gereguleerd door RICS",
+      "teamHeading": "Team",
+      "intelCta": "Ontdek Data Science",
+      "metaTitle": "Capital Markets | The McDevitt Company",
+      "metaDescription": "Investeringsgerichte verkopen en acquisities binnen alle retailvastgoedklassen, RICS-gereguleerd in Nederland."
+    }
   },
   "dataScience": {
     "capabilities": {

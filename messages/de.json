@@ -16,7 +16,34 @@
     "tagline": "Ein Full-Service-Unternehmen für Handelsimmobilien seit {year}."
   },
   "services": {
-    "subtitle": "Versierte Placemaker, die überzeugende Merchandising-Konzepte mit einer einzigartigen und marktgerechten Vermietungsvision entwickeln."
+    "subtitle": "Versierte Placemaker, die überzeugende Merchandising-Konzepte mit einer einzigartigen und marktgerechten Vermietungsvision entwickeln.",
+    "explore": "Entdecken"
+  },
+  "practice": {
+    "back": "Leistungen",
+    "caseLabels": {
+      "vendor": "Verkäufer",
+      "purchaser": "Käufer",
+      "assets": "Objekte",
+      "lfa": "Mietfläche",
+      "location": "Standort",
+      "price": "Preis",
+      "year": "Transaktionsjahr"
+    },
+    "capital": {
+      "eyebrow": "Capital Markets",
+      "segmentsHeading": "Unsere Spezialisten beraten zu diesen Segmenten",
+      "retailLabel": "Handel",
+      "expertiseHeading": "Unsere Expertise",
+      "trackRecordHeading": "Erfolgsbilanz & Fallstudien",
+      "accreditationCaption": "Reguliert durch RICS. Niederlande.",
+      "accreditationAlt": "Reguliert durch RICS, Royal Institution of Chartered Surveyors.",
+      "ricsRegulated": "Reguliert durch RICS",
+      "teamHeading": "Team",
+      "intelCta": "Data Science entdecken",
+      "metaTitle": "Capital Markets | The McDevitt Company",
+      "metaDescription": "Investitionsorientierte Verkäufe und Akquisitionen über alle Handelsimmobilien-Assetklassen, RICS-reguliert in den Niederlanden."
+    }
   },
   "dataScience": {
     "capabilities": {

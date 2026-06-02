@@ -1,0 +1,58 @@
+{
+  "heroLine": "We create investment solutions.",
+  "heroCaption": "Amsterdam, canal-side, evening",
+  "lead": "The McDevitt team brings exceptional experience in investment-oriented disposals and acquisitions. Our investment advisors have specialist knowledge of all retail real-estate asset classes. We advise investors of all categories, from institutions to private individuals.",
+  "approach": "We have played a leading role in numerous successful transactions, building a strong network of purchasers, vendors, and pricing that our investment and transaction experts use on behalf of our clients. We act locally but think and coordinate across our offices globally. We draw on years of experience in leasing and valuation to provide integrated solutions.",
+  "segmentsRetail": [
+    "High Street",
+    "Shopping Centers",
+    "Supermarkets",
+    "Retail Parks and Retail Warehousing"
+  ],
+  "segmentsOther": [
+    "Hospitality",
+    "Residential",
+    "Office"
+  ],
+  "expertise": [
+    {
+      "title": "Purchase and Sale",
+      "body": "We advise during each phase of the sale process, on individual assets and on portfolios. Care-free, from extensive vendor due diligence through final closing."
+    },
+    {
+      "title": "Acquisition",
+      "body": "We advise during each phase of the purchase process, from valuation and negotiation to final closing. We are specialists in connecting people."
+    },
+    {
+      "title": "Valuation and Advisory",
+      "body": "Personal approach and commercial intelligence in combination with structured market data. Reports are written for the decisions they support."
+    },
+    {
+      "title": "Asset Management",
+      "body": "Asset management is taking care, real care, of a tactical and strategic plan. We act on behalf of the asset and the investor in equal measure."
+    }
+  ],
+  "caseStudies": [
+    {
+      "narrative": "Disposition of two large-scale retail parks tenanted by Praxis and De Mandemakers Groep.",
+      "vendor": "De Mandemakers Groep (DMG)",
+      "purchaser": "Corum Asset Management",
+      "assets": "2",
+      "lfa": "15,500 sqm",
+      "location": "Capelle aan den IJssel & Bergschenhoek",
+      "price": "€21.3 million"
+    },
+    {
+      "narrative": "Disposition of a supermarket portfolio via sale-and-leaseback with the second-largest supermarket chain in the Netherlands.",
+      "vendor": "Jumbo Supermarkten",
+      "purchaser": "Bouwinvest",
+      "assets": "13",
+      "lfa": "17,700 sqm",
+      "location": "13 locations",
+      "price": "€34.4 million",
+      "year": "Q4 2018"
+    }
+  ],
+  "team": [],
+  "intelTeaser": "Market briefs, rent comps, tenant risk scoring. The intelligence behind every investment thesis."
+}

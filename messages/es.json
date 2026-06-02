@@ -16,7 +16,34 @@
     "tagline": "Una firma inmobiliaria comercial de servicio integral desde {year}."
   },
   "services": {
-    "subtitle": "Creadores de lugares expertos, capaces de elaborar planes de comercialización atractivos con una visión de arrendamiento única y relevante para el mercado."
+    "subtitle": "Creadores de lugares expertos, capaces de elaborar planes de comercialización atractivos con una visión de arrendamiento única y relevante para el mercado.",
+    "explore": "Explorar"
+  },
+  "practice": {
+    "back": "Servicios",
+    "caseLabels": {
+      "vendor": "Vendedor",
+      "purchaser": "Comprador",
+      "assets": "Activos",
+      "lfa": "SBA",
+      "location": "Ubicación",
+      "price": "Precio",
+      "year": "Año de la transacción"
+    },
+    "capital": {
+      "eyebrow": "Capital Markets",
+      "segmentsHeading": "Nuestros especialistas asesoran en estos segmentos",
+      "retailLabel": "Comercio",
+      "expertiseHeading": "Nuestra experiencia",
+      "trackRecordHeading": "Trayectoria y casos de éxito",
+      "accreditationCaption": "Regulado por RICS. Países Bajos.",
+      "accreditationAlt": "Regulado por RICS, Royal Institution of Chartered Surveyors.",
+      "ricsRegulated": "Regulado por RICS",
+      "teamHeading": "Equipo",
+      "intelCta": "Explorar Ciencia de datos",
+      "metaTitle": "Capital Markets | The McDevitt Company",
+      "metaDescription": "Disposiciones y adquisiciones orientadas a la inversión en todas las clases de activos inmobiliarios comerciales, regulado por RICS en los Países Bajos."
+    }
   },
   "dataScience": {
     "capabilities": {

@@ -56,6 +56,7 @@ export function getAbout(locale?: string) { return readJson('pages/about.json', 
 export function getServices(locale?: string) { return readJson('pages/services.json', locale); }
 export function getDataScience(locale?: string) { return readJson('pages/data-science.json', locale); }
 export function getClientPortal(locale?: string) { return readJson('pages/client-portal.json', locale); }
+export function getCapitalMarkets(locale?: string) { return readJson('pages/capital-markets.json', locale); }
 
 export function getTestimonials(locale?: string) {
   return readCollection('content/testimonials', locale)

@@ -16,7 +16,34 @@
     "tagline": "Un cabinet immobilier commercial à service complet depuis {year}."
   },
   "services": {
-    "subtitle": "Des créateurs de lieux chevronnés, capables d'élaborer des plans de merchandising convaincants avec une vision locative unique et adaptée au marché."
+    "subtitle": "Des créateurs de lieux chevronnés, capables d'élaborer des plans de merchandising convaincants avec une vision locative unique et adaptée au marché.",
+    "explore": "Découvrir"
+  },
+  "practice": {
+    "back": "Services",
+    "caseLabels": {
+      "vendor": "Vendeur",
+      "purchaser": "Acquéreur",
+      "assets": "Actifs",
+      "lfa": "SUB",
+      "location": "Localisation",
+      "price": "Prix",
+      "year": "Année de transaction"
+    },
+    "capital": {
+      "eyebrow": "Capital Markets",
+      "segmentsHeading": "Nos spécialistes conseillent sur ces segments",
+      "retailLabel": "Commerce",
+      "expertiseHeading": "Notre expertise",
+      "trackRecordHeading": "Références & études de cas",
+      "accreditationCaption": "Réglementé par la RICS. Pays-Bas.",
+      "accreditationAlt": "Réglementé par la RICS, Royal Institution of Chartered Surveyors.",
+      "ricsRegulated": "Réglementé par la RICS",
+      "teamHeading": "Équipe",
+      "intelCta": "Découvrir la Data Science",
+      "metaTitle": "Capital Markets | The McDevitt Company",
+      "metaDescription": "Cessions et acquisitions à vocation d'investissement sur toutes les classes d'actifs immobiliers commerciaux, réglementé par la RICS aux Pays-Bas."
+    }
   },
   "dataScience": {
     "capabilities": {

@@ -16,7 +16,34 @@
     "tagline": "A full service retail property firm since {year}."
   },
   "services": {
-    "subtitle": "Skilled placemakers with the ability to curate compelling merchandising plans with unique and market-relevant leasing vision."
+    "subtitle": "Skilled placemakers with the ability to curate compelling merchandising plans with unique and market-relevant leasing vision.",
+    "explore": "Explore"
+  },
+  "practice": {
+    "back": "Services",
+    "caseLabels": {
+      "vendor": "Vendor",
+      "purchaser": "Purchaser",
+      "assets": "Assets",
+      "lfa": "LFA",
+      "location": "Location",
+      "price": "Price",
+      "year": "Transaction year"
+    },
+    "capital": {
+      "eyebrow": "Capital Markets",
+      "segmentsHeading": "Specialists advise on these segments",
+      "retailLabel": "Retail",
+      "expertiseHeading": "Our Expertise",
+      "trackRecordHeading": "Track Record & Case Studies",
+      "accreditationCaption": "Regulated by RICS. The Netherlands.",
+      "accreditationAlt": "Regulated by RICS, Royal Institution of Chartered Surveyors.",
+      "ricsRegulated": "Regulated by RICS",
+      "teamHeading": "Team",
+      "intelCta": "Explore Data Science",
+      "metaTitle": "Capital Markets | The McDevitt Company",
+      "metaDescription": "Investment-oriented disposals and acquisitions across all retail real-estate asset classes, RICS-regulated in the Netherlands."
+    }
   },
   "dataScience": {
     "capabilities": {

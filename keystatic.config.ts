@@ -38,8 +38,61 @@ export default config({
         tenantRepDescription: fields.text({ label: 'Tenant Rep Description', multiline: true }),
         landlordRepTitle: fields.text({ label: 'Landlord Rep Title' }),
         landlordRepDescription: fields.text({ label: 'Landlord Rep Description', multiline: true }),
-        developmentTitle: fields.text({ label: 'Development Advisory Title' }),
-        developmentDescription: fields.text({ label: 'Development Advisory Description', multiline: true }),
+        capitalMarketsTitle: fields.text({ label: 'Capital Markets Title' }),
+        capitalMarketsDescription: fields.text({ label: 'Capital Markets Description', multiline: true }),
+        developmentTitle: fields.text({ label: 'Development Title' }),
+        developmentDescription: fields.text({ label: 'Development Description', multiline: true }),
+      },
+    }),
+    capitalMarkets: singleton({
+      label: 'Capital Markets (deep page)',
+      path: 'content/pages/capital-markets',
+      format: { data: 'json' },
+      schema: {
+        heroLine: fields.text({ label: 'Hero Display Line' }),
+        heroCaption: fields.text({ label: 'Hero Photo Caption' }),
+        heroPhoto: fields.text({ label: 'Hero Photo Path', description: 'Optional. Path under /public, e.g. /photos/practice-capital.png. Leave empty for the branded navy treatment.' }),
+        lead: fields.text({ label: 'Lead Paragraph', multiline: true }),
+        approach: fields.text({ label: 'Approach Paragraph', multiline: true }),
+        accreditationLogo: fields.text({ label: 'RICS Logo Path', description: 'Optional. e.g. /logos/rics-nl.svg. Leave empty for the typographic RICS treatment.' }),
+        segmentsRetail: fields.array(fields.text({ label: 'Retail segment' }), {
+          label: 'Retail segments',
+          itemLabel: props => props.value || 'Segment',
+        }),
+        segmentsOther: fields.array(fields.text({ label: 'Other segment' }), {
+          label: 'Other segments',
+          itemLabel: props => props.value || 'Segment',
+        }),
+        expertise: fields.array(
+          fields.object({
+            title: fields.text({ label: 'Title' }),
+            body: fields.text({ label: 'Description', multiline: true }),
+          }),
+          { label: 'Our Expertise', itemLabel: props => props.fields.title.value || 'Expertise block' },
+        ),
+        caseStudies: fields.array(
+          fields.object({
+            narrative: fields.text({ label: 'Narrative', multiline: true }),
+            vendor: fields.text({ label: 'Vendor' }),
+            purchaser: fields.text({ label: 'Purchaser' }),
+            assets: fields.text({ label: 'Assets (count)' }),
+            lfa: fields.text({ label: 'LFA' }),
+            location: fields.text({ label: 'Location' }),
+            price: fields.text({ label: 'Price' }),
+            year: fields.text({ label: 'Transaction Year (optional)' }),
+          }),
+          { label: 'Case Studies', itemLabel: props => props.fields.vendor.value || 'Case study' },
+        ),
+        team: fields.array(
+          fields.object({
+            name: fields.text({ label: 'Name' }),
+            title: fields.text({ label: 'Title', description: 'e.g. Manager · Capital Markets' }),
+            bio: fields.text({ label: 'Bio', multiline: true }),
+            portrait: fields.text({ label: 'Portrait Path' }),
+          }),
+          { label: 'Team (confirm names before publishing)', itemLabel: props => props.fields.name.value || 'Team member' },
+        ),
+        intelTeaser: fields.text({ label: 'Intelligence Teaser', multiline: true }),
       },
     }),
     dataScience: singleton({
