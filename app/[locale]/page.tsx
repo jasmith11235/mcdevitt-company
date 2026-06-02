@@ -1,3 +1,4 @@
+import { setRequestLocale } from 'next-intl/server'
 import { getHero, getAbout, getServices, getDataScience, getClientPortal, getTestimonials, getProjects, getOffices, getNews, getReadingRoom } from '@/lib/content'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
@@ -14,17 +15,20 @@ import WoodblockDivider from '@/components/WoodblockDivider'
 import Footer from '@/components/Footer'
 import ScrollAnimator from '@/components/ScrollAnimator'
 
-export default function Home() {
-  const hero = getHero()
-  const about = getAbout()
-  const services = getServices()
-  const dataScience = getDataScience()
-  const clientPortal = getClientPortal()
-  const testimonials = getTestimonials()
-  const projects = getProjects()
-  const offices = getOffices()
-  const news = getNews()
-  const readingRoom = getReadingRoom()
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  setRequestLocale(locale)
+
+  const hero = getHero(locale)
+  const about = getAbout(locale)
+  const services = getServices(locale)
+  const dataScience = getDataScience(locale)
+  const clientPortal = getClientPortal(locale)
+  const testimonials = getTestimonials(locale)
+  const projects = getProjects(locale)
+  const offices = getOffices(locale)
+  const news = getNews(locale)
+  const readingRoom = getReadingRoom(locale)
 
   return (
     <>

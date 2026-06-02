@@ -1,21 +1,24 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useTranslations } from 'next-intl'
 import Logo from './Logo'
 import TransitionLink from './TransitionLink'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const navLinks = [
-  { label: 'Our Story', href: '/#our-story' },
-  { label: 'Services', href: '/#services' },
-  { label: 'Data Science', href: '/#data-science' },
-  { label: 'Projects', href: '/#projects' },
-  { label: 'News', href: '/news' },
-  { label: 'Reading Room', href: '/reading-room' },
-  { label: 'Offices', href: '/#offices' },
-  { label: 'Contact', href: '#contact' },
-]
+  { key: 'ourStory', href: '/#our-story' },
+  { key: 'services', href: '/#services' },
+  { key: 'dataScience', href: '/#data-science' },
+  { key: 'projects', href: '/#projects' },
+  { key: 'news', href: '/news' },
+  { key: 'readingRoom', href: '/reading-room' },
+  { key: 'offices', href: '/#offices' },
+  { key: 'contact', href: '#contact' },
+] as const
 
 export default function Header() {
+  const t = useTranslations('nav')
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -39,9 +42,11 @@ export default function Header() {
                 href={link.href}
                 className="font-sans text-xs tracking-widest uppercase text-[#1D2B45] hover:text-[#3D9B82] transition-colors duration-200"
               >
-                {link.label}
+                {t(link.key)}
               </TransitionLink>
             ))}
+            <span className="h-4 w-px bg-[#1D2B45]/15" aria-hidden />
+            <LanguageSwitcher variant="light" />
           </nav>
           <button
             className="lg:hidden flex flex-col gap-1.5 p-3 min-w-[44px] min-h-[44px] items-center justify-center"
@@ -65,9 +70,12 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className="font-sans text-sm tracking-widest uppercase text-white hover:text-[#3D9B82] transition-colors duration-300 py-3 px-6 min-h-[44px] flex items-center"
             >
-              {link.label}
+              {t(link.key)}
             </TransitionLink>
           ))}
+          <div className="mt-6 pt-6 border-t border-white/10">
+            <LanguageSwitcher variant="dark" />
+          </div>
         </div>
       </div>
     </>

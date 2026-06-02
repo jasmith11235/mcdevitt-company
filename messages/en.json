@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "ourStory": "Our Story",
+    "services": "Services",
+    "dataScience": "Data Science",
+    "projects": "Projects",
+    "news": "News",
+    "readingRoom": "Reading Room",
+    "offices": "Offices",
+    "contact": "Contact"
+  },
+  "hero": {
+    "scroll": "Scroll"
+  },
+  "ourStory": {
+    "tagline": "A full service retail property firm since {year}."
+  },
+  "services": {
+    "subtitle": "Skilled placemakers with the ability to curate compelling merchandising plans with unique and market-relevant leasing vision."
+  },
+  "dataScience": {
+    "capabilities": {
+      "tapestry": {
+        "title": "Tapestry Segmentation",
+        "desc": "ESRI's market-leading psychographic system, dividing the US into 67 unique lifestyle groups."
+      },
+      "pos": {
+        "title": "Point of Sale Analysis",
+        "desc": "Point of Sale data sets containing millions of observations of consumer behavior."
+      },
+      "households": {
+        "title": "Target Households",
+        "desc": "Tapestry groups form the basis of a retailer's or investor's target demographic."
+      },
+      "performance": {
+        "title": "Sales Performance",
+        "desc": "Advanced analytic techniques make raw data actionable by accounting for economic, demographic, and geographic context."
+      },
+      "coTenancy": {
+        "title": "Co-Tenancy Correlations",
+        "desc": "A database of nearly 100,000 individual retail locations to determine co-tenant impact on client sales."
+      },
+      "trips": {
+        "title": "Trips Data",
+        "desc": "Start and end point analytics give actual drive times and more accurate volume projections."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Select Projects",
+    "subtitle": "We collaborate with select landlords and developers to create unique and distinctive retail destinations."
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials"
+  },
+  "news": {
+    "eyebrow": "News",
+    "subtitle": "Industry developments shaping retail real estate.",
+    "allNews": "All News",
+    "categories": {
+      "industry": "Industry",
+      "company": "Company News",
+      "insight": "Market Insight",
+      "project": "Project Update"
+    }
+  },
+  "readingRoom": {
+    "eyebrow": "Reading Room",
+    "subtitle": "Curiosities about the businesses that occupy buildings, and what they signal for the buildings themselves.",
+    "domainLabel": "Domain",
+    "marketLabel": "Market",
+    "allDomains": "All Domains",
+    "allMarkets": "All Markets",
+    "enter": "Enter the Reading Room",
+    "readOriginal": "Read the original",
+    "empty": "No articles match the current filters.",
+    "clearFilters": "Clear filters",
+    "domains": {
+      "retail-consumer": "Retail / Consumer",
+      "hospitality-fb": "Hospitality / F&B",
+      "culture-demographics": "Culture / Demographics",
+      "business-workspace": "Business / Workspace",
+      "design-placemaking": "Design / Placemaking"
+    }
+  },
+  "offices": {
+    "eyebrow": "Offices",
+    "subtitle": "Nine offices providing integrated national and international coverage."
+  },
+  "footer": {
+    "tagline": "A full-service retail real estate advisory firm. Strategic vision, data-driven insight, and global reach since 1997.",
+    "navigate": "Navigate",
+    "contact": "Contact",
+    "copyright": "© {year} The McDevitt Company. All rights reserved."
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "select": "Select language"
+  },
+  "meta": {
+    "home": {
+      "title": "The McDevitt Company",
+      "description": "A full-service retail real estate advisory firm. Strategic vision, data-driven insight, and global reach since 1997."
+    },
+    "news": {
+      "title": "News | The McDevitt Company",
+      "description": "Industry news and developments in retail real estate."
+    },
+    "readingRoom": {
+      "title": "Reading Room | The McDevitt Company",
+      "description": "Curated perspectives on the businesses that shape the built environment."
+    }
+  }
+}

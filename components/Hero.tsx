@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import Logo from './Logo'
 import { heroVideo } from '@/lib/videos'
 
@@ -27,6 +28,7 @@ const CLIPS: HeroClip[] = [
 const CROSSFADE_MS = 1500
 
 export default function Hero({ tagline, subtitle }: HeroProps) {
+  const t = useTranslations('hero')
   const [activeIdx, setActiveIdx] = useState(0)
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([])
 
@@ -97,7 +99,7 @@ export default function Hero({ tagline, subtitle }: HeroProps) {
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hero-scroll-pulse">
         <div className="w-px h-16 bg-white/30 mx-auto mb-2" />
-        <span className="font-sans text-[10px] tracking-widest uppercase text-white/40">Scroll</span>
+        <span className="font-sans text-[10px] tracking-widest uppercase text-white/40">{t('scroll')}</span>
       </div>
     </section>
   )

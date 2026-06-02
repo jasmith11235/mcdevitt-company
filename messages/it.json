@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "ourStory": "Chi siamo",
+    "services": "Servizi",
+    "dataScience": "Data Science",
+    "projects": "Progetti",
+    "news": "Notizie",
+    "readingRoom": "Sala di lettura",
+    "offices": "Sedi",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "scroll": "Scorri"
+  },
+  "ourStory": {
+    "tagline": "Una società immobiliare retail a servizio completo dal {year}."
+  },
+  "services": {
+    "subtitle": "Placemaker esperti, capaci di curare piani di merchandising convincenti con una visione di locazione unica e in linea con il mercato."
+  },
+  "dataScience": {
+    "capabilities": {
+      "tapestry": {
+        "title": "Segmentazione Tapestry",
+        "desc": "Il sistema psicografico leader di mercato di ESRI, che suddivide gli Stati Uniti in 67 gruppi di stili di vita unici."
+      },
+      "pos": {
+        "title": "Analisi dei punti vendita",
+        "desc": "Set di dati dei punti vendita contenenti milioni di osservazioni sul comportamento dei consumatori."
+      },
+      "households": {
+        "title": "Nuclei familiari target",
+        "desc": "I gruppi Tapestry costituiscono la base del target demografico di un retailer o di un investitore."
+      },
+      "performance": {
+        "title": "Performance di vendita",
+        "desc": "Tecniche analitiche avanzate rendono i dati grezzi utilizzabili tenendo conto del contesto economico, demografico e geografico."
+      },
+      "coTenancy": {
+        "title": "Correlazioni di co-tenancy",
+        "desc": "Un database di quasi 100.000 singole location retail per determinare l'impatto dei co-conduttori sulle vendite dei clienti."
+      },
+      "trips": {
+        "title": "Dati sugli spostamenti",
+        "desc": "L'analisi dei punti di partenza e di arrivo fornisce tempi di percorrenza reali e proiezioni di volume più accurate."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Progetti selezionati",
+    "subtitle": "Collaboriamo con proprietari e sviluppatori selezionati per creare destinazioni retail uniche e distintive."
+  },
+  "testimonials": {
+    "eyebrow": "Testimonianze"
+  },
+  "news": {
+    "eyebrow": "Notizie",
+    "subtitle": "Sviluppi del settore che plasmano il retail immobiliare.",
+    "allNews": "Tutte le notizie",
+    "categories": {
+      "industry": "Settore",
+      "company": "Notizie aziendali",
+      "insight": "Analisi di mercato",
+      "project": "Aggiornamento progetto"
+    }
+  },
+  "readingRoom": {
+    "eyebrow": "Sala di lettura",
+    "subtitle": "Curiosità sulle attività che occupano gli edifici e su ciò che rivelano sugli edifici stessi.",
+    "domainLabel": "Ambito",
+    "marketLabel": "Mercato",
+    "allDomains": "Tutti gli ambiti",
+    "allMarkets": "Tutti i mercati",
+    "enter": "Entra nella sala di lettura",
+    "readOriginal": "Leggi l'originale",
+    "empty": "Nessun articolo corrisponde ai filtri attuali.",
+    "clearFilters": "Cancella filtri",
+    "domains": {
+      "retail-consumer": "Retail / Consumatore",
+      "hospitality-fb": "Ospitalità / F&B",
+      "culture-demographics": "Cultura / Demografia",
+      "business-workspace": "Business / Spazio di lavoro",
+      "design-placemaking": "Design / Placemaking"
+    }
+  },
+  "offices": {
+    "eyebrow": "Sedi",
+    "subtitle": "Nove sedi che offrono una copertura nazionale e internazionale integrata."
+  },
+  "footer": {
+    "tagline": "Una società di consulenza immobiliare retail a servizio completo. Visione strategica, analisi basata sui dati e portata globale dal 1997.",
+    "navigate": "Naviga",
+    "contact": "Contatti",
+    "copyright": "© {year} The McDevitt Company. Tutti i diritti riservati."
+  },
+  "languageSwitcher": {
+    "label": "Lingua",
+    "select": "Seleziona lingua"
+  },
+  "meta": {
+    "home": {
+      "title": "The McDevitt Company",
+      "description": "Una società di consulenza immobiliare retail a servizio completo. Visione strategica, analisi basata sui dati e portata globale dal 1997."
+    },
+    "news": {
+      "title": "Notizie | The McDevitt Company",
+      "description": "Notizie e sviluppi nel settore immobiliare retail."
+    },
+    "readingRoom": {
+      "title": "Sala di lettura | The McDevitt Company",
+      "description": "Prospettive selezionate sulle attività che plasmano l'ambiente costruito."
+    }
+  }
+}

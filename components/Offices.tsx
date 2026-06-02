@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl'
+
 interface Office {
   slug: string
   city: string
@@ -6,6 +8,7 @@ interface Office {
 }
 
 export default function Offices({ offices }: { offices: Office[] }) {
+  const t = useTranslations('offices')
   return (
     <section id="offices" className="relative py-24 md:py-32 overflow-hidden">
       {/* Background */}
@@ -14,9 +17,9 @@ export default function Offices({ offices }: { offices: Office[] }) {
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="fade-in mb-16">
           <div className="accent-rule mb-6" />
-          <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Offices</h2>
+          <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{t('eyebrow')}</h2>
           <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-[#1D2B45]">
-            Nine offices providing integrated national and international coverage.
+            {t('subtitle')}
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-8 md:gap-12">

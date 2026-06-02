@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "ourStory": "Über uns",
+    "services": "Leistungen",
+    "dataScience": "Data Science",
+    "projects": "Projekte",
+    "news": "Neuigkeiten",
+    "readingRoom": "Lesezimmer",
+    "offices": "Standorte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "scroll": "Scrollen"
+  },
+  "ourStory": {
+    "tagline": "Ein Full-Service-Unternehmen für Handelsimmobilien seit {year}."
+  },
+  "services": {
+    "subtitle": "Versierte Placemaker, die überzeugende Merchandising-Konzepte mit einer einzigartigen und marktgerechten Vermietungsvision entwickeln."
+  },
+  "dataScience": {
+    "capabilities": {
+      "tapestry": {
+        "title": "Tapestry-Segmentierung",
+        "desc": "Das marktführende psychografische System von ESRI, das die USA in 67 einzigartige Lebensstilgruppen unterteilt."
+      },
+      "pos": {
+        "title": "Point-of-Sale-Analyse",
+        "desc": "Point-of-Sale-Datensätze mit Millionen von Beobachtungen des Verbraucherverhaltens."
+      },
+      "households": {
+        "title": "Zielhaushalte",
+        "desc": "Tapestry-Gruppen bilden die Grundlage der Zielgruppendemografie eines Händlers oder Investors."
+      },
+      "performance": {
+        "title": "Verkaufsleistung",
+        "desc": "Fortschrittliche Analyseverfahren machen Rohdaten nutzbar, indem sie den wirtschaftlichen, demografischen und geografischen Kontext berücksichtigen."
+      },
+      "coTenancy": {
+        "title": "Co-Tenancy-Korrelationen",
+        "desc": "Eine Datenbank mit fast 100.000 einzelnen Einzelhandelsstandorten zur Bestimmung des Einflusses von Mitmietern auf den Umsatz der Kunden."
+      },
+      "trips": {
+        "title": "Wegedaten",
+        "desc": "Die Analyse von Start- und Endpunkten liefert tatsächliche Fahrzeiten und genauere Volumenprognosen."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Ausgewählte Projekte",
+    "subtitle": "Wir arbeiten mit ausgewählten Eigentümern und Entwicklern zusammen, um einzigartige und unverwechselbare Handelsdestinationen zu schaffen."
+  },
+  "testimonials": {
+    "eyebrow": "Referenzen"
+  },
+  "news": {
+    "eyebrow": "Neuigkeiten",
+    "subtitle": "Branchenentwicklungen, die den Handelsimmobilienmarkt prägen.",
+    "allNews": "Alle Neuigkeiten",
+    "categories": {
+      "industry": "Branche",
+      "company": "Unternehmensnews",
+      "insight": "Markteinblick",
+      "project": "Projekt-Update"
+    }
+  },
+  "readingRoom": {
+    "eyebrow": "Lesezimmer",
+    "subtitle": "Kuriositäten über die Unternehmen, die Gebäude nutzen, und was sie über die Gebäude selbst aussagen.",
+    "domainLabel": "Bereich",
+    "marketLabel": "Markt",
+    "allDomains": "Alle Bereiche",
+    "allMarkets": "Alle Märkte",
+    "enter": "Das Lesezimmer betreten",
+    "readOriginal": "Original lesen",
+    "empty": "Keine Artikel entsprechen den aktuellen Filtern.",
+    "clearFilters": "Filter zurücksetzen",
+    "domains": {
+      "retail-consumer": "Handel / Verbraucher",
+      "hospitality-fb": "Gastgewerbe / F&B",
+      "culture-demographics": "Kultur / Demografie",
+      "business-workspace": "Business / Arbeitsplatz",
+      "design-placemaking": "Design / Placemaking"
+    }
+  },
+  "offices": {
+    "eyebrow": "Standorte",
+    "subtitle": "Neun Standorte mit integrierter nationaler und internationaler Abdeckung."
+  },
+  "footer": {
+    "tagline": "Ein Full-Service-Beratungsunternehmen für Handelsimmobilien. Strategische Vision, datenbasierte Erkenntnisse und globale Reichweite seit 1997.",
+    "navigate": "Navigation",
+    "contact": "Kontakt",
+    "copyright": "© {year} The McDevitt Company. Alle Rechte vorbehalten."
+  },
+  "languageSwitcher": {
+    "label": "Sprache",
+    "select": "Sprache auswählen"
+  },
+  "meta": {
+    "home": {
+      "title": "The McDevitt Company",
+      "description": "Ein Full-Service-Beratungsunternehmen für Handelsimmobilien. Strategische Vision, datenbasierte Erkenntnisse und globale Reichweite seit 1997."
+    },
+    "news": {
+      "title": "Neuigkeiten | The McDevitt Company",
+      "description": "Neuigkeiten und Entwicklungen im Bereich Handelsimmobilien."
+    },
+    "readingRoom": {
+      "title": "Lesezimmer | The McDevitt Company",
+      "description": "Kuratierte Perspektiven auf die Unternehmen, die die gebaute Umwelt prägen."
+    }
+  }
+}

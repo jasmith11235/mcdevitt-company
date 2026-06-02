@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl'
+
 interface ServicesProps {
   heading: string
   tenantRepTitle: string
@@ -9,6 +11,7 @@ interface ServicesProps {
 }
 
 export default function Services(props: ServicesProps) {
+  const t = useTranslations('services')
   const cards = [
     { title: props.tenantRepTitle, desc: props.tenantRepDescription },
     { title: props.landlordRepTitle, desc: props.landlordRepDescription },
@@ -27,7 +30,7 @@ export default function Services(props: ServicesProps) {
           <div className="accent-rule mb-6" />
           <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{props.heading}</h2>
           <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-[#1D2B45] max-w-2xl">
-            Skilled placemakers with the ability to curate compelling merchandising plans with unique and market-relevant leasing vision.
+            {t('subtitle')}
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">

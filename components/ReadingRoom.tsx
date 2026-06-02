@@ -2,6 +2,7 @@
 
 import { Suspense, useMemo, type ReactNode } from 'react'
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
+import { useTranslations, useLocale } from 'next-intl'
 import TransitionLink from './TransitionLink'
 import { MARKETS, MARKET_LABELS, isMarketValue, type MarketValue } from '@/lib/markets'
 
@@ -20,16 +21,15 @@ interface ReadingRoomItem {
   order?: number
 }
 
-const DOMAIN_LABELS: Record<string, string> = {
-  'retail-consumer': 'Retail / Consumer',
-  'hospitality-fb': 'Hospitality / F&B',
-  'culture-demographics': 'Culture / Demographics',
-  'business-workspace': 'Business / Workspace',
-  'design-placemaking': 'Design / Placemaking',
-}
+const DOMAIN_KEYS = [
+  'retail-consumer',
+  'hospitality-fb',
+  'culture-demographics',
+  'business-workspace',
+  'design-placemaking',
+] as const
 
-const DOMAIN_OPTIONS = Object.entries(DOMAIN_LABELS).map(([value, label]) => ({ value, label }))
-const DOMAIN_VALUES = new Set(Object.keys(DOMAIN_LABELS))
+const DOMAIN_VALUES = new Set<string>(DOMAIN_KEYS)
 const MARKET_OPTIONS = MARKETS.map(m => ({ value: m.value, label: m.label }))
 
 function isDomainValue(value: string): boolean {
@@ -59,18 +59,20 @@ export default function ReadingRoom({ items, limit }: ReadingRoomProps) {
 }
 
 function SectionHeader() {
+  const t = useTranslations('readingRoom')
   return (
     <div className="fade-in mb-16">
       <div className="accent-rule mb-6" />
-      <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Reading Room</h2>
+      <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{t('eyebrow')}</h2>
       <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-[#1D2B45] max-w-2xl">
-        Curiosities about the businesses that occupy buildings, and what they signal for the buildings themselves.
+        {t('subtitle')}
       </p>
     </div>
   )
 }
 
 function SimpleList({ items, limit }: { items: ReadingRoomItem[]; limit: number }) {
+  const t = useTranslations('readingRoom')
   const displayed = items.slice(0, limit)
   return (
     <>
@@ -81,7 +83,7 @@ function SimpleList({ items, limit }: { items: ReadingRoomItem[]; limit: number 
             href="/reading-room"
             className="group inline-flex items-center font-sans text-xs tracking-[0.2em] uppercase text-[#3D9B82] border border-[#3D9B82] px-8 py-3 hover:bg-[#3D9B82] hover:text-white transition-colors duration-300"
           >
-            <span>Enter the Reading Room</span>
+            <span>{t('enter')}</span>
             <span aria-hidden className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
           </TransitionLink>
         </div>
@@ -91,9 +93,11 @@ function SimpleList({ items, limit }: { items: ReadingRoomItem[]; limit: number 
 }
 
 function FilterableList({ items }: { items: ReadingRoomItem[] }) {
+  const t = useTranslations('readingRoom')
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
+  const domainOptions = DOMAIN_KEYS.map(value => ({ value, label: t(`domains.${value}`) }))
 
   const rawDomain = searchParams.get('domain')
   const rawMarket = searchParams.get('market')
@@ -157,16 +161,16 @@ function FilterableList({ items }: { items: ReadingRoomItem[] }) {
     <>
       <div className="enter-fade mb-16 space-y-6">
         <FilterRow
-          label="Domain"
-          allLabel="All Domains"
+          label={t('domainLabel')}
+          allLabel={t('allDomains')}
           allCount={allDomainsCount}
-          options={DOMAIN_OPTIONS.map(o => ({ ...o, count: domainCounts[o.value] ?? 0 }))}
+          options={domainOptions.map(o => ({ ...o, count: domainCounts[o.value] ?? 0 }))}
           activeValue={activeDomain}
           onSelect={value => updateParam('domain', value)}
         />
         <FilterRow
-          label="Market"
-          allLabel="All Markets"
+          label={t('marketLabel')}
+          allLabel={t('allMarkets')}
           allCount={allMarketsCount}
           options={MARKET_OPTIONS.map(o => ({ ...o, count: marketCounts[o.value] ?? 0 }))}
           activeValue={activeMarket}
@@ -267,8 +271,11 @@ function FilterChip({ active, count, onClick, children }: FilterChipProps) {
 }
 
 function Article({ item, index }: { item: ReadingRoomItem; index: number }) {
+  const t = useTranslations('readingRoom')
+  const locale = useLocale()
   const markets = item.markets ?? []
-  const formattedDate = new Date(item.date).toLocaleDateString('en-US', {
+  const domainLabel = isDomainValue(item.domain) ? t(`domains.${item.domain}`) : item.domain
+  const formattedDate = new Date(item.date).toLocaleDateString(locale, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -279,7 +286,7 @@ function Article({ item, index }: { item: ReadingRoomItem; index: number }) {
       <div className="border-t-[3px] border-[#3D9B82] pt-8 max-w-4xl transition-colors duration-500 group-hover:border-[#1D2B45]">
         <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-4">
           <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82]">
-            {DOMAIN_LABELS[item.domain] ?? item.domain}
+            {domainLabel}
           </span>
           <MetaSeparator />
           <span className="font-sans text-[10px] tracking-wider text-[#1D2B45]/50">{item.source}</span>
@@ -335,7 +342,7 @@ function Article({ item, index }: { item: ReadingRoomItem; index: number }) {
             rel="noopener noreferrer"
             className="group/cta inline-flex items-center mt-6 py-2 font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82] hover:text-[#1D2B45] transition-colors duration-300"
           >
-            <span>Read the original</span>
+            <span>{t('readOriginal')}</span>
             <span aria-hidden className="ml-2 inline-block transition-transform duration-300 group-hover/cta:translate-x-1">&rarr;</span>
           </a>
         )}
@@ -353,16 +360,17 @@ function MetaSeparator() {
 }
 
 function EmptyState({ canClear, onClear }: { canClear: boolean; onClear: () => void }) {
+  const t = useTranslations('readingRoom')
   return (
     <div className="enter-fade border-t-[3px] border-[#1D2B45]/10 pt-8 max-w-4xl">
-      <p className="text-base text-[#1D2B45]/60 mb-4">No articles match the current filters.</p>
+      <p className="text-base text-[#1D2B45]/60 mb-4">{t('empty')}</p>
       {canClear && (
         <button
           type="button"
           onClick={onClear}
           className="group inline-flex items-center py-2 font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82] hover:text-[#1D2B45] transition-colors duration-300"
         >
-          <span>Clear filters</span>
+          <span>{t('clearFilters')}</span>
           <span aria-hidden className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
         </button>
       )}
