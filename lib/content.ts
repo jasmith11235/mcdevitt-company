@@ -89,12 +89,23 @@ export function getOffices(locale?: string) {
     .sort((a: any, b: any) => (a.order || 0) - (b.order || 0));
 }
 
+/**
+ * Approval gate: crawler-collected items are written as drafts. Only entries
+ * explicitly marked `status: "published"` are served to the public site, so
+ * nothing the crawler pulls goes live without a human sign-off in Keystatic.
+ */
+function isPublished(item: any) {
+  return item.status === 'published';
+}
+
 export function getNews(locale?: string) {
   return readCollection('content/news', locale)
+    .filter(isPublished)
     .sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export function getReadingRoom(locale?: string) {
   return readCollection('content/reading-room', locale)
+    .filter(isPublished)
     .sort((a: any, b: any) => (a.order || 0) - (b.order || 0));
 }

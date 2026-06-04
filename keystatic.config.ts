@@ -250,6 +250,15 @@ export default config({
       columns: ['source', 'category', 'date'],
       schema: {
         title: fields.slug({ name: { label: 'Headline' } }),
+        status: fields.select({
+          label: 'Status',
+          description: 'Crawler-collected items arrive as Draft. Set to Published to make an item live on the site.',
+          options: [
+            { label: 'Draft (pending review)', value: 'draft' },
+            { label: 'Published', value: 'published' },
+          ],
+          defaultValue: 'draft',
+        }),
         source: fields.text({ label: 'Publication', description: 'e.g. Commercial Observer, CoStar News' }),
         date: fields.date({ label: 'Date' }),
         category: fields.select({
@@ -274,6 +283,15 @@ export default config({
       columns: ['source', 'domain', 'date', 'order'],
       schema: {
         title: fields.slug({ name: { label: 'Article Title' } }),
+        status: fields.select({
+          label: 'Status',
+          description: 'Crawler-collected items arrive as Draft. Set to Published to make an item live on the site.',
+          options: [
+            { label: 'Draft (pending review)', value: 'draft' },
+            { label: 'Published', value: 'published' },
+          ],
+          defaultValue: 'draft',
+        }),
         source: fields.text({ label: 'Publication' }),
         author: fields.text({ label: 'Author (optional)' }),
         date: fields.date({ label: 'Date' }),
