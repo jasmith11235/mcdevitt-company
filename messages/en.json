@@ -141,11 +141,21 @@
     "tagline": "A full-service retail real estate advisory firm. Strategic vision, data-driven insight, and global reach since 1997.",
     "navigate": "Navigate",
     "contact": "Contact",
+    "careers": "Careers",
+    "careersBlurb": "Want to work with us? We are always interested in exceptional people.",
+    "careersCta": "Join our team",
     "copyright": "© {year} The McDevitt Company. All rights reserved."
   },
   "languageSwitcher": {
     "label": "Language",
     "select": "Select language"
+  },
+  "careersThankYou": {
+    "metaTitle": "Thank You | The McDevitt Company",
+    "eyebrow": "Careers",
+    "heading": "Thank you for your interest.",
+    "body": "We have received your application. Our team reviews every submission, and we will be in touch if there is a fit.",
+    "backHome": "Back to home"
   },
   "meta": {
     "home": {

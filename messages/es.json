@@ -141,11 +141,21 @@
     "tagline": "Una firma de asesoría inmobiliaria comercial de servicio integral. Visión estratégica, análisis basado en datos y alcance global desde 1997.",
     "navigate": "Navegar",
     "contact": "Contacto",
+    "careers": "Empleo",
+    "careersBlurb": "¿Quieres trabajar con nosotros? Siempre buscamos a personas excepcionales.",
+    "careersCta": "Únete a nuestro equipo",
     "copyright": "© {year} The McDevitt Company. Todos los derechos reservados."
   },
   "languageSwitcher": {
     "label": "Idioma",
     "select": "Seleccionar idioma"
+  },
+  "careersThankYou": {
+    "metaTitle": "Gracias | The McDevitt Company",
+    "eyebrow": "Empleo",
+    "heading": "Gracias por tu interés.",
+    "body": "Hemos recibido tu candidatura. Nuestro equipo revisa cada solicitud y nos pondremos en contacto contigo si encaja.",
+    "backHome": "Volver al inicio"
   },
   "meta": {
     "home": {

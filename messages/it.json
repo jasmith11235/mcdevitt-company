@@ -141,11 +141,21 @@
     "tagline": "Una società di consulenza immobiliare retail a servizio completo. Visione strategica, analisi basata sui dati e portata globale dal 1997.",
     "navigate": "Naviga",
     "contact": "Contatti",
+    "careers": "Lavora con noi",
+    "careersBlurb": "Vuoi lavorare con noi? Siamo sempre alla ricerca di persone eccezionali.",
+    "careersCta": "Unisciti al nostro team",
     "copyright": "© {year} The McDevitt Company. Tutti i diritti riservati."
   },
   "languageSwitcher": {
     "label": "Lingua",
     "select": "Seleziona lingua"
+  },
+  "careersThankYou": {
+    "metaTitle": "Grazie | The McDevitt Company",
+    "eyebrow": "Lavora con noi",
+    "heading": "Grazie per il tuo interesse.",
+    "body": "Abbiamo ricevuto la tua candidatura. Il nostro team esamina ogni richiesta e ti contatteremo se c'è un riscontro.",
+    "backHome": "Torna alla home"
   },
   "meta": {
     "home": {

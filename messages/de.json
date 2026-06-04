@@ -141,11 +141,21 @@
     "tagline": "Ein Full-Service-Beratungsunternehmen für Handelsimmobilien. Strategische Vision, datenbasierte Erkenntnisse und globale Reichweite seit 1997.",
     "navigate": "Navigation",
     "contact": "Kontakt",
+    "careers": "Karriere",
+    "careersBlurb": "Möchten Sie mit uns arbeiten? Wir suchen stets nach außergewöhnlichen Menschen.",
+    "careersCta": "Werden Sie Teil unseres Teams",
     "copyright": "© {year} The McDevitt Company. Alle Rechte vorbehalten."
   },
   "languageSwitcher": {
     "label": "Sprache",
     "select": "Sprache auswählen"
+  },
+  "careersThankYou": {
+    "metaTitle": "Vielen Dank | The McDevitt Company",
+    "eyebrow": "Karriere",
+    "heading": "Vielen Dank für Ihr Interesse.",
+    "body": "Wir haben Ihre Bewerbung erhalten. Unser Team prüft jede Einsendung und meldet sich bei Ihnen, wenn es passt.",
+    "backHome": "Zurück zur Startseite"
   },
   "meta": {
     "home": {

@@ -141,11 +141,21 @@
     "tagline": "Un cabinet de conseil immobilier commercial à service complet. Vision stratégique, analyse fondée sur les données et portée mondiale depuis 1997.",
     "navigate": "Naviguer",
     "contact": "Contact",
+    "careers": "Carrières",
+    "careersBlurb": "Envie de travailler avec nous ? Nous sommes toujours à la recherche de personnes exceptionnelles.",
+    "careersCta": "Rejoindre notre équipe",
     "copyright": "© {year} The McDevitt Company. Tous droits réservés."
   },
   "languageSwitcher": {
     "label": "Langue",
     "select": "Choisir la langue"
+  },
+  "careersThankYou": {
+    "metaTitle": "Merci | The McDevitt Company",
+    "eyebrow": "Carrières",
+    "heading": "Merci de votre intérêt.",
+    "body": "Nous avons bien reçu votre candidature. Notre équipe examine chaque dossier et nous vous recontacterons si votre profil correspond.",
+    "backHome": "Retour à l'accueil"
   },
   "meta": {
     "home": {

@@ -141,11 +141,21 @@
     "tagline": "Een full-service adviesbureau voor retailvastgoed. Strategische visie, datagedreven inzicht en wereldwijd bereik sinds 1997.",
     "navigate": "Navigeren",
     "contact": "Contact",
+    "careers": "Carrière",
+    "careersBlurb": "Wil je met ons werken? We zijn altijd op zoek naar uitzonderlijke mensen.",
+    "careersCta": "Word lid van ons team",
     "copyright": "© {year} The McDevitt Company. Alle rechten voorbehouden."
   },
   "languageSwitcher": {
     "label": "Taal",
     "select": "Taal selecteren"
+  },
+  "careersThankYou": {
+    "metaTitle": "Bedankt | The McDevitt Company",
+    "eyebrow": "Carrière",
+    "heading": "Bedankt voor je interesse.",
+    "body": "We hebben je sollicitatie ontvangen. Ons team bekijkt elke inzending en we nemen contact op als er een match is.",
+    "backHome": "Terug naar home"
   },
   "meta": {
     "home": {
