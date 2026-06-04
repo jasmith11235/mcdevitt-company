@@ -43,6 +43,29 @@
       "intelCta": "Explore Data Science",
       "metaTitle": "Capital Markets | The McDevitt Company",
       "metaDescription": "Investment-oriented disposals and acquisitions across all retail real-estate asset classes, RICS-regulated in the Netherlands."
+    },
+    "common": {
+      "caseStudiesHeading": "Case Studies",
+      "featuredHeading": "Featured Asset",
+      "rosterHeading": "Selected Clients",
+      "rosterPending": "Our reconciled 2026 client roster is being finalised — available on request.",
+      "intelCta": "Explore Data Science"
+    },
+    "tenants": {
+      "eyebrow": "Tenant Representation",
+      "metaTitle": "Tenant Representation | The McDevitt Company",
+      "metaDescription": "Site selection and competitive deals for expanding retail brands, underpinned by data science."
+    },
+    "landlords": {
+      "eyebrow": "Landlord Representation",
+      "metaTitle": "Landlord Representation | The McDevitt Company",
+      "metaDescription": "Placemaking and leasing for distinctive retail destinations, bringing together best-in-class tenants."
+    },
+    "development": {
+      "eyebrow": "Development",
+      "walledNote": "A distinct practice",
+      "metaTitle": "Development | The McDevitt Company",
+      "metaDescription": "Retail-grounded districts that last — identifying locations at the inflection point."
     }
   },
   "dataScience": {

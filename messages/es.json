@@ -43,6 +43,29 @@
       "intelCta": "Explorar Ciencia de datos",
       "metaTitle": "Capital Markets | The McDevitt Company",
       "metaDescription": "Disposiciones y adquisiciones orientadas a la inversión en todas las clases de activos inmobiliarios comerciales, regulado por RICS en los Países Bajos."
+    },
+    "common": {
+      "caseStudiesHeading": "Casos de éxito",
+      "featuredHeading": "Activo destacado",
+      "rosterHeading": "Clientes seleccionados",
+      "rosterPending": "Nuestra lista de clientes de 2026 se está finalizando — disponible a petición.",
+      "intelCta": "Explorar Ciencia de datos"
+    },
+    "tenants": {
+      "eyebrow": "Representación de inquilinos",
+      "metaTitle": "Representación de inquilinos | The McDevitt Company",
+      "metaDescription": "Selección de emplazamientos y operaciones competitivas para marcas en expansión, respaldadas por la ciencia de datos."
+    },
+    "landlords": {
+      "eyebrow": "Representación de propietarios",
+      "metaTitle": "Representación de propietarios | The McDevitt Company",
+      "metaDescription": "Placemaking y comercialización de destinos comerciales distintivos que reúnen a los mejores inquilinos."
+    },
+    "development": {
+      "eyebrow": "Desarrollo",
+      "walledNote": "Una práctica diferenciada",
+      "metaTitle": "Desarrollo | The McDevitt Company",
+      "metaDescription": "Distritos con vocación comercial que perduran — identificar ubicaciones en el punto de inflexión."
     }
   },
   "dataScience": {

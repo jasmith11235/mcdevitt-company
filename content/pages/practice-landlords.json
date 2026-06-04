@@ -1,0 +1,41 @@
+{
+  "heroLine": "We curate retail destinations.",
+  "heroCaption": "District La Brea, Los Angeles",
+  "heroPhoto": "/photos/practice-landlords.jpg",
+  "lead": "We collaborate with select landlords and developers to create distinctive retail destinations by bringing together targeted, best-in-class tenants.",
+  "sections": [
+    {
+      "heading": "Global Reach",
+      "body": "Having completed thousands of transactions across the United States, Canada, and Europe, our team has built strong relationships with major landlords, developers, and retailers worldwide — and a deep understanding of the specific elements that drive success, or failure, in real estate projects throughout the world."
+    },
+    {
+      "heading": "Placemaking",
+      "body": "Skilled placemakers, we curate compelling merchandising plans with a unique, market-relevant leasing vision — bringing together targeted, best-in-class tenants in transformational and innovative retail environments."
+    },
+    {
+      "heading": "Reporting",
+      "body": "Dedicated Project Managers ensure maximum transparency. Using industry-leading software, they keep our clients' finger on the pulse with accurate, on-demand reporting and timely, consistent communication, customized to each project."
+    }
+  ],
+  "featured": {
+    "title": "The Shops at Sportsmen's Lodge",
+    "location": "Studio City, CA",
+    "assetType": "open-air lifestyle center",
+    "body": "An open-air retail and dining destination in the heart of Studio City, merchandised and leased to serve the surrounding community with a curated mix of lifestyle tenants.",
+    "photo": "/photos/sportsmens-lodge.jpg"
+  },
+  "caseStudies": [
+    {
+      "title": "URBN Portfolio",
+      "location": "P.C. Hooftstraat, Amsterdam",
+      "year": "",
+      "narrative": "Representation across the URBN portfolio on Amsterdam's premier luxury shopping street — placing the right tenants on one of Europe's most demanding high streets."
+    }
+  ],
+  "quote": {
+    "quote": "Having this global presence helps me when I'm looking globally, but it also gives me a more worldly sort of wisdom and advice when I'm looking in the United States.",
+    "name": "Stephen Starr",
+    "role": "CEO & President, Starr Restaurant Group"
+  },
+  "intelTeaser": "Tenant pipelines, merchandising mix, market briefs. The intelligence behind every leasing plan."
+}

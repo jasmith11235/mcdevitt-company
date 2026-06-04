@@ -1,6 +1,67 @@
 import { config, fields, collection, singleton } from '@keystatic/core';
 import { MARKETS } from './lib/markets';
 
+/**
+ * Shared schema for the generalized practice deep pages (Tenant, Landlord,
+ * Development). A factory so each singleton gets its own field controllers.
+ * Capital Markets has a bespoke schema below.
+ */
+function practiceSchema() {
+  return {
+    heroLine: fields.text({ label: 'Hero Display Line' }),
+    heroCaption: fields.text({ label: 'Hero Photo Caption', description: 'Optional. Shown small under the hero.' }),
+    heroPhoto: fields.text({ label: 'Hero Photo Path', description: 'Optional. Path under /public, e.g. /photos/practice-tenants.png. Leave empty for the branded navy treatment.' }),
+    lead: fields.text({ label: 'Lead Paragraph', multiline: true }),
+    sections: fields.array(
+      fields.object({
+        heading: fields.text({ label: 'Heading' }),
+        body: fields.text({ label: 'Body', multiline: true }),
+      }),
+      { label: 'Approach Sections', itemLabel: props => props.fields.heading.value || 'Section' },
+    ),
+    criteriaHeading: fields.text({ label: 'Criteria Section Heading', description: 'Optional. e.g. Acquisition Criteria.' }),
+    criteria: fields.array(
+      fields.object({
+        heading: fields.text({ label: 'Group Heading' }),
+        items: fields.array(fields.text({ label: 'Item' }), { label: 'Items', itemLabel: props => props.value || 'Item' }),
+      }),
+      { label: 'Criteria Groups', itemLabel: props => props.fields.heading.value || 'Group' },
+    ),
+    featured: fields.object(
+      {
+        title: fields.text({ label: 'Title' }),
+        location: fields.text({ label: 'Location' }),
+        assetType: fields.text({ label: 'Asset Type' }),
+        body: fields.text({ label: 'Description', multiline: true }),
+        photo: fields.text({ label: 'Photo Path', description: 'Optional. Path under /public.' }),
+      },
+      { label: 'Featured Asset (optional)' },
+    ),
+    caseStudies: fields.array(
+      fields.object({
+        title: fields.text({ label: 'Title' }),
+        location: fields.text({ label: 'Location' }),
+        year: fields.text({ label: 'Year' }),
+        narrative: fields.text({ label: 'Narrative', multiline: true }),
+      }),
+      { label: 'Case Studies', itemLabel: props => props.fields.title.value || 'Case study' },
+    ),
+    roster: fields.array(fields.text({ label: 'Client name' }), {
+      label: 'Client Roster (leave empty to show "available on request")',
+      itemLabel: props => props.value || 'Client',
+    }),
+    quote: fields.object(
+      {
+        quote: fields.text({ label: 'Quote', multiline: true }),
+        name: fields.text({ label: 'Name' }),
+        role: fields.text({ label: 'Role' }),
+      },
+      { label: 'Pull Quote (optional)' },
+    ),
+    intelTeaser: fields.text({ label: 'Intelligence Teaser', multiline: true }),
+  };
+}
+
 export default config({
   storage: {
     kind: 'local',
@@ -94,6 +155,24 @@ export default config({
         ),
         intelTeaser: fields.text({ label: 'Intelligence Teaser', multiline: true }),
       },
+    }),
+    practiceTenants: singleton({
+      label: 'Tenant Representation (deep page)',
+      path: 'content/pages/practice-tenants',
+      format: { data: 'json' },
+      schema: practiceSchema(),
+    }),
+    practiceLandlords: singleton({
+      label: 'Landlord Representation (deep page)',
+      path: 'content/pages/practice-landlords',
+      format: { data: 'json' },
+      schema: practiceSchema(),
+    }),
+    practiceDevelopment: singleton({
+      label: 'Development (deep page)',
+      path: 'content/pages/practice-development',
+      format: { data: 'json' },
+      schema: practiceSchema(),
     }),
     dataScience: singleton({
       label: 'Data Science Section',

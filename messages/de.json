@@ -43,6 +43,29 @@
       "intelCta": "Data Science entdecken",
       "metaTitle": "Capital Markets | The McDevitt Company",
       "metaDescription": "Investitionsorientierte Verkäufe und Akquisitionen über alle Handelsimmobilien-Assetklassen, RICS-reguliert in den Niederlanden."
+    },
+    "common": {
+      "caseStudiesHeading": "Fallstudien",
+      "featuredHeading": "Ausgewähltes Objekt",
+      "rosterHeading": "Ausgewählte Kunden",
+      "rosterPending": "Unsere aktualisierte Kundenliste 2026 wird finalisiert — auf Anfrage verfügbar.",
+      "intelCta": "Data Science entdecken"
+    },
+    "tenants": {
+      "eyebrow": "Mietervertretung",
+      "metaTitle": "Mietervertretung | The McDevitt Company",
+      "metaDescription": "Standortauswahl und wettbewerbsfähige Abschlüsse für expandierende Retail-Marken, gestützt auf Data Science."
+    },
+    "landlords": {
+      "eyebrow": "Eigentümervertretung",
+      "metaTitle": "Eigentümervertretung | The McDevitt Company",
+      "metaDescription": "Placemaking und Vermietung für unverwechselbare Handelsdestinationen mit erstklassigen Mietern."
+    },
+    "development": {
+      "eyebrow": "Entwicklung",
+      "walledNote": "Ein eigenständiger Bereich",
+      "metaTitle": "Entwicklung | The McDevitt Company",
+      "metaDescription": "Handelsgeprägte Quartiere mit Bestand — Standorte am Wendepunkt erkennen."
     }
   },
   "dataScience": {

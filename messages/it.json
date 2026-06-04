@@ -43,6 +43,29 @@
       "intelCta": "Esplora la Data Science",
       "metaTitle": "Capital Markets | The McDevitt Company",
       "metaDescription": "Cessioni e acquisizioni orientate all'investimento su tutte le classi di asset immobiliari retail, regolamentato da RICS nei Paesi Bassi."
+    },
+    "common": {
+      "caseStudiesHeading": "Case study",
+      "featuredHeading": "Asset in evidenza",
+      "rosterHeading": "Clienti selezionati",
+      "rosterPending": "Il nostro elenco clienti 2026 è in fase di finalizzazione — disponibile su richiesta.",
+      "intelCta": "Esplora la Data Science"
+    },
+    "tenants": {
+      "eyebrow": "Rappresentanza dei conduttori",
+      "metaTitle": "Rappresentanza dei conduttori | The McDevitt Company",
+      "metaDescription": "Selezione dei siti e operazioni competitive per i marchi retail in espansione, supportate dalla data science."
+    },
+    "landlords": {
+      "eyebrow": "Rappresentanza dei locatori",
+      "metaTitle": "Rappresentanza dei locatori | The McDevitt Company",
+      "metaDescription": "Placemaking e locazione per destinazioni retail distintive, riunendo i migliori conduttori."
+    },
+    "development": {
+      "eyebrow": "Sviluppo",
+      "walledNote": "Una pratica distinta",
+      "metaTitle": "Sviluppo | The McDevitt Company",
+      "metaDescription": "Distretti a vocazione retail che durano nel tempo — individuare le località al punto di svolta."
     }
   },
   "dataScience": {

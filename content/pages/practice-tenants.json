@@ -1,0 +1,62 @@
+{
+  "heroLine": "We find where brands belong.",
+  "heroCaption": "Urban Outfitters · Charleston",
+  "heroPhoto": "/photos/practice-tenants.png",
+  "lead": "We combine market knowledge with demographic and psychographic analysis to recommend the best available sites for expanding retail brands. We partner with clients who value unique spaces and an exceptional shopping experience.",
+  "sections": [
+    {
+      "heading": "Site Selection",
+      "body": "We approach site selection with an experienced blend of art and science. Our relationships and history in the industry guide our clients to the best holistic real estate decisions and deal terms at every stage of their growth — a track record of more than twenty years and thousands of locations, from 500 to 56,000 square feet."
+    },
+    {
+      "heading": "Competitive Deals",
+      "body": "We have executed deals in every major, secondary, and tertiary market, giving us ground-level knowledge of the streets, lifestyle centers, and malls that matter. Long-standing relationships with premier landlords give us broad visibility and the leverage to secure the most advantageous terms. With an eye for areas in transition, we identify emerging markets early — so our clients capitalize on lower rents and prime positioning."
+    },
+    {
+      "heading": "Reporting",
+      "body": "Highly trained Project Managers serve as a single point of contact, coordinating with each client's architecture, construction, marketing, operations, finance, and administrative teams to facilitate an efficient store-development process and keep every opening on schedule."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Anthropologie",
+      "location": "158 Regent Street, London",
+      "year": "2019",
+      "narrative": "A flagship on one of London's most storied retail streets — site selection and lease negotiation for the brand's continued European expansion."
+    },
+    {
+      "title": "Free People",
+      "location": "De Negen Straatjes, Amsterdam",
+      "year": "2025",
+      "narrative": "A boutique among Amsterdam's Nine Streets, pairing the brand with one of the city's most distinctive shopping districts."
+    }
+  ],
+  "roster": [
+    "Urban Outfitters",
+    "Anthropologie",
+    "Free People",
+    "Free People Movement",
+    "Nuuly",
+    "Terrain",
+    "Sur La Table",
+    "Aimé Leon Dore",
+    "Alo Yoga",
+    "Boden",
+    "Carhartt",
+    "Dr. Martens",
+    "Nic+Zoe",
+    "RealTruck",
+    "Sitka",
+    "Backcountry",
+    "Federal Donuts",
+    "Simon Pearce",
+    "Starr Restaurant Group",
+    "Vetri"
+  ],
+  "quote": {
+    "quote": "They have an intuitive sense of what we want and what we're looking for.",
+    "name": "Dick Hayne",
+    "role": "Founder & CEO, URBN Inc."
+  },
+  "intelTeaser": "Tapestry segmentation, drive-time trade areas, co-tenancy correlations. The data science behind every site we recommend."
+}

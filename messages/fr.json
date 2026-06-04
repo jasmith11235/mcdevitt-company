@@ -43,6 +43,29 @@
       "intelCta": "Découvrir la Data Science",
       "metaTitle": "Capital Markets | The McDevitt Company",
       "metaDescription": "Cessions et acquisitions à vocation d'investissement sur toutes les classes d'actifs immobiliers commerciaux, réglementé par la RICS aux Pays-Bas."
+    },
+    "common": {
+      "caseStudiesHeading": "Études de cas",
+      "featuredHeading": "Actif à la une",
+      "rosterHeading": "Clients sélectionnés",
+      "rosterPending": "Notre liste de clients 2026 est en cours de finalisation — disponible sur demande.",
+      "intelCta": "Découvrir la Data Science"
+    },
+    "tenants": {
+      "eyebrow": "Représentation des preneurs",
+      "metaTitle": "Représentation des preneurs | The McDevitt Company",
+      "metaDescription": "Sélection de sites et transactions compétitives pour les enseignes en expansion, appuyées par la data science."
+    },
+    "landlords": {
+      "eyebrow": "Représentation des bailleurs",
+      "metaTitle": "Représentation des bailleurs | The McDevitt Company",
+      "metaDescription": "Placemaking et commercialisation de destinations commerciales distinctives réunissant les meilleures enseignes."
+    },
+    "development": {
+      "eyebrow": "Développement",
+      "walledNote": "Une pratique distincte",
+      "metaTitle": "Développement | The McDevitt Company",
+      "metaDescription": "Des quartiers ancrés dans le commerce qui durent — identifier les emplacements au point d'inflexion."
     }
   },
   "dataScience": {

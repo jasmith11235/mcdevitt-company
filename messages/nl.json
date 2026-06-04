@@ -43,6 +43,29 @@
       "intelCta": "Ontdek Data Science",
       "metaTitle": "Capital Markets | The McDevitt Company",
       "metaDescription": "Investeringsgerichte verkopen en acquisities binnen alle retailvastgoedklassen, RICS-gereguleerd in Nederland."
+    },
+    "common": {
+      "caseStudiesHeading": "Casestudies",
+      "featuredHeading": "Uitgelicht object",
+      "rosterHeading": "Geselecteerde klanten",
+      "rosterPending": "Onze geactualiseerde klantenlijst voor 2026 wordt afgerond — op aanvraag beschikbaar.",
+      "intelCta": "Ontdek Data Science"
+    },
+    "tenants": {
+      "eyebrow": "Huurdersvertegenwoordiging",
+      "metaTitle": "Huurdersvertegenwoordiging | The McDevitt Company",
+      "metaDescription": "Locatieselectie en scherpe deals voor groeiende retailmerken, onderbouwd met data science."
+    },
+    "landlords": {
+      "eyebrow": "Verhuurdersvertegenwoordiging",
+      "metaTitle": "Verhuurdersvertegenwoordiging | The McDevitt Company",
+      "metaDescription": "Placemaking en verhuur voor onderscheidende retailbestemmingen, met de beste tenants."
+    },
+    "development": {
+      "eyebrow": "Ontwikkeling",
+      "walledNote": "Een aparte praktijk",
+      "metaTitle": "Ontwikkeling | The McDevitt Company",
+      "metaDescription": "Retailgerichte districten die standhouden — locaties op het kantelpunt herkennen."
     }
   },
   "dataScience": {

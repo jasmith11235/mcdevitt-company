@@ -6,6 +6,10 @@ const BASE_URL = 'https://mcdevittco.com'
 // Page paths shared across locales (relative to the locale root).
 const PAGES = [
   { path: '', priority: 1.0 },
+  { path: '/practice/tenants', priority: 0.7 },
+  { path: '/practice/landlords', priority: 0.7 },
+  { path: '/practice/capital', priority: 0.7 },
+  { path: '/practice/development', priority: 0.7 },
   { path: '/news', priority: 0.8 },
   { path: '/reading-room', priority: 0.8 },
 ] as const

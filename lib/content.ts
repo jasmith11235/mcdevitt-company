@@ -58,6 +58,22 @@ export function getDataScience(locale?: string) { return readJson('pages/data-sc
 export function getClientPortal(locale?: string) { return readJson('pages/client-portal.json', locale); }
 export function getCapitalMarkets(locale?: string) { return readJson('pages/capital-markets.json', locale); }
 
+/**
+ * Deep practice pages that share the generalized magazine-spread template.
+ * Capital Markets has its own bespoke page/route and is intentionally not here.
+ */
+export const PRACTICE_SLUGS = ['tenants', 'landlords', 'development'] as const;
+export type PracticeSlug = (typeof PRACTICE_SLUGS)[number];
+
+export function isPracticeSlug(slug: string): slug is PracticeSlug {
+  return (PRACTICE_SLUGS as readonly string[]).includes(slug);
+}
+
+export function getPractice(slug: string, locale?: string) {
+  if (!isPracticeSlug(slug)) return null;
+  return readJson(`pages/practice-${slug}.json`, locale);
+}
+
 export function getTestimonials(locale?: string) {
   return readCollection('content/testimonials', locale)
     .sort((a: any, b: any) => (a.order || 0) - (b.order || 0));
