@@ -24,7 +24,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
             {t('subtitle')}
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <div key={project.slug} className="fade-in group relative overflow-hidden bg-stone-100 aspect-[3/4] cursor-pointer">
               {project.image && (
@@ -33,7 +33,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
                   alt={project.name}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               )}
               {/* Gradient overlay */}
