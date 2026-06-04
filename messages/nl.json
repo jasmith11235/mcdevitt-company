@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "ourStory": "Ons verhaal",
+    "services": "Diensten",
+    "dataScience": "Data Science",
+    "projects": "Projecten",
+    "news": "Nieuws",
+    "readingRoom": "Leeskamer",
+    "offices": "Kantoren",
+    "contact": "Contact"
+  },
+  "hero": {
+    "scroll": "Scroll"
+  },
+  "ourStory": {
+    "tagline": "Een full-service retailvastgoedbureau sinds {year}."
+  },
+  "services": {
+    "subtitle": "Bedreven placemakers die overtuigende merchandisingplannen samenstellen met een unieke en marktrelevante verhuurvisie.",
+    "explore": "Ontdek"
+  },
+  "practice": {
+    "back": "Diensten",
+    "caseLabels": {
+      "vendor": "Verkoper",
+      "purchaser": "Koper",
+      "assets": "Objecten",
+      "lfa": "LFA",
+      "location": "Locatie",
+      "price": "Prijs",
+      "year": "Transactiejaar"
+    },
+    "capital": {
+      "eyebrow": "Capital Markets",
+      "segmentsHeading": "Specialisten adviseren over deze segmenten",
+      "retailLabel": "Retail",
+      "expertiseHeading": "Onze expertise",
+      "trackRecordHeading": "Track record & casestudies",
+      "accreditationCaption": "Gereguleerd door RICS. Nederland.",
+      "accreditationAlt": "Gereguleerd door RICS, Royal Institution of Chartered Surveyors.",
+      "ricsRegulated": "Gereguleerd door RICS",
+      "teamHeading": "Team",
+      "intelCta": "Ontdek Data Science",
+      "metaTitle": "Capital Markets | The McDevitt Company",
+      "metaDescription": "Investeringsgerichte verkopen en acquisities binnen alle retailvastgoedklassen, RICS-gereguleerd in Nederland."
+    },
+    "common": {
+      "caseStudiesHeading": "Casestudies",
+      "featuredHeading": "Uitgelicht object",
+      "rosterHeading": "Geselecteerde klanten",
+      "rosterPending": "Onze geactualiseerde klantenlijst voor 2026 wordt afgerond — op aanvraag beschikbaar.",
+      "intelCta": "Ontdek Data Science"
+    },
+    "tenants": {
+      "eyebrow": "Huurdersvertegenwoordiging",
+      "metaTitle": "Huurdersvertegenwoordiging | The McDevitt Company",
+      "metaDescription": "Locatieselectie en scherpe deals voor groeiende retailmerken, onderbouwd met data science."
+    },
+    "landlords": {
+      "eyebrow": "Verhuurdersvertegenwoordiging",
+      "metaTitle": "Verhuurdersvertegenwoordiging | The McDevitt Company",
+      "metaDescription": "Placemaking en verhuur voor onderscheidende retailbestemmingen, met de beste tenants."
+    },
+    "development": {
+      "eyebrow": "Ontwikkeling",
+      "walledNote": "Een aparte praktijk",
+      "metaTitle": "Ontwikkeling | The McDevitt Company",
+      "metaDescription": "Retailgerichte districten die standhouden — locaties op het kantelpunt herkennen."
+    }
+  },
+  "dataScience": {
+    "capabilities": {
+      "tapestry": {
+        "title": "Tapestry-segmentatie",
+        "desc": "Het toonaangevende psychografische systeem van ESRI, dat de VS verdeelt in 67 unieke leefstijlgroepen."
+      },
+      "pos": {
+        "title": "Point of Sale-analyse",
+        "desc": "Point of Sale-datasets met miljoenen waarnemingen van consumentengedrag."
+      },
+      "households": {
+        "title": "Doelhuishoudens",
+        "desc": "Tapestry-groepen vormen de basis van de doeldemografie van een retailer of investeerder."
+      },
+      "performance": {
+        "title": "Verkoopprestaties",
+        "desc": "Geavanceerde analysetechnieken maken ruwe data bruikbaar door rekening te houden met economische, demografische en geografische context."
+      },
+      "coTenancy": {
+        "title": "Co-tenancy-correlaties",
+        "desc": "Een database van bijna 100.000 individuele retaillocaties om de invloed van mede-huurders op de omzet van klanten te bepalen."
+      },
+      "trips": {
+        "title": "Verplaatsingsdata",
+        "desc": "Analyse van begin- en eindpunten levert werkelijke reistijden en nauwkeurigere volumeprognoses op."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Geselecteerde projecten",
+    "subtitle": "We werken samen met geselecteerde eigenaren en ontwikkelaars om unieke en onderscheidende retailbestemmingen te creëren."
+  },
+  "testimonials": {
+    "eyebrow": "Referenties"
+  },
+  "news": {
+    "eyebrow": "Nieuws",
+    "subtitle": "Ontwikkelingen in de sector die het retailvastgoed vormgeven.",
+    "allNews": "Al het nieuws",
+    "categories": {
+      "industry": "Sector",
+      "company": "Bedrijfsnieuws",
+      "insight": "Marktinzicht",
+      "project": "Projectupdate"
+    }
+  },
+  "readingRoom": {
+    "eyebrow": "Leeskamer",
+    "subtitle": "Nieuwsgierigheden over de bedrijven die gebouwen bezetten, en wat ze betekenen voor de gebouwen zelf.",
+    "domainLabel": "Domein",
+    "marketLabel": "Markt",
+    "allDomains": "Alle domeinen",
+    "allMarkets": "Alle markten",
+    "enter": "Betreed de leeskamer",
+    "readOriginal": "Lees het origineel",
+    "empty": "Geen artikelen komen overeen met de huidige filters.",
+    "clearFilters": "Filters wissen",
+    "domains": {
+      "retail-consumer": "Retail / Consument",
+      "hospitality-fb": "Horeca / F&B",
+      "culture-demographics": "Cultuur / Demografie",
+      "business-workspace": "Zakelijk / Werkplek",
+      "design-placemaking": "Design / Placemaking"
+    }
+  },
+  "offices": {
+    "eyebrow": "Kantoren",
+    "subtitle": "Negen kantoren die geïntegreerde nationale en internationale dekking bieden."
+  },
+  "footer": {
+    "tagline": "Een full-service adviesbureau voor retailvastgoed. Strategische visie, datagedreven inzicht en wereldwijd bereik sinds 1997.",
+    "navigate": "Navigeren",
+    "contact": "Contact",
+    "careers": "Carrière",
+    "careersBlurb": "Wil je met ons werken? We zijn altijd op zoek naar uitzonderlijke mensen.",
+    "careersCta": "Word lid van ons team",
+    "copyright": "© {year} The McDevitt Company. Alle rechten voorbehouden."
+  },
+  "languageSwitcher": {
+    "label": "Taal",
+    "select": "Taal selecteren"
+  },
+  "careersThankYou": {
+    "metaTitle": "Bedankt | The McDevitt Company",
+    "eyebrow": "Carrière",
+    "heading": "Bedankt voor je interesse.",
+    "body": "We hebben je sollicitatie ontvangen. Ons team bekijkt elke inzending en we nemen contact op als er een match is.",
+    "backHome": "Terug naar home"
+  },
+  "meta": {
+    "home": {
+      "title": "The McDevitt Company",
+      "description": "Een full-service adviesbureau voor retailvastgoed. Strategische visie, datagedreven inzicht en wereldwijd bereik sinds 1997."
+    },
+    "news": {
+      "title": "Nieuws | The McDevitt Company",
+      "description": "Nieuws en ontwikkelingen in de retailvastgoedsector."
+    },
+    "readingRoom": {
+      "title": "Leeskamer | The McDevitt Company",
+      "description": "Samengestelde perspectieven op de bedrijven die de gebouwde omgeving vormgeven."
+    }
+  }
+}

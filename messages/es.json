@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "ourStory": "Nuestra historia",
+    "services": "Servicios",
+    "dataScience": "Ciencia de datos",
+    "projects": "Proyectos",
+    "news": "Noticias",
+    "readingRoom": "Sala de lectura",
+    "offices": "Oficinas",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "scroll": "Desplazar"
+  },
+  "ourStory": {
+    "tagline": "Una firma inmobiliaria comercial de servicio integral desde {year}."
+  },
+  "services": {
+    "subtitle": "Creadores de lugares expertos, capaces de elaborar planes de comercialización atractivos con una visión de arrendamiento única y relevante para el mercado.",
+    "explore": "Explorar"
+  },
+  "practice": {
+    "back": "Servicios",
+    "caseLabels": {
+      "vendor": "Vendedor",
+      "purchaser": "Comprador",
+      "assets": "Activos",
+      "lfa": "SBA",
+      "location": "Ubicación",
+      "price": "Precio",
+      "year": "Año de la transacción"
+    },
+    "capital": {
+      "eyebrow": "Capital Markets",
+      "segmentsHeading": "Nuestros especialistas asesoran en estos segmentos",
+      "retailLabel": "Comercio",
+      "expertiseHeading": "Nuestra experiencia",
+      "trackRecordHeading": "Trayectoria y casos de éxito",
+      "accreditationCaption": "Regulado por RICS. Países Bajos.",
+      "accreditationAlt": "Regulado por RICS, Royal Institution of Chartered Surveyors.",
+      "ricsRegulated": "Regulado por RICS",
+      "teamHeading": "Equipo",
+      "intelCta": "Explorar Ciencia de datos",
+      "metaTitle": "Capital Markets | The McDevitt Company",
+      "metaDescription": "Disposiciones y adquisiciones orientadas a la inversión en todas las clases de activos inmobiliarios comerciales, regulado por RICS en los Países Bajos."
+    },
+    "common": {
+      "caseStudiesHeading": "Casos de éxito",
+      "featuredHeading": "Activo destacado",
+      "rosterHeading": "Clientes seleccionados",
+      "rosterPending": "Nuestra lista de clientes de 2026 se está finalizando — disponible a petición.",
+      "intelCta": "Explorar Ciencia de datos"
+    },
+    "tenants": {
+      "eyebrow": "Representación de inquilinos",
+      "metaTitle": "Representación de inquilinos | The McDevitt Company",
+      "metaDescription": "Selección de emplazamientos y operaciones competitivas para marcas en expansión, respaldadas por la ciencia de datos."
+    },
+    "landlords": {
+      "eyebrow": "Representación de propietarios",
+      "metaTitle": "Representación de propietarios | The McDevitt Company",
+      "metaDescription": "Placemaking y comercialización de destinos comerciales distintivos que reúnen a los mejores inquilinos."
+    },
+    "development": {
+      "eyebrow": "Desarrollo",
+      "walledNote": "Una práctica diferenciada",
+      "metaTitle": "Desarrollo | The McDevitt Company",
+      "metaDescription": "Distritos con vocación comercial que perduran — identificar ubicaciones en el punto de inflexión."
+    }
+  },
+  "dataScience": {
+    "capabilities": {
+      "tapestry": {
+        "title": "Segmentación Tapestry",
+        "desc": "El sistema psicográfico líder del mercado de ESRI, que divide EE. UU. en 67 grupos de estilo de vida únicos."
+      },
+      "pos": {
+        "title": "Análisis de punto de venta",
+        "desc": "Conjuntos de datos de punto de venta con millones de observaciones del comportamiento del consumidor."
+      },
+      "households": {
+        "title": "Hogares objetivo",
+        "desc": "Los grupos Tapestry constituyen la base del público demográfico objetivo de un minorista o inversor."
+      },
+      "performance": {
+        "title": "Rendimiento de ventas",
+        "desc": "Técnicas analíticas avanzadas convierten los datos brutos en información útil al tener en cuenta el contexto económico, demográfico y geográfico."
+      },
+      "coTenancy": {
+        "title": "Correlaciones de co-arrendamiento",
+        "desc": "Una base de datos de casi 100.000 ubicaciones minoristas individuales para determinar el impacto de los co-arrendatarios en las ventas de los clientes."
+      },
+      "trips": {
+        "title": "Datos de desplazamientos",
+        "desc": "El análisis de puntos de inicio y fin ofrece tiempos de viaje reales y proyecciones de volumen más precisas."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Proyectos seleccionados",
+    "subtitle": "Colaboramos con propietarios y promotores seleccionados para crear destinos comerciales únicos y distintivos."
+  },
+  "testimonials": {
+    "eyebrow": "Testimonios"
+  },
+  "news": {
+    "eyebrow": "Noticias",
+    "subtitle": "Novedades del sector que dan forma al inmobiliario comercial.",
+    "allNews": "Todas las noticias",
+    "categories": {
+      "industry": "Sector",
+      "company": "Noticias de la empresa",
+      "insight": "Análisis de mercado",
+      "project": "Actualización de proyecto"
+    }
+  },
+  "readingRoom": {
+    "eyebrow": "Sala de lectura",
+    "subtitle": "Curiosidades sobre los negocios que ocupan los edificios y lo que revelan sobre los propios edificios.",
+    "domainLabel": "Ámbito",
+    "marketLabel": "Mercado",
+    "allDomains": "Todos los ámbitos",
+    "allMarkets": "Todos los mercados",
+    "enter": "Entrar en la sala de lectura",
+    "readOriginal": "Leer el original",
+    "empty": "Ningún artículo coincide con los filtros actuales.",
+    "clearFilters": "Borrar filtros",
+    "domains": {
+      "retail-consumer": "Comercio / Consumidor",
+      "hospitality-fb": "Hostelería / Restauración",
+      "culture-demographics": "Cultura / Demografía",
+      "business-workspace": "Empresa / Espacio de trabajo",
+      "design-placemaking": "Diseño / Creación de lugares"
+    }
+  },
+  "offices": {
+    "eyebrow": "Oficinas",
+    "subtitle": "Nueve oficinas que ofrecen una cobertura nacional e internacional integrada."
+  },
+  "footer": {
+    "tagline": "Una firma de asesoría inmobiliaria comercial de servicio integral. Visión estratégica, análisis basado en datos y alcance global desde 1997.",
+    "navigate": "Navegar",
+    "contact": "Contacto",
+    "careers": "Empleo",
+    "careersBlurb": "¿Quieres trabajar con nosotros? Siempre buscamos a personas excepcionales.",
+    "careersCta": "Únete a nuestro equipo",
+    "copyright": "© {year} The McDevitt Company. Todos los derechos reservados."
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "select": "Seleccionar idioma"
+  },
+  "careersThankYou": {
+    "metaTitle": "Gracias | The McDevitt Company",
+    "eyebrow": "Empleo",
+    "heading": "Gracias por tu interés.",
+    "body": "Hemos recibido tu candidatura. Nuestro equipo revisa cada solicitud y nos pondremos en contacto contigo si encaja.",
+    "backHome": "Volver al inicio"
+  },
+  "meta": {
+    "home": {
+      "title": "The McDevitt Company",
+      "description": "Una firma de asesoría inmobiliaria comercial de servicio integral. Visión estratégica, análisis basado en datos y alcance global desde 1997."
+    },
+    "news": {
+      "title": "Noticias | The McDevitt Company",
+      "description": "Noticias y novedades del sector inmobiliario comercial."
+    },
+    "readingRoom": {
+      "title": "Sala de lectura | The McDevitt Company",
+      "description": "Perspectivas seleccionadas sobre los negocios que dan forma al entorno construido."
+    }
+  }
+}

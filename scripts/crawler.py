@@ -481,9 +481,16 @@ READING_ROOM_SEEDS = [
 # ---------------------------------------------------------------------------
 
 def write_items(items, output_dir, dry_run=False):
-    """Write each item as a JSON file. Returns count written."""
+    """Write each item as a JSON file. Returns count written.
+
+    Approval gate: every crawler-obtained item is written as a draft. The public
+    site only serves items explicitly marked ``status: "published"``, so nothing
+    the crawler pulls goes live until a human approves it in Keystatic. An item
+    that has already been approved is never clobbered back to draft.
+    """
     if dry_run:
         for item in items:
+            item.setdefault("status", "draft")
             print(json.dumps(item, indent=2))
         return len(items)
 
@@ -504,6 +511,18 @@ def write_items(items, output_dir, dry_run=False):
         used_slugs.add(slug)
 
         filepath = os.path.join(output_dir, f"{slug}.json")
+
+        # Preserve a human approval: never downgrade an already-published item.
+        if os.path.exists(filepath):
+            try:
+                with open(filepath, encoding="utf-8") as existing:
+                    if json.load(existing).get("status") == "published":
+                        continue
+            except (ValueError, OSError):
+                pass
+
+        item.setdefault("status", "draft")
+
         with open(filepath, "w", encoding="utf-8") as f:
             json.dump(item, f, indent=2, ensure_ascii=False)
             f.write("\n")

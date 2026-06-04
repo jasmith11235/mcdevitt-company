@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "ourStory": "Our Story",
+    "services": "Services",
+    "dataScience": "Data Science",
+    "projects": "Projects",
+    "news": "News",
+    "readingRoom": "Reading Room",
+    "offices": "Offices",
+    "contact": "Contact"
+  },
+  "hero": {
+    "scroll": "Scroll"
+  },
+  "ourStory": {
+    "tagline": "A full service retail property firm since {year}."
+  },
+  "services": {
+    "subtitle": "Skilled placemakers with the ability to curate compelling merchandising plans with unique and market-relevant leasing vision.",
+    "explore": "Explore"
+  },
+  "practice": {
+    "back": "Services",
+    "caseLabels": {
+      "vendor": "Vendor",
+      "purchaser": "Purchaser",
+      "assets": "Assets",
+      "lfa": "LFA",
+      "location": "Location",
+      "price": "Price",
+      "year": "Transaction year"
+    },
+    "capital": {
+      "eyebrow": "Capital Markets",
+      "segmentsHeading": "Specialists advise on these segments",
+      "retailLabel": "Retail",
+      "expertiseHeading": "Our Expertise",
+      "trackRecordHeading": "Track Record & Case Studies",
+      "accreditationCaption": "Regulated by RICS. The Netherlands.",
+      "accreditationAlt": "Regulated by RICS, Royal Institution of Chartered Surveyors.",
+      "ricsRegulated": "Regulated by RICS",
+      "teamHeading": "Team",
+      "intelCta": "Explore Data Science",
+      "metaTitle": "Capital Markets | The McDevitt Company",
+      "metaDescription": "Investment-oriented disposals and acquisitions across all retail real-estate asset classes, RICS-regulated in the Netherlands."
+    },
+    "common": {
+      "caseStudiesHeading": "Case Studies",
+      "featuredHeading": "Featured Asset",
+      "rosterHeading": "Selected Clients",
+      "rosterPending": "Our reconciled 2026 client roster is being finalised — available on request.",
+      "intelCta": "Explore Data Science"
+    },
+    "tenants": {
+      "eyebrow": "Tenant Representation",
+      "metaTitle": "Tenant Representation | The McDevitt Company",
+      "metaDescription": "Site selection and competitive deals for expanding retail brands, underpinned by data science."
+    },
+    "landlords": {
+      "eyebrow": "Landlord Representation",
+      "metaTitle": "Landlord Representation | The McDevitt Company",
+      "metaDescription": "Placemaking and leasing for distinctive retail destinations, bringing together best-in-class tenants."
+    },
+    "development": {
+      "eyebrow": "Development",
+      "walledNote": "A distinct practice",
+      "metaTitle": "Development | The McDevitt Company",
+      "metaDescription": "Retail-grounded districts that last — identifying locations at the inflection point."
+    }
+  },
+  "dataScience": {
+    "capabilities": {
+      "tapestry": {
+        "title": "Tapestry Segmentation",
+        "desc": "ESRI's market-leading psychographic system, dividing the US into 67 unique lifestyle groups."
+      },
+      "pos": {
+        "title": "Point of Sale Analysis",
+        "desc": "Point of Sale data sets containing millions of observations of consumer behavior."
+      },
+      "households": {
+        "title": "Target Households",
+        "desc": "Tapestry groups form the basis of a retailer's or investor's target demographic."
+      },
+      "performance": {
+        "title": "Sales Performance",
+        "desc": "Advanced analytic techniques make raw data actionable by accounting for economic, demographic, and geographic context."
+      },
+      "coTenancy": {
+        "title": "Co-Tenancy Correlations",
+        "desc": "A database of nearly 100,000 individual retail locations to determine co-tenant impact on client sales."
+      },
+      "trips": {
+        "title": "Trips Data",
+        "desc": "Start and end point analytics give actual drive times and more accurate volume projections."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Select Projects",
+    "subtitle": "We collaborate with select landlords and developers to create unique and distinctive retail destinations."
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials"
+  },
+  "news": {
+    "eyebrow": "News",
+    "subtitle": "Industry developments shaping retail real estate.",
+    "allNews": "All News",
+    "categories": {
+      "industry": "Industry",
+      "company": "Company News",
+      "insight": "Market Insight",
+      "project": "Project Update"
+    }
+  },
+  "readingRoom": {
+    "eyebrow": "Reading Room",
+    "subtitle": "Curiosities about the businesses that occupy buildings, and what they signal for the buildings themselves.",
+    "domainLabel": "Domain",
+    "marketLabel": "Market",
+    "allDomains": "All Domains",
+    "allMarkets": "All Markets",
+    "enter": "Enter the Reading Room",
+    "readOriginal": "Read the original",
+    "empty": "No articles match the current filters.",
+    "clearFilters": "Clear filters",
+    "domains": {
+      "retail-consumer": "Retail / Consumer",
+      "hospitality-fb": "Hospitality / F&B",
+      "culture-demographics": "Culture / Demographics",
+      "business-workspace": "Business / Workspace",
+      "design-placemaking": "Design / Placemaking"
+    }
+  },
+  "offices": {
+    "eyebrow": "Offices",
+    "subtitle": "Nine offices providing integrated national and international coverage."
+  },
+  "footer": {
+    "tagline": "A full-service retail real estate advisory firm. Strategic vision, data-driven insight, and global reach since 1997.",
+    "navigate": "Navigate",
+    "contact": "Contact",
+    "careers": "Careers",
+    "careersBlurb": "Want to work with us? We are always interested in exceptional people.",
+    "careersCta": "Join our team",
+    "copyright": "© {year} The McDevitt Company. All rights reserved."
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "select": "Select language"
+  },
+  "careersThankYou": {
+    "metaTitle": "Thank You | The McDevitt Company",
+    "eyebrow": "Careers",
+    "heading": "Thank you for your interest.",
+    "body": "We have received your application. Our team reviews every submission, and we will be in touch if there is a fit.",
+    "backHome": "Back to home"
+  },
+  "meta": {
+    "home": {
+      "title": "The McDevitt Company",
+      "description": "A full-service retail real estate advisory firm. Strategic vision, data-driven insight, and global reach since 1997."
+    },
+    "news": {
+      "title": "News | The McDevitt Company",
+      "description": "Industry news and developments in retail real estate."
+    },
+    "readingRoom": {
+      "title": "Reading Room | The McDevitt Company",
+      "description": "Curated perspectives on the businesses that shape the built environment."
+    }
+  }
+}

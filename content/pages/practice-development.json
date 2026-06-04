@@ -1,0 +1,50 @@
+{
+  "heroLine": "We pioneer districts that last.",
+  "heroCaption": "",
+  "heroPhoto": "/photos/practice-development.png",
+  "lead": "We pioneer retail-grounded districts that last. Decisions rooted in experience, supported by research, refined by intuition.",
+  "sections": [
+    {
+      "heading": "How We Think",
+      "body": "Retail real estate moves in cycles. Every twenty to thirty years, a new class of tenant displaces the last. Our edge is identifying these rotations early — before vacancy becomes distress — and positioning ourselves and our partners to capture the spread between legacy rents and incoming demand."
+    },
+    {
+      "heading": "Where Demand Meets Supply",
+      "body": "We sit at the intersection of tenant demand and space supply. We know which brands are expanding, which are contracting, and where the arbitrage lives. That positioning, across both sides of the transaction, is the strategy."
+    },
+    {
+      "heading": "Our Focus",
+      "body": "Affluent suburban corridors in high-growth metros — walkable, mixed-use, street-level. A decade of suburban acceleration has created a critical mass of the consumer these brands target: high-income, experience-oriented, willing to drive ten minutes for the right brand but unwilling to go to a regional mall. Creating 'urbanity' in these corridors is now the format brands explicitly ask for."
+    },
+    {
+      "heading": "On the Ground",
+      "body": "Real estate is a local execution game. We keep boots on the ground in seven markets: Philadelphia, Greenwich, Nashville, Chicago, Palm Beach, Houston, and Los Angeles."
+    }
+  ],
+  "criteriaHeading": "Acquisition Criteria",
+  "criteria": [
+    {
+      "heading": "What we acquire",
+      "items": ["Value-add", "Core-plus"]
+    },
+    {
+      "heading": "Desired locations",
+      "items": ["The contiguous 48 states"]
+    },
+    {
+      "heading": "Markets",
+      "items": ["Retail", "Residential mixed-use", "Hospitality"]
+    },
+    {
+      "heading": "Required information",
+      "items": [
+        "Offering memorandum or deal summary",
+        "Rent roll and lease abstracts",
+        "Trailing operating statements",
+        "Site plan and survey",
+        "Photographs and location context"
+      ]
+    }
+  ],
+  "intelTeaser": "Migratory trends, tenant pipelines, market timing. The data science behind every district we build."
+}

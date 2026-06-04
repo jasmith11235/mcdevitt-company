@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 interface Project {
   slug: string
@@ -12,17 +13,18 @@ interface Project {
 }
 
 export default function Projects({ projects }: { projects: Project[] }) {
+  const t = useTranslations('projects')
   return (
     <section id="projects" className="py-24 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="fade-in mb-16">
           <div className="accent-rule mb-6" />
-          <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">Select Projects</h2>
+          <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{t('eyebrow')}</h2>
           <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-[#1D2B45] max-w-2xl">
-            We collaborate with select landlords and developers to create unique and distinctive retail destinations.
+            {t('subtitle')}
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <div key={project.slug} className="fade-in group relative overflow-hidden bg-stone-100 aspect-[3/4] cursor-pointer">
               {project.image && (
@@ -31,7 +33,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
                   alt={project.name}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               )}
               {/* Gradient overlay */}

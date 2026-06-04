@@ -1,19 +1,19 @@
+import { useTranslations } from 'next-intl'
+
 interface DataScienceProps {
   heading: string
   intro: string
   proprietaryIntro: string
 }
 
-const capabilities = [
-  { title: 'Tapestry Segmentation', desc: "ESRI's market-leading psychographic system, dividing the US into 67 unique lifestyle groups." },
-  { title: 'Point of Sale Analysis', desc: 'Point of Sale data sets containing millions of observations of consumer behavior.' },
-  { title: 'Target Households', desc: "Tapestry groups form the basis of a retailer's or investor's target demographic." },
-  { title: 'Sales Performance', desc: 'Advanced analytic techniques make raw data actionable by accounting for economic, demographic, and geographic context.' },
-  { title: 'Co-Tenancy Correlations', desc: 'A database of nearly 100,000 individual retail locations to determine co-tenant impact on client sales.' },
-  { title: 'Trips Data', desc: 'Start and end point analytics give actual drive times and more accurate volume projections.' },
-]
+const CAPABILITY_KEYS = ['tapestry', 'pos', 'households', 'performance', 'coTenancy', 'trips'] as const
 
 export default function DataScience({ heading, intro, proprietaryIntro }: DataScienceProps) {
+  const t = useTranslations('dataScience.capabilities')
+  const capabilities = CAPABILITY_KEYS.map(key => ({
+    title: t(`${key}.title`),
+    desc: t(`${key}.desc`),
+  }))
   return (
     <section id="data-science" className="relative py-24 md:py-32 overflow-hidden">
       {/* Background */}
