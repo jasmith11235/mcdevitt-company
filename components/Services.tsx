@@ -17,13 +17,12 @@ export default function Services(props: ServicesProps) {
   const t = useTranslations('services')
 
   // Order per build spec: Tenant · Landlord · Capital Markets · Development.
-  // `href` makes a pillar open its deep section; pillars without a built page
-  // yet stay static until their deep sections land.
+  // Each pillar opens its own deep section.
   const cards = [
-    { title: props.tenantRepTitle, desc: props.tenantRepDescription, href: undefined },
-    { title: props.landlordRepTitle, desc: props.landlordRepDescription, href: undefined },
+    { title: props.tenantRepTitle, desc: props.tenantRepDescription, href: '/practice/tenants' },
+    { title: props.landlordRepTitle, desc: props.landlordRepDescription, href: '/practice/landlords' },
     { title: props.capitalMarketsTitle, desc: props.capitalMarketsDescription, href: '/practice/capital' },
-    { title: props.developmentTitle, desc: props.developmentDescription, href: undefined },
+    { title: props.developmentTitle, desc: props.developmentDescription, href: '/practice/development' },
   ]
 
   return (
@@ -64,7 +63,7 @@ function ServiceCard({ title, desc, href, exploreLabel }: ServiceCardProps) {
       <h3 className="font-sans text-sm tracking-widest uppercase text-[#1D2B45] mb-6">{title}</h3>
       <p className="text-base leading-relaxed text-[#1D2B45]/75">{desc}</p>
       {href && (
-        <span className="mt-6 inline-flex items-center font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82]">
+        <span className="mt-auto pt-6 inline-flex items-center font-sans text-[10px] tracking-[0.2em] uppercase text-[#3D9B82]">
           <span>{exploreLabel}</span>
           <span aria-hidden className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
         </span>
@@ -72,7 +71,7 @@ function ServiceCard({ title, desc, href, exploreLabel }: ServiceCardProps) {
     </>
   )
 
-  const base = 'fade-in relative bg-white border-t-[3px] border-[#3D9B82] p-8 card-lift'
+  const base = 'fade-in relative flex flex-col h-full bg-white border-t-[3px] border-[#3D9B82] p-8 card-lift'
 
   if (href) {
     return (

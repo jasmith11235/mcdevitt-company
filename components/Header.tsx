@@ -31,25 +31,25 @@ export default function Header() {
   return (
     <>
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'header-glass shadow-md' : 'bg-white'}`}>
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between gap-6">
           <TransitionLink href="/" className="flex-shrink-0" aria-label="The McDevitt Company — home">
             <Logo color="fathom" className="h-12 w-12 md:h-16 md:w-16" />
           </TransitionLink>
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden xl:flex items-center gap-4 min-w-0">
             {navLinks.map(link => (
               <TransitionLink
                 key={link.href}
                 href={link.href}
-                className="font-sans text-xs tracking-widest uppercase text-[#1D2B45] hover:text-[#3D9B82] transition-colors duration-200"
+                className="whitespace-nowrap font-sans text-[13px] tracking-widest uppercase text-[#1D2B45] hover:text-[#3D9B82] transition-colors duration-200"
               >
                 {t(link.key)}
               </TransitionLink>
             ))}
-            <span className="h-4 w-px bg-[#1D2B45]/15" aria-hidden />
+            <span className="h-4 w-px bg-[#1D2B45]/15 flex-shrink-0" aria-hidden />
             <LanguageSwitcher variant="light" />
           </nav>
           <button
-            className="lg:hidden flex flex-col gap-1.5 p-3 min-w-[44px] min-h-[44px] items-center justify-center"
+            className="xl:hidden flex flex-col gap-1.5 p-3 min-w-[44px] min-h-[44px] items-center justify-center"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
@@ -61,7 +61,7 @@ export default function Header() {
         </div>
       </header>
       {/* Mobile menu overlay */}
-      <div className={`fixed inset-0 z-40 bg-[#1D2B45] transition-transform duration-500 lg:hidden ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed inset-0 z-40 bg-[#1D2B45] transition-transform duration-500 xl:hidden ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="flex flex-col items-center justify-center h-full gap-2">
           {navLinks.map(link => (
             <TransitionLink
