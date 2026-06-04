@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import TransitionLink from './TransitionLink'
+import WoodblockDivider from './WoodblockDivider'
 
 interface Expertise {
   title: string
@@ -32,6 +33,7 @@ export interface CapitalMarketsContent {
   lead: string
   approach: string
   accreditationLogo?: string
+  accreditationLogoLight?: string
   segmentsRetail: string[]
   segmentsOther: string[]
   expertise: Expertise[]
@@ -57,6 +59,8 @@ export default function CapitalMarkets(content: CapitalMarketsContent) {
           <p className="fade-in text-lg leading-relaxed text-[#1D2B45]/80">{content.approach}</p>
         </div>
       </section>
+
+      <WoodblockDivider src="/graphics/woodblock-8.jpg" />
 
       <Accreditation
         logo={content.accreditationLogo}
@@ -137,7 +141,7 @@ function Hero({
         </h1>
 
         <div className="mt-12 flex items-center gap-4">
-          <RicsMark logo={content.accreditationLogo} regulatedLabel={regulatedLabel} variant="light" />
+          <RicsMark logo={content.accreditationLogoLight ?? content.accreditationLogo} regulatedLabel={regulatedLabel} variant="light" />
           {content.heroCaption && (
             <span className="font-sans text-[10px] tracking-[0.25em] uppercase text-white/40">
               {content.heroCaption}

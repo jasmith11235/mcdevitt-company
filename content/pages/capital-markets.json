@@ -1,6 +1,9 @@
 {
   "heroLine": "We create investment solutions.",
   "heroCaption": "Amsterdam, canal-side, evening",
+  "heroPhoto": "/photos/practice-capital.png",
+  "accreditationLogo": "/logos/rics-regulated.png",
+  "accreditationLogoLight": "/logos/rics-white.png",
   "lead": "The McDevitt team brings exceptional experience in investment-oriented disposals and acquisitions. Our investment advisors have specialist knowledge of all retail real-estate asset classes. We advise investors of all categories, from institutions to private individuals.",
   "approach": "We have played a leading role in numerous successful transactions, building a strong network of purchasers, vendors, and pricing that our investment and transaction experts use on behalf of our clients. We act locally but think and coordinate across our offices globally. We draw on years of experience in leasing and valuation to provide integrated solutions.",
   "segmentsRetail": [
@@ -53,6 +56,19 @@
       "year": "Q4 2018"
     }
   ],
-  "team": [],
+  "team": [
+    {
+      "name": "Michiel Tahey",
+      "title": "Manager · Capital Markets",
+      "bio": "Advises investors on investment-oriented acquisitions and dispositions across retail asset classes from the Amsterdam office.",
+      "portrait": ""
+    },
+    {
+      "name": "Willem Groen",
+      "title": "Manager · Capital Markets",
+      "bio": "Leads valuation, transaction structuring, and asset management mandates for institutional and private investors in the Netherlands.",
+      "portrait": ""
+    }
+  ],
   "intelTeaser": "Market briefs, rent comps, tenant risk scoring. The intelligence behind every investment thesis."
 }

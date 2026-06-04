@@ -115,7 +115,8 @@ export default config({
         heroPhoto: fields.text({ label: 'Hero Photo Path', description: 'Optional. Path under /public, e.g. /photos/practice-capital.png. Leave empty for the branded navy treatment.' }),
         lead: fields.text({ label: 'Lead Paragraph', multiline: true }),
         approach: fields.text({ label: 'Approach Paragraph', multiline: true }),
-        accreditationLogo: fields.text({ label: 'RICS Logo Path', description: 'Optional. e.g. /logos/rics-nl.svg. Leave empty for the typographic RICS treatment.' }),
+        accreditationLogo: fields.text({ label: 'RICS Logo Path (dark, for light band)', description: 'Optional. e.g. /logos/rics-regulated.png. Leave empty for the typographic RICS treatment.' }),
+        accreditationLogoLight: fields.text({ label: 'RICS Logo Path (white, for navy hero)', description: 'Optional. e.g. /logos/rics-white.png. Falls back to the dark logo if empty.' }),
         segmentsRetail: fields.array(fields.text({ label: 'Retail segment' }), {
           label: 'Retail segments',
           itemLabel: props => props.value || 'Segment',
