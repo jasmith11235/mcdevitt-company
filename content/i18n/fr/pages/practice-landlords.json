@@ -22,13 +22,7 @@
     "location": "Studio City, CA",
     "assetType": "centre de vie en plein air",
     "body": "Une destination de commerce et de restauration en plein air au cœur de Studio City, merchandisée et louée pour servir la communauté environnante avec un assortiment soigné d'enseignes lifestyle.",
-    "photo": "/photos/sportsmens-lodge.jpg",
-    "gallery": [
-      {
-        "photo": "/photos/sportsmens-lodge-grounds.jpg",
-        "caption": "Studio City, California"
-      }
-    ]
+    "photo": "/photos/sportsmens-lodge-grounds.jpg"
   },
   "caseStudies": [
     {

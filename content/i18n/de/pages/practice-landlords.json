@@ -22,13 +22,7 @@
     "location": "Studio City, CA",
     "assetType": "Open-Air-Lifestyle-Center",
     "body": "Ein Open-Air-Ziel für Einzelhandel und Gastronomie im Herzen von Studio City, das mit einem kuratierten Mix aus Lifestyle-Mietern für die umliegende Gemeinde gestaltet und vermietet wurde.",
-    "photo": "/photos/sportsmens-lodge.jpg",
-    "gallery": [
-      {
-        "photo": "/photos/sportsmens-lodge-grounds.jpg",
-        "caption": "Studio City, California"
-      }
-    ]
+    "photo": "/photos/sportsmens-lodge-grounds.jpg"
   },
   "caseStudies": [
     {
