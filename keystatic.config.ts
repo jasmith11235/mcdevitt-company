@@ -34,6 +34,13 @@ function practiceSchema() {
         assetType: fields.text({ label: 'Asset Type' }),
         body: fields.text({ label: 'Description', multiline: true }),
         photo: fields.text({ label: 'Photo Path', description: 'Optional. Path under /public.' }),
+        gallery: fields.array(
+          fields.object({
+            photo: fields.text({ label: 'Photo Path', description: 'Path under /public, e.g. /photos/sportsmens-lodge-grounds.jpg' }),
+            caption: fields.text({ label: 'Caption (optional)' }),
+          }),
+          { label: 'Gallery', itemLabel: props => props.fields.caption.value || 'Image' },
+        ),
       },
       { label: 'Featured Asset (optional)' },
     ),
