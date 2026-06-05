@@ -286,7 +286,7 @@ function Featured({ asset, eyebrow, accent }: { asset: FeaturedAsset; eyebrow: s
         </div>
 
         {asset.gallery && asset.gallery.length > 0 && (
-          <div className="fade-in mt-12 grid sm:grid-cols-2 gap-6">
+          <div className={`fade-in mt-12 grid gap-6${asset.gallery.length > 1 ? ' sm:grid-cols-2' : ''}`}>
             {asset.gallery.map((g, i) => (
               <figure key={i} className="relative">
                 <div className="relative aspect-[3/2] overflow-hidden bg-[#1D2B45]">
