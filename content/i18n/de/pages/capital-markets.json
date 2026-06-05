@@ -1,0 +1,74 @@
+{
+  "heroLine": "Wir schaffen Investmentlösungen.",
+  "heroCaption": "Amsterdam, am Kanal, abends",
+  "heroPhoto": "/photos/practice-capital.png",
+  "accreditationLogo": "/logos/rics-regulated.png",
+  "accreditationLogoLight": "/logos/rics-white.png",
+  "lead": "Das McDevitt-Team bringt außergewöhnliche Erfahrung in investitionsorientierten Verkäufen und Akquisitionen mit. Unsere Investmentberater verfügen über Spezialwissen zu allen Anlageklassen von Einzelhandelsimmobilien. Wir beraten Investoren aller Kategorien, von Institutionen bis hin zu Privatpersonen.",
+  "approach": "Wir haben bei zahlreichen erfolgreichen Transaktionen eine führende Rolle gespielt und ein starkes Netzwerk aus Käufern, Verkäufern und Preisreferenzen aufgebaut, das unsere Investment- und Transaktionsexperten im Auftrag unserer Kunden nutzen. Wir handeln lokal, denken und koordinieren jedoch über unsere Büros hinweg global. Wir greifen auf jahrelange Erfahrung in Vermietung und Bewertung zurück, um integrierte Lösungen zu bieten.",
+  "segmentsRetail": [
+    "Geschäftsstraßen",
+    "Einkaufszentren",
+    "Supermärkte",
+    "Fachmarktzentren und großflächiger Einzelhandel"
+  ],
+  "segmentsOther": [
+    "Hotellerie",
+    "Wohnen",
+    "Büro"
+  ],
+  "expertise": [
+    {
+      "title": "An- und Verkauf",
+      "body": "Wir beraten in jeder Phase des Verkaufsprozesses, sowohl bei einzelnen Objekten als auch bei Portfolios. Sorgenfrei, von der umfassenden Verkäufer-Due-Diligence bis zum finalen Closing."
+    },
+    {
+      "title": "Akquisition",
+      "body": "Wir beraten in jeder Phase des Kaufprozesses, von der Bewertung und Verhandlung bis zum finalen Closing. Wir sind Spezialisten darin, Menschen zusammenzubringen."
+    },
+    {
+      "title": "Bewertung und Beratung",
+      "body": "Persönlicher Ansatz und kaufmännischer Sachverstand in Kombination mit strukturierten Marktdaten. Berichte werden für die Entscheidungen verfasst, die sie stützen."
+    },
+    {
+      "title": "Asset Management",
+      "body": "Asset Management bedeutet, sich wirklich um einen taktischen und strategischen Plan zu kümmern. Wir handeln gleichermaßen im Interesse des Objekts und des Investors."
+    }
+  ],
+  "caseStudies": [
+    {
+      "narrative": "Veräußerung von zwei großflächigen Fachmarktzentren, vermietet an Praxis und De Mandemakers Groep.",
+      "vendor": "De Mandemakers Groep (DMG)",
+      "purchaser": "Corum Asset Management",
+      "assets": "2",
+      "lfa": "15,500 sqm",
+      "location": "Capelle aan den IJssel & Bergschenhoek",
+      "price": "€21.3 million"
+    },
+    {
+      "narrative": "Veräußerung eines Supermarktportfolios per Sale-and-Leaseback mit der zweitgrößten Supermarktkette der Niederlande.",
+      "vendor": "Jumbo Supermarkten",
+      "purchaser": "Bouwinvest",
+      "assets": "13",
+      "lfa": "17,700 sqm",
+      "location": "13 Standorte",
+      "price": "€34.4 million",
+      "year": "Q4 2018"
+    }
+  ],
+  "team": [
+    {
+      "name": "Michiel Tahey",
+      "title": "Manager · Kapitalmärkte",
+      "bio": "Berät Investoren vom Amsterdamer Büro aus bei investitionsorientierten Akquisitionen und Veräußerungen über alle Einzelhandels-Anlageklassen hinweg.",
+      "portrait": ""
+    },
+    {
+      "name": "Willem Groen",
+      "title": "Manager · Kapitalmärkte",
+      "bio": "Leitet Mandate in den Bereichen Bewertung, Transaktionsstrukturierung und Asset Management für institutionelle und private Investoren in den Niederlanden.",
+      "portrait": ""
+    }
+  ],
+  "intelTeaser": "Marktberichte, Mietvergleiche, Mieter-Risikobewertung. Die Intelligenz hinter jeder Investmentthese."
+}

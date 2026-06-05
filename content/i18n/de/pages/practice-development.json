@@ -1,0 +1,50 @@
+{
+  "heroLine": "Wir gestalten Quartiere, die Bestand haben.",
+  "heroCaption": "",
+  "heroPhoto": "/photos/practice-development.png",
+  "lead": "Wir gestalten wegweisende, einzelhandelsgeprägte Quartiere, die Bestand haben. Entscheidungen, die in Erfahrung verwurzelt, durch Forschung gestützt und durch Intuition verfeinert sind.",
+  "sections": [
+    {
+      "heading": "Wie wir denken",
+      "body": "Einzelhandelsimmobilien bewegen sich in Zyklen. Alle zwanzig bis dreißig Jahre verdrängt eine neue Mieterklasse die vorherige. Unser Vorteil liegt darin, diese Rotationen frühzeitig zu erkennen — bevor aus Leerstand eine Notlage wird — und uns und unsere Partner so zu positionieren, dass wir die Differenz zwischen Bestandsmieten und neuer Nachfrage abschöpfen."
+    },
+    {
+      "heading": "Wo Nachfrage auf Angebot trifft",
+      "body": "Wir stehen an der Schnittstelle zwischen Mieternachfrage und Flächenangebot. Wir wissen, welche Marken expandieren, welche schrumpfen und wo die Arbitrage liegt. Diese Positionierung auf beiden Seiten der Transaktion ist die Strategie."
+    },
+    {
+      "heading": "Unser Fokus",
+      "body": "Wohlhabende vorstädtische Korridore in wachstumsstarken Metropolregionen — fußläufig, gemischt genutzt, auf Straßenniveau. Ein Jahrzehnt der vorstädtischen Beschleunigung hat eine kritische Masse genau jener Konsumenten geschaffen, auf die diese Marken abzielen: einkommensstark, erlebnisorientiert, bereit, zehn Minuten für die richtige Marke zu fahren, aber nicht gewillt, in ein regionales Einkaufszentrum zu gehen. 'Urbanität' in diesen Korridoren zu schaffen, ist heute das Format, nach dem Marken ausdrücklich fragen."
+    },
+    {
+      "heading": "Vor Ort",
+      "body": "Immobilien sind ein Geschäft der lokalen Umsetzung. Wir sind in sieben Märkten direkt vor Ort präsent: Philadelphia, Greenwich, Nashville, Chicago, Palm Beach, Houston und Los Angeles."
+    }
+  ],
+  "criteriaHeading": "Akquisitionskriterien",
+  "criteria": [
+    {
+      "heading": "Was wir erwerben",
+      "items": ["Value-add", "Core-plus"]
+    },
+    {
+      "heading": "Gewünschte Standorte",
+      "items": ["Die zusammenhängenden 48 Bundesstaaten"]
+    },
+    {
+      "heading": "Märkte",
+      "items": ["Einzelhandel", "Wohngeprägte Mischnutzung", "Hotellerie"]
+    },
+    {
+      "heading": "Erforderliche Unterlagen",
+      "items": [
+        "Verkaufsexposé oder Deal-Zusammenfassung",
+        "Mietaufstellung und Mietvertragsauszüge",
+        "Betriebsabrechnungen der zurückliegenden Perioden",
+        "Lageplan und Vermessung",
+        "Fotos und Standortkontext"
+      ]
+    }
+  ],
+  "intelTeaser": "Migrationstrends, Mieter-Pipelines, Markt-Timing. Die Data Science hinter jedem Quartier, das wir entwickeln."
+}

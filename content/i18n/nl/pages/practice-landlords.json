@@ -1,0 +1,51 @@
+{
+  "heroLine": "Wij stellen retailbestemmingen samen.",
+  "heroCaption": "District La Brea, Los Angeles",
+  "heroPhoto": "/photos/practice-landlords.jpg",
+  "lead": "Wij werken samen met geselecteerde verhuurders en ontwikkelaars om onderscheidende retailbestemmingen te creëren door gerichte, toonaangevende huurders samen te brengen.",
+  "sections": [
+    {
+      "heading": "Wereldwijd bereik",
+      "body": "Na het afronden van duizenden transacties in de Verenigde Staten, Canada en Europa heeft ons team sterke relaties opgebouwd met belangrijke verhuurders, ontwikkelaars en retailers wereldwijd — en een diepgaand begrip van de specifieke elementen die het succes, of falen, van vastgoedprojecten over de hele wereld bepalen."
+    },
+    {
+      "heading": "Placemaking",
+      "body": "Als bekwame placemakers stellen wij overtuigende merchandisingplannen samen met een unieke, marktrelevante verhuurvisie — waarbij we gerichte, toonaangevende huurders samenbrengen in transformatieve en innovatieve retailomgevingen."
+    },
+    {
+      "heading": "Rapportage",
+      "body": "Toegewijde Project Managers zorgen voor maximale transparantie. Met toonaangevende software houden zij onze klanten voortdurend op de hoogte met accurate, on-demand rapportages en tijdige, consistente communicatie, afgestemd op elk project."
+    }
+  ],
+  "featured": {
+    "title": "The Shops at Sportsmen's Lodge",
+    "location": "Studio City, CA",
+    "assetType": "openluchtlifestylecentrum",
+    "body": "Een openluchtbestemming voor retail en horeca in het hart van Studio City, gemerchandiseerd en verhuurd om de omliggende gemeenschap te bedienen met een zorgvuldig samengestelde mix van lifestylehuurders.",
+    "photo": "/photos/sportsmens-lodge.jpg",
+    "gallery": [
+      {
+        "photo": "/photos/sportsmens-lodge-grounds.jpg",
+        "caption": "Studio City, California"
+      },
+      {
+        "photo": "/photos/sportsmens-lodge-siteplan.jpg",
+        "caption": "Merchandising & huurdersmix"
+      }
+    ]
+  },
+  "caseStudies": [
+    {
+      "title": "URBN Portfolio",
+      "location": "P.C. Hooftstraat, Amsterdam",
+      "year": "",
+      "narrative": "Vertegenwoordiging binnen de URBN-portefeuille in de meest vooraanstaande luxe winkelstraat van Amsterdam — waarbij we de juiste huurders plaatsen in een van de meest veeleisende high streets van Europa."
+    }
+  ],
+  "quote": {
+    "quote": "Deze wereldwijde aanwezigheid helpt mij wanneer ik wereldwijd kijk, maar geeft mij ook een meer kosmopolitische wijsheid en advies wanneer ik in de Verenigde Staten kijk.",
+    "name": "Stephen Starr",
+    "role": "CEO & President, Starr Restaurant Group"
+  },
+  "intelTeaser": "Huurderspijplijnen, merchandisingmix, marktbriefings. De intelligentie achter elk verhuurplan."
+}

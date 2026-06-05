@@ -1,0 +1,10 @@
+{
+  "name": "Pacific Park",
+  "location": "Brooklyn, NY",
+  "totalSf": "1.6 million sf",
+  "mcdevittSf": "100,000 sf",
+  "assetType": "Calle urbana",
+  "description": "Compuesto por 15 edificios que rodean un emblemático parque de 8 acres, Pacific Park es una nueva comunidad en el corazón de Brooklyn. McDevitt desarrolló la visión de marketing y está ejecutando una estrategia para reunir una mezcla auténtica de inquilinos locales y de primer nivel.",
+  "image": "/images/projects/pacific-park.jpg",
+  "order": 3
+}

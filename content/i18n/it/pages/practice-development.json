@@ -1,0 +1,50 @@
+{
+  "heroLine": "Diamo vita a distretti destinati a durare.",
+  "heroCaption": "",
+  "heroPhoto": "/photos/practice-development.png",
+  "lead": "Diamo vita a distretti radicati nel retail e destinati a durare. Decisioni fondate sull'esperienza, supportate dalla ricerca, affinate dall'intuizione.",
+  "sections": [
+    {
+      "heading": "Come ragioniamo",
+      "body": "L'immobiliare retail si muove per cicli. Ogni venti o trent'anni, una nuova categoria di tenant soppianta la precedente. Il nostro punto di forza è individuare queste rotazioni in anticipo — prima che la sfitto si trasformi in difficoltà — posizionando noi stessi e i nostri partner per cogliere il differenziale tra gli affitti consolidati e la domanda emergente."
+    },
+    {
+      "heading": "Dove la domanda incontra l'offerta",
+      "body": "Ci collochiamo all'intersezione tra la domanda dei tenant e l'offerta di spazi. Sappiamo quali brand sono in espansione, quali in contrazione e dove si trova l'arbitraggio. Questo posizionamento, su entrambi i lati della transazione, è la strategia."
+    },
+    {
+      "heading": "Il nostro focus",
+      "body": "Corridoi suburbani benestanti in aree metropolitane ad alta crescita — percorribili a piedi, mixed-use, a livello strada. Un decennio di accelerazione suburbana ha creato una massa critica del consumatore a cui questi brand si rivolgono: ad alto reddito, orientato all'esperienza, disposto a guidare dieci minuti per il brand giusto ma restio a recarsi in un mall regionale. Creare 'urbanità' in questi corridoi è ormai il format che i brand richiedono esplicitamente."
+    },
+    {
+      "heading": "Sul campo",
+      "body": "L'immobiliare è un gioco di esecuzione locale. Manteniamo una presenza diretta in sette mercati: Philadelphia, Greenwich, Nashville, Chicago, Palm Beach, Houston e Los Angeles."
+    }
+  ],
+  "criteriaHeading": "Criteri di acquisizione",
+  "criteria": [
+    {
+      "heading": "Cosa acquisiamo",
+      "items": ["Value-add", "Core-plus"]
+    },
+    {
+      "heading": "Location desiderate",
+      "items": ["I 48 stati contigui"]
+    },
+    {
+      "heading": "Mercati",
+      "items": ["Retail", "Mixed-use residenziale", "Hospitality"]
+    },
+    {
+      "heading": "Informazioni richieste",
+      "items": [
+        "Offering memorandum o sintesi dell'operazione",
+        "Rent roll e abstract dei contratti di locazione",
+        "Bilanci operativi degli ultimi periodi",
+        "Site plan e rilievo",
+        "Fotografie e contesto della location"
+      ]
+    }
+  ],
+  "intelTeaser": "Trend migratori, pipeline di tenant, timing di mercato. La data science dietro ogni distretto che costruiamo."
+}

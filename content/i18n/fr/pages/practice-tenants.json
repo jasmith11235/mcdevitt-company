@@ -1,0 +1,62 @@
+{
+  "heroLine": "Nous trouvons la place qui revient à chaque marque.",
+  "heroCaption": "Urban Outfitters · Charleston",
+  "heroPhoto": "/photos/practice-tenants.png",
+  "lead": "Nous combinons notre connaissance du marché avec l'analyse démographique et psychographique afin de recommander les meilleurs emplacements disponibles aux enseignes en expansion. Nous nous associons à des clients qui apprécient les espaces uniques et une expérience d'achat exceptionnelle.",
+  "sections": [
+    {
+      "heading": "Choix des emplacements",
+      "body": "Nous abordons le choix des emplacements avec un mélange éprouvé d'art et de science. Nos relations et notre histoire dans le secteur guident nos clients vers les meilleures décisions immobilières globales et les meilleures conditions de transaction à chaque étape de leur croissance — un bilan de plus de vingt ans et de milliers d'emplacements, de 500 à 56,000 pieds carrés."
+    },
+    {
+      "heading": "Transactions compétitives",
+      "body": "Nous avons réalisé des transactions sur tous les marchés primaires, secondaires et tertiaires, ce qui nous confère une connaissance de terrain des rues, des centres de vie et des centres commerciaux qui comptent. Des relations de longue date avec des bailleurs de premier plan nous offrent une large visibilité et le levier nécessaire pour obtenir les conditions les plus avantageuses. Attentifs aux secteurs en mutation, nous repérons tôt les marchés émergents — afin que nos clients tirent parti de loyers plus bas et d'un positionnement de premier choix."
+    },
+    {
+      "heading": "Reporting",
+      "body": "Des chefs de projet hautement qualifiés font office d'interlocuteur unique, assurant la coordination avec les équipes d'architecture, de construction, de marketing, d'exploitation, de finance et d'administration de chaque client afin de faciliter un processus efficace de développement des points de vente et de respecter le calendrier de chaque ouverture."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Anthropologie",
+      "location": "158 Regent Street, London",
+      "year": "2019",
+      "narrative": "Un magasin phare sur l'une des rues commerçantes les plus emblématiques de London — choix de l'emplacement et négociation du bail pour la poursuite de l'expansion européenne de la marque."
+    },
+    {
+      "title": "Free People",
+      "location": "De Negen Straatjes, Amsterdam",
+      "year": "2025",
+      "narrative": "Une boutique au cœur des Neuf Rues d'Amsterdam, associant la marque à l'un des quartiers commerçants les plus distinctifs de la ville."
+    }
+  ],
+  "roster": [
+    "Urban Outfitters",
+    "Anthropologie",
+    "Free People",
+    "Free People Movement",
+    "Nuuly",
+    "Terrain",
+    "Sur La Table",
+    "Aimé Leon Dore",
+    "Alo Yoga",
+    "Boden",
+    "Carhartt",
+    "Dr. Martens",
+    "Nic+Zoe",
+    "RealTruck",
+    "Sitka",
+    "Backcountry",
+    "Federal Donuts",
+    "Simon Pearce",
+    "Starr Restaurant Group",
+    "Vetri"
+  ],
+  "quote": {
+    "quote": "Ils ont une compréhension intuitive de ce que nous voulons et de ce que nous recherchons.",
+    "name": "Dick Hayne",
+    "role": "Fondateur et PDG, URBN Inc."
+  },
+  "intelTeaser": "Segmentation Tapestry, zones de chalandise par temps de trajet, corrélations de co-occupation. La science des données derrière chaque emplacement que nous recommandons."
+}
