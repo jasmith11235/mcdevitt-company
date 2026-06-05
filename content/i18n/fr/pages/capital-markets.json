@@ -1,0 +1,74 @@
+{
+  "heroLine": "Nous créons des solutions d'investissement.",
+  "heroCaption": "Amsterdam, au bord du canal, en soirée",
+  "heroPhoto": "/photos/practice-capital.png",
+  "accreditationLogo": "/logos/rics-regulated.png",
+  "accreditationLogoLight": "/logos/rics-white.png",
+  "lead": "L'équipe de McDevitt apporte une expérience exceptionnelle dans les cessions et acquisitions à vocation d'investissement. Nos conseillers en investissement possèdent une connaissance spécialisée de toutes les catégories d'actifs immobiliers de commerce de détail. Nous conseillons les investisseurs de toutes catégories, des institutions aux particuliers.",
+  "approach": "Nous avons joué un rôle de premier plan dans de nombreuses transactions réussies, bâtissant un solide réseau d'acquéreurs, de vendeurs et de références de prix que nos experts en investissement et en transaction mettent au service de nos clients. Nous agissons localement, mais réfléchissons et coordonnons nos actions à l'échelle mondiale, entre tous nos bureaux. Nous nous appuyons sur des années d'expérience en location et en évaluation pour offrir des solutions intégrées.",
+  "segmentsRetail": [
+    "Artères commerçantes",
+    "Centres commerciaux",
+    "Supermarchés",
+    "Parcs commerciaux et entrepôts de commerce de détail"
+  ],
+  "segmentsOther": [
+    "Hôtellerie",
+    "Résidentiel",
+    "Bureaux"
+  ],
+  "expertise": [
+    {
+      "title": "Achat et vente",
+      "body": "Nous conseillons à chaque étape du processus de vente, qu'il s'agisse d'actifs individuels ou de portefeuilles. En toute sérénité, de la due diligence approfondie du vendeur jusqu'à la signature finale."
+    },
+    {
+      "title": "Acquisition",
+      "body": "Nous conseillons à chaque étape du processus d'achat, de l'évaluation et de la négociation jusqu'à la signature finale. Nous sommes spécialistes de la mise en relation."
+    },
+    {
+      "title": "Évaluation et conseil",
+      "body": "Approche personnalisée et intelligence commerciale, conjuguées à des données de marché structurées. Nos rapports sont rédigés en fonction des décisions qu'ils éclairent."
+    },
+    {
+      "title": "Gestion d'actifs",
+      "body": "La gestion d'actifs consiste à prendre soin, véritablement soin, d'un plan tactique et stratégique. Nous agissons autant dans l'intérêt de l'actif que dans celui de l'investisseur."
+    }
+  ],
+  "caseStudies": [
+    {
+      "narrative": "Cession de deux parcs commerciaux de grande envergure occupés par Praxis et De Mandemakers Groep.",
+      "vendor": "De Mandemakers Groep (DMG)",
+      "purchaser": "Corum Asset Management",
+      "assets": "2",
+      "lfa": "15,500 sqm",
+      "location": "Capelle aan den IJssel & Bergschenhoek",
+      "price": "€21.3 million"
+    },
+    {
+      "narrative": "Cession d'un portefeuille de supermarchés par cession-bail avec la deuxième plus grande chaîne de supermarchés des Pays-Bas.",
+      "vendor": "Jumbo Supermarkten",
+      "purchaser": "Bouwinvest",
+      "assets": "13",
+      "lfa": "17,700 sqm",
+      "location": "13 emplacements",
+      "price": "€34.4 million",
+      "year": "Q4 2018"
+    }
+  ],
+  "team": [
+    {
+      "name": "Michiel Tahey",
+      "title": "Responsable · Marchés des capitaux",
+      "bio": "Conseille les investisseurs sur les acquisitions et cessions à vocation d'investissement dans les catégories d'actifs de commerce de détail, depuis le bureau d'Amsterdam.",
+      "portrait": ""
+    },
+    {
+      "name": "Willem Groen",
+      "title": "Responsable · Marchés des capitaux",
+      "bio": "Dirige les mandats d'évaluation, de structuration de transactions et de gestion d'actifs pour les investisseurs institutionnels et privés aux Pays-Bas.",
+      "portrait": ""
+    }
+  ],
+  "intelTeaser": "Notes de marché, comparables de loyers, notation du risque locataire. L'intelligence derrière chaque thèse d'investissement."
+}

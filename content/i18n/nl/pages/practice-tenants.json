@@ -1,0 +1,62 @@
+{
+  "heroLine": "Wij vinden waar merken thuishoren.",
+  "heroCaption": "Urban Outfitters · Charleston",
+  "heroPhoto": "/photos/practice-tenants.png",
+  "lead": "Wij combineren marktkennis met demografische en psychografische analyse om de beste beschikbare locaties aan te bevelen voor groeiende retailmerken. Wij werken samen met klanten die unieke ruimtes en een uitzonderlijke winkelervaring waarderen.",
+  "sections": [
+    {
+      "heading": "Locatiekeuze",
+      "body": "Wij benaderen locatiekeuze met een ervaren samenspel van kunst en wetenschap. Onze relaties en geschiedenis in de sector leiden onze klanten naar de beste integrale vastgoedbeslissingen en dealvoorwaarden in elke fase van hun groei — een staat van dienst van meer dan twintig jaar en duizenden locaties, van 500 tot 56.000 square feet."
+    },
+    {
+      "heading": "Concurrerende deals",
+      "body": "Wij hebben deals gesloten in elke primaire, secundaire en tertiaire markt, wat ons kennis op straatniveau geeft van de straten, lifestylecentra en winkelcentra die ertoe doen. Langdurige relaties met vooraanstaande verhuurders geven ons een breed overzicht en de hefboomwerking om de meest voordelige voorwaarden te bedingen. Met oog voor gebieden in transitie identificeren wij opkomende markten vroegtijdig — zodat onze klanten profiteren van lagere huren en een uitstekende positionering."
+    },
+    {
+      "heading": "Rapportage",
+      "body": "Uitstekend opgeleide Project Managers fungeren als één aanspreekpunt en stemmen af met de afdelingen architectuur, bouw, marketing, operations, finance en administratie van elke klant om een efficiënt winkelontwikkelingsproces te faciliteren en elke opening op schema te houden."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Anthropologie",
+      "location": "158 Regent Street, London",
+      "year": "2019",
+      "narrative": "Een flagshipstore in een van de meest legendarische winkelstraten van Londen — locatiekeuze en huuronderhandeling voor de voortgaande Europese expansie van het merk."
+    },
+    {
+      "title": "Free People",
+      "location": "De Negen Straatjes, Amsterdam",
+      "year": "2025",
+      "narrative": "Een boetiek in de Amsterdamse Negen Straatjes, die het merk koppelt aan een van de meest onderscheidende winkelgebieden van de stad."
+    }
+  ],
+  "roster": [
+    "Urban Outfitters",
+    "Anthropologie",
+    "Free People",
+    "Free People Movement",
+    "Nuuly",
+    "Terrain",
+    "Sur La Table",
+    "Aimé Leon Dore",
+    "Alo Yoga",
+    "Boden",
+    "Carhartt",
+    "Dr. Martens",
+    "Nic+Zoe",
+    "RealTruck",
+    "Sitka",
+    "Backcountry",
+    "Federal Donuts",
+    "Simon Pearce",
+    "Starr Restaurant Group",
+    "Vetri"
+  ],
+  "quote": {
+    "quote": "Ze hebben een intuïtief gevoel voor wat we willen en waar we naar op zoek zijn.",
+    "name": "Dick Hayne",
+    "role": "Oprichter & CEO, URBN Inc."
+  },
+  "intelTeaser": "Tapestry-segmentatie, verzorgingsgebieden op basis van reistijd, co-tenancy-correlaties. De data science achter elke locatie die wij aanbevelen."
+}

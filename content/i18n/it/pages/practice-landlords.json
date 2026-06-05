@@ -1,0 +1,41 @@
+{
+  "heroLine": "Curiamo destinazioni retail.",
+  "heroCaption": "District La Brea, Los Angeles",
+  "heroPhoto": "/photos/practice-landlords.jpg",
+  "lead": "Collaboriamo con landlord e developer selezionati per creare destinazioni retail distintive, riunendo tenant mirati e best-in-class.",
+  "sections": [
+    {
+      "heading": "Portata globale",
+      "body": "Avendo concluso migliaia di operazioni negli Stati Uniti, in Canada e in Europa, il nostro team ha costruito solide relazioni con i principali landlord, developer e retailer in tutto il mondo — e una profonda comprensione degli elementi specifici che determinano il successo, o il fallimento, dei progetti immobiliari ovunque nel mondo."
+    },
+    {
+      "heading": "Placemaking",
+      "body": "Esperti placemaker, curiamo merchandising plan convincenti con una visione di locazione unica e rilevante per il mercato — riunendo tenant mirati e best-in-class in contesti retail trasformativi e innovativi."
+    },
+    {
+      "heading": "Reportistica",
+      "body": "Project Manager dedicati garantiscono la massima trasparenza. Grazie a software all'avanguardia nel settore, tengono i nostri clienti costantemente aggiornati con reportistica accurata e on-demand e una comunicazione tempestiva e coerente, personalizzata per ciascun progetto."
+    }
+  ],
+  "featured": {
+    "title": "The Shops at Sportsmen's Lodge",
+    "location": "Studio City, CA",
+    "assetType": "lifestyle center all'aperto",
+    "body": "Una destinazione retail e dining all'aperto nel cuore di Studio City, con un merchandising e una locazione pensati per servire la comunità circostante con un mix curato di tenant lifestyle.",
+    "photo": "/photos/sportsmens-lodge-grounds.jpg"
+  },
+  "caseStudies": [
+    {
+      "title": "URBN Portfolio",
+      "location": "P.C. Hooftstraat, Amsterdam",
+      "year": "",
+      "narrative": "Rappresentanza dell'intero portafoglio URBN sulla principale via dello shopping di lusso di Amsterdam — collocando i tenant giusti su una delle high street più esigenti d'Europa."
+    }
+  ],
+  "quote": {
+    "quote": "Questa presenza globale mi è d'aiuto quando guardo al mondo intero, ma mi offre anche una saggezza e una consulenza più cosmopolite quando guardo agli Stati Uniti.",
+    "name": "Stephen Starr",
+    "role": "CEO e Presidente, Starr Restaurant Group"
+  },
+  "intelTeaser": "Pipeline di tenant, mix di merchandising, brief di mercato. L'intelligence dietro ogni piano di locazione."
+}

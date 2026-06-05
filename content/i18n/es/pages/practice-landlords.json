@@ -1,0 +1,41 @@
+{
+  "heroLine": "Diseñamos destinos de retail.",
+  "heroCaption": "District La Brea, Los Angeles",
+  "heroPhoto": "/photos/practice-landlords.jpg",
+  "lead": "Colaboramos con propietarios y promotores selectos para crear destinos de retail distintivos reuniendo a inquilinos específicos y de primer nivel.",
+  "sections": [
+    {
+      "heading": "Alcance global",
+      "body": "Tras completar miles de transacciones en Estados Unidos, Canadá y Europa, nuestro equipo ha construido sólidas relaciones con los principales propietarios, promotores y retailers de todo el mundo — y un profundo conocimiento de los elementos específicos que determinan el éxito, o el fracaso, de los proyectos inmobiliarios en cualquier parte del mundo."
+    },
+    {
+      "heading": "Placemaking",
+      "body": "Como hábiles creadores de lugares, diseñamos planes de comercialización atractivos con una visión de arrendamiento única y relevante para el mercado — reuniendo a inquilinos específicos y de primer nivel en entornos de retail transformadores e innovadores."
+    },
+    {
+      "heading": "Reportes",
+      "body": "Project Managers dedicados garantizan la máxima transparencia. Mediante software líder del sector, mantienen a nuestros clientes al tanto de cada detalle con informes precisos y disponibles a demanda, y una comunicación puntual y constante, personalizada para cada proyecto."
+    }
+  ],
+  "featured": {
+    "title": "The Shops at Sportsmen's Lodge",
+    "location": "Studio City, CA",
+    "assetType": "centro lifestyle al aire libre",
+    "body": "Un destino de retail y restauración al aire libre en el corazón de Studio City, comercializado y arrendado para servir a la comunidad circundante con una mezcla cuidada de inquilinos de estilo de vida.",
+    "photo": "/photos/sportsmens-lodge-grounds.jpg"
+  },
+  "caseStudies": [
+    {
+      "title": "URBN Portfolio",
+      "location": "P.C. Hooftstraat, Amsterdam",
+      "year": "",
+      "narrative": "Representación de la cartera de URBN en la principal calle comercial de lujo de Ámsterdam — colocando a los inquilinos adecuados en una de las calles comerciales más exigentes de Europa."
+    }
+  ],
+  "quote": {
+    "quote": "Tener esta presencia global me ayuda cuando busco a escala global, pero también me aporta una sabiduría y un asesoramiento más cosmopolitas cuando busco en Estados Unidos.",
+    "name": "Stephen Starr",
+    "role": "CEO y presidente, Starr Restaurant Group"
+  },
+  "intelTeaser": "Pipelines de inquilinos, mix de comercialización, informes de mercado. La inteligencia detrás de cada plan de arrendamiento."
+}

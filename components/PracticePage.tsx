@@ -13,12 +13,18 @@ interface CriteriaGroup {
   items: string[]
 }
 
+interface GalleryItem {
+  photo: string
+  caption?: string
+}
+
 interface FeaturedAsset {
   title: string
   location?: string
   assetType?: string
   body: string
   photo?: string
+  gallery?: GalleryItem[]
 }
 
 interface PracticeCase {
@@ -278,6 +284,29 @@ function Featured({ asset, eyebrow, accent }: { asset: FeaturedAsset; eyebrow: s
             <p className="text-lg leading-relaxed" style={{ color: `${NAVY}cc` }}>{asset.body}</p>
           </div>
         </div>
+
+        {asset.gallery && asset.gallery.length > 0 && (
+          <div className={`fade-in mt-12 grid gap-6${asset.gallery.length > 1 ? ' sm:grid-cols-2' : ''}`}>
+            {asset.gallery.map((g, i) => (
+              <figure key={i} className="relative">
+                <div className="relative aspect-[3/2] overflow-hidden bg-[#1D2B45]">
+                  <Image
+                    src={g.photo}
+                    alt={g.caption || asset.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width:640px) 100vw, 50vw"
+                  />
+                </div>
+                {g.caption && (
+                  <figcaption className="mt-3 font-sans text-[10px] tracking-[0.2em] uppercase" style={{ color: `${NAVY}80` }}>
+                    {g.caption}
+                  </figcaption>
+                )}
+              </figure>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   )

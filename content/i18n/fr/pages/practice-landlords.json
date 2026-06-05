@@ -1,0 +1,41 @@
+{
+  "heroLine": "Nous façonnons des destinations commerciales.",
+  "heroCaption": "District La Brea, Los Angeles",
+  "heroPhoto": "/photos/practice-landlords.jpg",
+  "lead": "Nous collaborons avec des bailleurs et des promoteurs sélectionnés pour créer des destinations commerciales distinctives en réunissant des enseignes ciblées et de premier ordre.",
+  "sections": [
+    {
+      "heading": "Portée mondiale",
+      "body": "Ayant réalisé des milliers de transactions aux United States, au Canada et en Europe, notre équipe a tissé des relations solides avec les grands bailleurs, promoteurs et enseignes du monde entier — ainsi qu'une compréhension approfondie des éléments précis qui déterminent la réussite, ou l'échec, des projets immobiliers à travers le monde."
+    },
+    {
+      "heading": "Aménagement des lieux",
+      "body": "Aménageurs de lieux chevronnés, nous concevons des plans de merchandising convaincants assortis d'une vision de location unique et adaptée au marché — en réunissant des enseignes ciblées et de premier ordre au sein d'environnements de commerce de détail innovants et porteurs de transformation."
+    },
+    {
+      "heading": "Reporting",
+      "body": "Des chefs de projet dédiés garantissent une transparence maximale. À l'aide de logiciels parmi les plus performants du secteur, ils permettent à nos clients de garder la main sur le pouls de leurs projets grâce à un reporting précis et à la demande, ainsi qu'à une communication régulière et cohérente, personnalisée pour chaque projet."
+    }
+  ],
+  "featured": {
+    "title": "The Shops at Sportsmen's Lodge",
+    "location": "Studio City, CA",
+    "assetType": "centre de vie en plein air",
+    "body": "Une destination de commerce et de restauration en plein air au cœur de Studio City, merchandisée et louée pour servir la communauté environnante avec un assortiment soigné d'enseignes lifestyle.",
+    "photo": "/photos/sportsmens-lodge-grounds.jpg"
+  },
+  "caseStudies": [
+    {
+      "title": "Portefeuille URBN",
+      "location": "P.C. Hooftstraat, Amsterdam",
+      "year": "",
+      "narrative": "Représentation de l'ensemble du portefeuille URBN sur la première artère du luxe d'Amsterdam — en plaçant les bonnes enseignes sur l'une des artères commerçantes les plus exigeantes d'Europe."
+    }
+  ],
+  "quote": {
+    "quote": "Cette présence mondiale m'aide lorsque je prospecte à l'international, mais elle m'apporte aussi une sagesse et des conseils plus avisés lorsque je cherche aux United States.",
+    "name": "Stephen Starr",
+    "role": "PDG et président, Starr Restaurant Group"
+  },
+  "intelTeaser": "Pipelines d'enseignes, mix de merchandising, notes de marché. L'intelligence derrière chaque plan de location."
+}

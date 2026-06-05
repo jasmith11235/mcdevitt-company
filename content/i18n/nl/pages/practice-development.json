@@ -1,0 +1,50 @@
+{
+  "heroLine": "Wij ontwikkelen districten die blijven.",
+  "heroCaption": "",
+  "heroPhoto": "/photos/practice-development.png",
+  "lead": "Wij ontwikkelen op retail gefundeerde districten die blijven. Beslissingen geworteld in ervaring, onderbouwd door onderzoek, verfijnd door intuïtie.",
+  "sections": [
+    {
+      "heading": "Hoe wij denken",
+      "body": "Retailvastgoed beweegt in cycli. Elke twintig tot dertig jaar verdringt een nieuwe categorie huurders de vorige. Onze kracht is het vroegtijdig herkennen van deze rotaties — voordat leegstand in nood verandert — en onszelf en onze partners zo te positioneren dat we het verschil tussen historische huren en nieuwe vraag kunnen benutten."
+    },
+    {
+      "heading": "Waar vraag en aanbod samenkomen",
+      "body": "Wij bevinden ons op het snijvlak van vraag naar huurders en aanbod van ruimte. Wij weten welke merken uitbreiden, welke krimpen en waar de arbitrage zit. Die positionering, aan beide zijden van de transactie, vormt de strategie."
+    },
+    {
+      "heading": "Onze focus",
+      "body": "Welvarende suburbane corridors in snelgroeiende metropolen — beloopbaar, gemengd gebruik, op straatniveau. Een decennium van suburbane versnelling heeft een kritieke massa gecreëerd van de consument waar deze merken zich op richten: hoog inkomen, gericht op beleving, bereid om tien minuten te rijden voor het juiste merk, maar niet bereid naar een regionaal winkelcentrum te gaan. Het creëren van 'urbaniteit' in deze corridors is nu het formaat waar merken expliciet om vragen."
+    },
+    {
+      "heading": "In de praktijk",
+      "body": "Vastgoed is een spel van lokale uitvoering. Wij houden voet aan de grond in zeven markten: Philadelphia, Greenwich, Nashville, Chicago, Palm Beach, Houston en Los Angeles."
+    }
+  ],
+  "criteriaHeading": "Acquisitiecriteria",
+  "criteria": [
+    {
+      "heading": "Wat wij verwerven",
+      "items": ["Value-add", "Core-plus"]
+    },
+    {
+      "heading": "Gewenste locaties",
+      "items": ["De aaneengesloten 48 staten"]
+    },
+    {
+      "heading": "Markten",
+      "items": ["Retail", "Gemengd gebruik met wonen", "Horeca"]
+    },
+    {
+      "heading": "Vereiste informatie",
+      "items": [
+        "Offering memorandum of dealsamenvatting",
+        "Huuroverzicht en huurcontractabstracts",
+        "Voortschrijdende exploitatieoverzichten",
+        "Situatietekening en meting",
+        "Foto's en locatiecontext"
+      ]
+    }
+  ],
+  "intelTeaser": "Migratietrends, huurderspijplijnen, markttiming. De data science achter elk district dat wij bouwen."
+}

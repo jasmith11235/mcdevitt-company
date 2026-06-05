@@ -1,0 +1,74 @@
+{
+  "heroLine": "Wij creëren investeringsoplossingen.",
+  "heroCaption": "Amsterdam, aan de gracht, 's avonds",
+  "heroPhoto": "/photos/practice-capital.png",
+  "accreditationLogo": "/logos/rics-regulated.png",
+  "accreditationLogoLight": "/logos/rics-white.png",
+  "lead": "Het McDevitt-team beschikt over uitzonderlijke ervaring in investeringsgerichte verkopen en acquisities. Onze investeringsadviseurs hebben specialistische kennis van alle categorieën retailvastgoed. Wij adviseren investeerders van elke categorie, van instellingen tot particulieren.",
+  "approach": "Wij hebben een leidende rol gespeeld in talloze succesvolle transacties en daarmee een sterk netwerk opgebouwd van kopers, verkopers en prijsinformatie dat onze investerings- en transactiespecialisten inzetten ten behoeve van onze klanten. Wij handelen lokaal, maar denken en coördineren wereldwijd over al onze kantoren heen. Wij putten uit jarenlange ervaring in verhuur en taxatie om geïntegreerde oplossingen te bieden.",
+  "segmentsRetail": [
+    "High Street",
+    "Winkelcentra",
+    "Supermarkten",
+    "Retailparken en perifere detailhandel"
+  ],
+  "segmentsOther": [
+    "Horeca",
+    "Wonen",
+    "Kantoor"
+  ],
+  "expertise": [
+    {
+      "title": "Aan- en verkoop",
+      "body": "Wij adviseren in elke fase van het verkoopproces, zowel bij afzonderlijke objecten als bij portefeuilles. Zorgeloos, van uitgebreide due diligence aan verkoperszijde tot de uiteindelijke afronding."
+    },
+    {
+      "title": "Acquisitie",
+      "body": "Wij adviseren in elke fase van het aankoopproces, van taxatie en onderhandeling tot de uiteindelijke afronding. Wij zijn specialisten in het verbinden van mensen."
+    },
+    {
+      "title": "Taxatie en advies",
+      "body": "Een persoonlijke benadering en commerciële intelligentie in combinatie met gestructureerde marktgegevens. Rapporten worden geschreven met het oog op de beslissingen die zij ondersteunen."
+    },
+    {
+      "title": "Asset management",
+      "body": "Asset management is zorg dragen, echte zorg, voor een tactisch en strategisch plan. Wij handelen in gelijke mate ten behoeve van het object en de investeerder."
+    }
+  ],
+  "caseStudies": [
+    {
+      "narrative": "Verkoop van twee grootschalige retailparken verhuurd aan Praxis en De Mandemakers Groep.",
+      "vendor": "De Mandemakers Groep (DMG)",
+      "purchaser": "Corum Asset Management",
+      "assets": "2",
+      "lfa": "15,500 sqm",
+      "location": "Capelle aan den IJssel & Bergschenhoek",
+      "price": "€21.3 million"
+    },
+    {
+      "narrative": "Verkoop van een supermarktportefeuille via sale-and-leaseback met de op een na grootste supermarktketen van Nederland.",
+      "vendor": "Jumbo Supermarkten",
+      "purchaser": "Bouwinvest",
+      "assets": "13",
+      "lfa": "17,700 sqm",
+      "location": "13 locaties",
+      "price": "€34.4 million",
+      "year": "Q4 2018"
+    }
+  ],
+  "team": [
+    {
+      "name": "Michiel Tahey",
+      "title": "Manager · Capital Markets",
+      "bio": "Adviseert investeerders over investeringsgerichte acquisities en verkopen binnen alle categorieën retailvastgoed vanuit het kantoor in Amsterdam.",
+      "portrait": ""
+    },
+    {
+      "name": "Willem Groen",
+      "title": "Manager · Capital Markets",
+      "bio": "Leidt taxatie-, transactiestructurerings- en asset-managementopdrachten voor institutionele en particuliere investeerders in Nederland.",
+      "portrait": ""
+    }
+  ],
+  "intelTeaser": "Marktbriefings, huurvergelijkingen, risicobeoordeling van huurders. De intelligentie achter elke investeringsthese."
+}

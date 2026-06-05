@@ -1,0 +1,74 @@
+{
+  "heroLine": "Creiamo soluzioni di investimento.",
+  "heroCaption": "Amsterdam, lungo i canali, di sera",
+  "heroPhoto": "/photos/practice-capital.png",
+  "accreditationLogo": "/logos/rics-regulated.png",
+  "accreditationLogoLight": "/logos/rics-white.png",
+  "lead": "Il team di McDevitt vanta un'esperienza eccezionale nelle dismissioni e acquisizioni orientate all'investimento. I nostri consulenti d'investimento possiedono una conoscenza specialistica di tutte le asset class immobiliari retail. Offriamo consulenza a investitori di ogni categoria, dalle istituzioni ai privati.",
+  "approach": "Abbiamo svolto un ruolo di primo piano in numerose operazioni di successo, costruendo una solida rete di acquirenti, venditori e riferimenti di pricing che i nostri esperti di investimenti e transazioni mettono al servizio dei clienti. Agiamo a livello locale, ma pensiamo e coordiniamo le attività tra i nostri uffici a livello globale. Attingiamo ad anni di esperienza nella locazione e nella valutazione per offrire soluzioni integrate.",
+  "segmentsRetail": [
+    "High Street",
+    "Centri commerciali",
+    "Supermercati",
+    "Retail park e retail warehousing"
+  ],
+  "segmentsOther": [
+    "Hospitality",
+    "Residenziale",
+    "Uffici"
+  ],
+  "expertise": [
+    {
+      "title": "Compravendita",
+      "body": "Offriamo consulenza in ogni fase del processo di vendita, su singoli asset e su portafogli. Senza pensieri, dall'approfondita due diligence del venditore fino al closing finale."
+    },
+    {
+      "title": "Acquisizione",
+      "body": "Offriamo consulenza in ogni fase del processo di acquisto, dalla valutazione e negoziazione fino al closing finale. Siamo specialisti nel mettere in contatto le persone."
+    },
+    {
+      "title": "Valutazione e consulenza",
+      "body": "Approccio personale e intelligenza commerciale, in combinazione con dati di mercato strutturati. I report sono redatti in funzione delle decisioni che supportano."
+    },
+    {
+      "title": "Asset management",
+      "body": "Fare asset management significa prendersi cura, davvero, di un piano tattico e strategico. Agiamo per conto dell'asset e dell'investitore in egual misura."
+    }
+  ],
+  "caseStudies": [
+    {
+      "narrative": "Dismissione di due retail park su larga scala con tenant Praxis e De Mandemakers Groep.",
+      "vendor": "De Mandemakers Groep (DMG)",
+      "purchaser": "Corum Asset Management",
+      "assets": "2",
+      "lfa": "15,500 sqm",
+      "location": "Capelle aan den IJssel & Bergschenhoek",
+      "price": "€21.3 million"
+    },
+    {
+      "narrative": "Dismissione di un portafoglio di supermercati tramite sale-and-leaseback con la seconda catena di supermercati dei Paesi Bassi.",
+      "vendor": "Jumbo Supermarkten",
+      "purchaser": "Bouwinvest",
+      "assets": "13",
+      "lfa": "17,700 sqm",
+      "location": "13 sedi",
+      "price": "€34.4 million",
+      "year": "Q4 2018"
+    }
+  ],
+  "team": [
+    {
+      "name": "Michiel Tahey",
+      "title": "Manager · Capital Markets",
+      "bio": "Offre consulenza agli investitori su acquisizioni e dismissioni orientate all'investimento nelle diverse asset class retail dall'ufficio di Amsterdam.",
+      "portrait": ""
+    },
+    {
+      "name": "Willem Groen",
+      "title": "Manager · Capital Markets",
+      "bio": "Guida i mandati di valutazione, strutturazione delle transazioni e asset management per investitori istituzionali e privati nei Paesi Bassi.",
+      "portrait": ""
+    }
+  ],
+  "intelTeaser": "Brief di mercato, comparable degli affitti, scoring del rischio dei tenant. L'intelligence dietro ogni tesi di investimento."
+}

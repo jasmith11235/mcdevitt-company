@@ -1,0 +1,62 @@
+{
+  "heroLine": "Wir finden, wohin Marken gehören.",
+  "heroCaption": "Urban Outfitters · Charleston",
+  "heroPhoto": "/photos/practice-tenants.png",
+  "lead": "Wir verbinden Marktwissen mit demografischen und psychografischen Analysen, um expandierenden Einzelhandelsmarken die besten verfügbaren Standorte zu empfehlen. Wir arbeiten mit Kunden zusammen, die einzigartige Flächen und ein außergewöhnliches Einkaufserlebnis schätzen.",
+  "sections": [
+    {
+      "heading": "Standortauswahl",
+      "body": "Wir gehen die Standortauswahl mit einer erfahrenen Mischung aus Kunst und Wissenschaft an. Unsere Beziehungen und unsere Geschichte in der Branche führen unsere Kunden in jeder Wachstumsphase zu den besten ganzheitlichen Immobilienentscheidungen und Vertragskonditionen — eine Erfolgsbilanz von mehr als zwanzig Jahren und Tausenden von Standorten, von 500 bis 56,000 Quadratfuß."
+    },
+    {
+      "heading": "Wettbewerbsfähige Abschlüsse",
+      "body": "Wir haben Abschlüsse in jedem bedeutenden Markt sowie in Sekundär- und Tertiärmärkten getätigt, was uns fundiertes Wissen vor Ort über die Straßen, Lifestyle-Center und Malls verschafft, auf die es ankommt. Langjährige Beziehungen zu führenden Vermietern verschaffen uns einen umfassenden Überblick und die nötige Verhandlungsstärke, um die vorteilhaftesten Konditionen zu sichern. Mit einem Gespür für Gebiete im Wandel erkennen wir aufstrebende Märkte frühzeitig — sodass unsere Kunden von niedrigeren Mieten und erstklassiger Positionierung profitieren."
+    },
+    {
+      "heading": "Reporting",
+      "body": "Hochqualifizierte Projektmanager fungieren als zentrale Ansprechpartner und stimmen sich mit den Teams jedes Kunden aus den Bereichen Architektur, Bau, Marketing, Betrieb, Finanzen und Verwaltung ab, um einen effizienten Ladenentwicklungsprozess zu gewährleisten und jede Eröffnung termingerecht zu halten."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Anthropologie",
+      "location": "158 Regent Street, London",
+      "year": "2019",
+      "narrative": "Ein Flagship-Store an einer der traditionsreichsten Einkaufsstraßen Londons — Standortauswahl und Mietvertragsverhandlung für die fortgesetzte europäische Expansion der Marke."
+    },
+    {
+      "title": "Free People",
+      "location": "De Negen Straatjes, Amsterdam",
+      "year": "2025",
+      "narrative": "Eine Boutique in Amsterdams Nine Streets, die die Marke mit einem der unverwechselbarsten Einkaufsviertel der Stadt verbindet."
+    }
+  ],
+  "roster": [
+    "Urban Outfitters",
+    "Anthropologie",
+    "Free People",
+    "Free People Movement",
+    "Nuuly",
+    "Terrain",
+    "Sur La Table",
+    "Aimé Leon Dore",
+    "Alo Yoga",
+    "Boden",
+    "Carhartt",
+    "Dr. Martens",
+    "Nic+Zoe",
+    "RealTruck",
+    "Sitka",
+    "Backcountry",
+    "Federal Donuts",
+    "Simon Pearce",
+    "Starr Restaurant Group",
+    "Vetri"
+  ],
+  "quote": {
+    "quote": "Sie haben ein intuitives Gespür dafür, was wir wollen und wonach wir suchen.",
+    "name": "Dick Hayne",
+    "role": "Gründer & CEO, URBN Inc."
+  },
+  "intelTeaser": "Tapestry-Segmentierung, Einzugsgebiete nach Fahrzeit, Co-Tenancy-Korrelationen. Die Data Science hinter jedem Standort, den wir empfehlen."
+}

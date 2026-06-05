@@ -1,0 +1,50 @@
+{
+  "heroLine": "Somos pioneros de distritos que perduran.",
+  "heroCaption": "",
+  "heroPhoto": "/photos/practice-development.png",
+  "lead": "Somos pioneros de distritos arraigados en el retail que perduran. Decisiones fundamentadas en la experiencia, respaldadas por la investigación, refinadas por la intuición.",
+  "sections": [
+    {
+      "heading": "Cómo pensamos",
+      "body": "El inmobiliario de retail se mueve por ciclos. Cada veinte o treinta años, una nueva clase de inquilino desplaza a la anterior. Nuestra ventaja consiste en identificar estas rotaciones de forma temprana — antes de que la desocupación se convierta en situación crítica — y posicionarnos a nosotros y a nuestros socios para capturar el diferencial entre las rentas heredadas y la demanda entrante."
+    },
+    {
+      "heading": "Donde la demanda se encuentra con la oferta",
+      "body": "Nos situamos en la intersección entre la demanda de inquilinos y la oferta de espacio. Sabemos qué marcas se están expandiendo, cuáles se están contrayendo y dónde reside el arbitraje. Ese posicionamiento, en ambos lados de la transacción, es la estrategia."
+    },
+    {
+      "heading": "Nuestro enfoque",
+      "body": "Corredores suburbanos acomodados en metrópolis de alto crecimiento — transitables a pie, de uso mixto, a pie de calle. Una década de aceleración suburbana ha creado una masa crítica del consumidor al que apuntan estas marcas: de altos ingresos, orientado a la experiencia, dispuesto a conducir diez minutos por la marca adecuada pero reacio a ir a un centro comercial regional. Crear 'urbanidad' en estos corredores es ahora el formato que las marcas piden de forma explícita."
+    },
+    {
+      "heading": "Sobre el terreno",
+      "body": "El inmobiliario es un juego de ejecución local. Mantenemos presencia sobre el terreno en siete mercados: Filadelfia, Greenwich, Nashville, Chicago, Palm Beach, Houston y Los Ángeles."
+    }
+  ],
+  "criteriaHeading": "Criterios de adquisición",
+  "criteria": [
+    {
+      "heading": "Qué adquirimos",
+      "items": ["Valor añadido", "Core-plus"]
+    },
+    {
+      "heading": "Ubicaciones deseadas",
+      "items": ["Los 48 estados contiguos"]
+    },
+    {
+      "heading": "Mercados",
+      "items": ["Retail", "Uso mixto residencial", "Hostelería"]
+    },
+    {
+      "heading": "Información requerida",
+      "items": [
+        "Memorando de oferta o resumen de la operación",
+        "Rent roll y resúmenes de contratos de arrendamiento",
+        "Estados operativos de los últimos doce meses",
+        "Plano de emplazamiento y levantamiento topográfico",
+        "Fotografías y contexto de la ubicación"
+      ]
+    }
+  ],
+  "intelTeaser": "Tendencias migratorias, pipelines de inquilinos, timing de mercado. La ciencia de datos detrás de cada distrito que construimos."
+}

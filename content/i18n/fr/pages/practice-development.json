@@ -1,0 +1,50 @@
+{
+  "heroLine": "Nous créons des quartiers faits pour durer.",
+  "heroCaption": "",
+  "heroPhoto": "/photos/practice-development.png",
+  "lead": "Nous créons des quartiers ancrés dans le commerce de détail et faits pour durer. Des décisions enracinées dans l'expérience, étayées par la recherche, affinées par l'intuition.",
+  "sections": [
+    {
+      "heading": "Notre façon de penser",
+      "body": "L'immobilier de commerce de détail évolue par cycles. Tous les vingt à trente ans, une nouvelle catégorie d'enseignes en supplante une autre. Notre avantage réside dans notre capacité à repérer ces rotations tôt — avant que la vacance ne se transforme en difficulté — et à nous positionner, avec nos partenaires, pour capter l'écart entre les loyers historiques et la demande émergente."
+    },
+    {
+      "heading": "Là où la demande rencontre l'offre",
+      "body": "Nous nous situons au carrefour de la demande des enseignes et de l'offre d'espaces. Nous savons quelles marques sont en expansion, lesquelles se contractent et où se trouve l'arbitrage. Ce positionnement, des deux côtés de la transaction, constitue la stratégie."
+    },
+    {
+      "heading": "Notre priorité",
+      "body": "Des artères suburbaines aisées dans des métropoles à forte croissance — accessibles à pied, à usage mixte, au niveau de la rue. Une décennie d'accélération suburbaine a créé une masse critique du consommateur que ces marques ciblent : revenus élevés, orienté expérience, prêt à rouler dix minutes pour la bonne marque mais réticent à se rendre dans un centre commercial régional. Créer de l'« urbanité » dans ces artères est désormais le format que les marques réclament explicitement."
+    },
+    {
+      "heading": "Sur le terrain",
+      "body": "L'immobilier est une affaire d'exécution locale. Nous maintenons une présence de terrain sur sept marchés : Philadelphia, Greenwich, Nashville, Chicago, Palm Beach, Houston et Los Angeles."
+    }
+  ],
+  "criteriaHeading": "Critères d'acquisition",
+  "criteria": [
+    {
+      "heading": "Ce que nous acquérons",
+      "items": ["Value-add", "Core-plus"]
+    },
+    {
+      "heading": "Emplacements recherchés",
+      "items": ["Les 48 États contigus"]
+    },
+    {
+      "heading": "Marchés",
+      "items": ["Commerce de détail", "Résidentiel à usage mixte", "Hôtellerie"]
+    },
+    {
+      "heading": "Informations requises",
+      "items": [
+        "Mémorandum d'information ou résumé de l'opération",
+        "État locatif et résumés de baux",
+        "États d'exploitation des derniers exercices",
+        "Plan de masse et levé topographique",
+        "Photographies et contexte de l'emplacement"
+      ]
+    }
+  ],
+  "intelTeaser": "Tendances migratoires, pipelines d'enseignes, timing de marché. La science des données derrière chaque quartier que nous bâtissons."
+}

@@ -1,0 +1,62 @@
+{
+  "heroLine": "Troviamo il posto giusto per i brand.",
+  "heroCaption": "Urban Outfitters · Charleston",
+  "heroPhoto": "/photos/practice-tenants.png",
+  "lead": "Uniamo la conoscenza del mercato all'analisi demografica e psicografica per consigliare le migliori location disponibili ai brand retail in espansione. Collaboriamo con clienti che apprezzano gli spazi unici e un'esperienza di shopping eccezionale.",
+  "sections": [
+    {
+      "heading": "Selezione delle location",
+      "body": "Affrontiamo la selezione delle location con un sapiente mix di arte e scienza. Le nostre relazioni e la nostra storia nel settore guidano i clienti verso le migliori decisioni immobiliari complessive e le migliori condizioni contrattuali in ogni fase della loro crescita — un track record di oltre vent'anni e migliaia di location, da 500 a 56.000 piedi quadrati."
+    },
+    {
+      "heading": "Operazioni competitive",
+      "body": "Abbiamo concluso operazioni in ogni mercato principale, secondario e terziario, acquisendo una conoscenza diretta delle strade, dei lifestyle center e dei mall che contano. Le relazioni di lunga data con i landlord di prim'ordine ci garantiscono ampia visibilità e la leva per assicurare le condizioni più vantaggiose. Con un occhio attento alle aree in transizione, individuiamo precocemente i mercati emergenti — così i nostri clienti capitalizzano su affitti più bassi e su un posizionamento privilegiato."
+    },
+    {
+      "heading": "Reportistica",
+      "body": "Project Manager altamente qualificati fungono da unico punto di contatto, coordinandosi con i team di architettura, costruzione, marketing, operations, finanza e amministrazione di ciascun cliente per agevolare un efficiente processo di sviluppo dei punti vendita e mantenere ogni apertura nei tempi previsti."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Anthropologie",
+      "location": "158 Regent Street, London",
+      "year": "2019",
+      "narrative": "Un flagship in una delle strade retail più celebri di Londra — selezione della location e negoziazione del contratto di locazione per la continua espansione europea del brand."
+    },
+    {
+      "title": "Free People",
+      "location": "De Negen Straatjes, Amsterdam",
+      "year": "2025",
+      "narrative": "Una boutique tra le Nove Strade di Amsterdam, che abbina il brand a uno dei distretti commerciali più distintivi della città."
+    }
+  ],
+  "roster": [
+    "Urban Outfitters",
+    "Anthropologie",
+    "Free People",
+    "Free People Movement",
+    "Nuuly",
+    "Terrain",
+    "Sur La Table",
+    "Aimé Leon Dore",
+    "Alo Yoga",
+    "Boden",
+    "Carhartt",
+    "Dr. Martens",
+    "Nic+Zoe",
+    "RealTruck",
+    "Sitka",
+    "Backcountry",
+    "Federal Donuts",
+    "Simon Pearce",
+    "Starr Restaurant Group",
+    "Vetri"
+  ],
+  "quote": {
+    "quote": "Hanno una percezione intuitiva di ciò che vogliamo e di ciò che cerchiamo.",
+    "name": "Dick Hayne",
+    "role": "Fondatore e CEO, URBN Inc."
+  },
+  "intelTeaser": "Segmentazione Tapestry, aree di mercato per tempi di percorrenza, correlazioni di co-tenancy. La data science dietro ogni location che consigliamo."
+}

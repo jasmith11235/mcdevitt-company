@@ -1,0 +1,74 @@
+{
+  "heroLine": "Creamos soluciones de inversión.",
+  "heroCaption": "Ámsterdam, junto al canal, al atardecer",
+  "heroPhoto": "/photos/practice-capital.png",
+  "accreditationLogo": "/logos/rics-regulated.png",
+  "accreditationLogoLight": "/logos/rics-white.png",
+  "lead": "El equipo de The McDevitt aporta una experiencia excepcional en ventas y adquisiciones orientadas a la inversión. Nuestros asesores de inversión cuentan con conocimientos especializados en todas las clases de activos inmobiliarios de retail. Asesoramos a inversores de toda índole, desde instituciones hasta particulares.",
+  "approach": "Hemos desempeñado un papel destacado en numerosas transacciones exitosas, construyendo una sólida red de compradores, vendedores y referencias de precios que nuestros expertos en inversión y transacciones emplean en nombre de nuestros clientes. Actuamos a escala local, pero pensamos y coordinamos de forma global a través de nuestras oficinas. Nos apoyamos en años de experiencia en arrendamiento y valoración para ofrecer soluciones integradas.",
+  "segmentsRetail": [
+    "Calle comercial",
+    "Centros comerciales",
+    "Supermercados",
+    "Parques comerciales y naves comerciales"
+  ],
+  "segmentsOther": [
+    "Hostelería",
+    "Residencial",
+    "Oficinas"
+  ],
+  "expertise": [
+    {
+      "title": "Compra y venta",
+      "body": "Asesoramos en cada fase del proceso de venta, tanto en activos individuales como en carteras. Sin preocupaciones, desde una exhaustiva due diligence del vendedor hasta el cierre final."
+    },
+    {
+      "title": "Adquisición",
+      "body": "Asesoramos en cada fase del proceso de compra, desde la valoración y la negociación hasta el cierre final. Somos especialistas en conectar personas."
+    },
+    {
+      "title": "Valoración y asesoramiento",
+      "body": "Un enfoque personal e inteligencia comercial en combinación con datos de mercado estructurados. Los informes se redactan en función de las decisiones que respaldan."
+    },
+    {
+      "title": "Gestión de activos",
+      "body": "La gestión de activos consiste en cuidar, cuidar de verdad, de un plan táctico y estratégico. Actuamos en nombre del activo y del inversor en igual medida."
+    }
+  ],
+  "caseStudies": [
+    {
+      "narrative": "Venta de dos parques comerciales de gran escala arrendados a Praxis y De Mandemakers Groep.",
+      "vendor": "De Mandemakers Groep (DMG)",
+      "purchaser": "Corum Asset Management",
+      "assets": "2",
+      "lfa": "15,500 sqm",
+      "location": "Capelle aan den IJssel & Bergschenhoek",
+      "price": "€21.3 million"
+    },
+    {
+      "narrative": "Venta de una cartera de supermercados mediante sale-and-leaseback con la segunda mayor cadena de supermercados de los Países Bajos.",
+      "vendor": "Jumbo Supermarkten",
+      "purchaser": "Bouwinvest",
+      "assets": "13",
+      "lfa": "17,700 sqm",
+      "location": "13 ubicaciones",
+      "price": "€34.4 million",
+      "year": "Q4 2018"
+    }
+  ],
+  "team": [
+    {
+      "name": "Michiel Tahey",
+      "title": "Gerente · Mercados de capital",
+      "bio": "Asesora a inversores en adquisiciones y ventas orientadas a la inversión en todas las clases de activos de retail desde la oficina de Ámsterdam.",
+      "portrait": ""
+    },
+    {
+      "name": "Willem Groen",
+      "title": "Gerente · Mercados de capital",
+      "bio": "Lidera mandatos de valoración, estructuración de transacciones y gestión de activos para inversores institucionales y privados en los Países Bajos.",
+      "portrait": ""
+    }
+  ],
+  "intelTeaser": "Informes de mercado, comparables de renta, evaluación del riesgo de inquilinos. La inteligencia detrás de cada tesis de inversión."
+}

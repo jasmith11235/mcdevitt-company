@@ -1,0 +1,41 @@
+{
+  "heroLine": "Wir kuratieren Einzelhandelsziele.",
+  "heroCaption": "District La Brea, Los Angeles",
+  "heroPhoto": "/photos/practice-landlords.jpg",
+  "lead": "Wir arbeiten mit ausgewählten Vermietern und Projektentwicklern zusammen, um unverwechselbare Einzelhandelsziele zu schaffen, indem wir gezielt erstklassige Mieter zusammenbringen.",
+  "sections": [
+    {
+      "heading": "Globale Reichweite",
+      "body": "Mit Tausenden abgeschlossenen Transaktionen in den Vereinigten Staaten, Kanada und Europa hat unser Team weltweit starke Beziehungen zu bedeutenden Vermietern, Projektentwicklern und Einzelhändlern aufgebaut — sowie ein tiefes Verständnis für die spezifischen Faktoren, die über Erfolg oder Misserfolg von Immobilienprojekten auf der ganzen Welt entscheiden."
+    },
+    {
+      "heading": "Placemaking",
+      "body": "Als versierte Placemaker kuratieren wir überzeugende Merchandising-Pläne mit einer einzigartigen, marktrelevanten Vermietungsvision — indem wir gezielt erstklassige Mieter in transformativen und innovativen Einzelhandelsumgebungen zusammenbringen."
+    },
+    {
+      "heading": "Reporting",
+      "body": "Engagierte Projektmanager sorgen für maximale Transparenz. Mit branchenführender Software halten sie unsere Kunden mit präzisem, bedarfsgerechtem Reporting und zeitnaher, konsistenter, auf jedes Projekt zugeschnittener Kommunikation stets am Puls des Geschehens."
+    }
+  ],
+  "featured": {
+    "title": "The Shops at Sportsmen's Lodge",
+    "location": "Studio City, CA",
+    "assetType": "Open-Air-Lifestyle-Center",
+    "body": "Ein Open-Air-Ziel für Einzelhandel und Gastronomie im Herzen von Studio City, das mit einem kuratierten Mix aus Lifestyle-Mietern für die umliegende Gemeinde gestaltet und vermietet wurde.",
+    "photo": "/photos/sportsmens-lodge-grounds.jpg"
+  },
+  "caseStudies": [
+    {
+      "title": "URBN Portfolio",
+      "location": "P.C. Hooftstraat, Amsterdam",
+      "year": "",
+      "narrative": "Vertretung des gesamten URBN-Portfolios an Amsterdams führender Luxus-Einkaufsstraße — die richtigen Mieter an einer der anspruchsvollsten Geschäftsstraßen Europas platzieren."
+    }
+  ],
+  "quote": {
+    "quote": "Diese globale Präsenz hilft mir, wenn ich global suche, aber sie verschafft mir auch eine weltgewandtere Art von Wissen und Beratung, wenn ich in den Vereinigten Staaten suche.",
+    "name": "Stephen Starr",
+    "role": "CEO & Präsident, Starr Restaurant Group"
+  },
+  "intelTeaser": "Mieter-Pipelines, Merchandising-Mix, Marktberichte. Die Intelligenz hinter jedem Vermietungsplan."
+}
