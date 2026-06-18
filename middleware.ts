@@ -1,13 +1,34 @@
-import createMiddleware from 'next-intl/middleware'
+import { auth } from '@/lib/auth'
+import createIntlMiddleware from 'next-intl/middleware'
 import { routing } from './i18n/routing'
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
-export default createMiddleware(routing)
+const intlMiddleware = createIntlMiddleware(routing)
+
+export default auth(function middleware(req) {
+  const { pathname } = req.nextUrl
+  const session = req.auth
+
+  if (pathname.startsWith('/keystatic/signin')) {
+    if (session) return NextResponse.redirect(new URL('/keystatic', req.url))
+    return NextResponse.next()
+  }
+
+  if (pathname.startsWith('/keystatic')) {
+    if (!session) return NextResponse.redirect(new URL('/keystatic/signin', req.url))
+    return NextResponse.next()
+  }
+
+  if (pathname.startsWith('/admin')) {
+    if (!session) return NextResponse.redirect(new URL('/keystatic/signin', req.url))
+    if (session.user.role !== 'superadmin') return NextResponse.redirect(new URL('/keystatic', req.url))
+    return NextResponse.next()
+  }
+
+  return intlMiddleware(req as NextRequest)
+})
 
 export const config = {
-  // Match all pathnames except for:
-  // - /api, /trpc (API routes)
-  // - /keystatic (the CMS, intentionally not localized)
-  // - /_next, /_vercel (Next.js internals)
-  // - anything containing a dot (static files: .mp4, .jpg, robots.txt, ...)
-  matcher: ['/((?!api|trpc|keystatic|_next|_vercel|.*\\..*).*)'],
+  matcher: ['/((?!api|trpc|_next|_vercel|.*\\..*).*)'],
 }
