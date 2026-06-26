@@ -39,3 +39,10 @@ next-env.d.ts
 
 # source collateral (large Dropbox PDFs — reference only, never commit)
 /docs/
+
+# redesign handoff source (HTML comps, originals, decks — reference only, never commit)
+/public/McDevitt-HTML-Comps/
+/public/McDevitt-Assets-and-Docs/
+
+# hero carousel handoff source (raw drop — used assets are copied into /public/images/hero/)
+/public/Hero-Carousel-Assets/

@@ -1,106 +1,118 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-import { useTranslations } from 'next-intl'
-import Logo from './Logo'
-import { heroVideo } from '@/lib/videos'
+import { useEffect, useState } from 'react'
 
 interface HeroProps {
   tagline: string
-  subtitle: string
+  subtitle?: string
 }
 
-interface HeroClip {
-  src: string
-  startAt?: number
-  durationSec: number
+interface Slide {
+  id: string
+  label: string
 }
 
-const CLIPS: HeroClip[] = [
-  { src: heroVideo('la-sunset.mp4'),     durationSec: 10 },
-  { src: heroVideo('amsterdam.mp4'),     durationSec: 7  },
-  { src: heroVideo('nashville.mp4'),     durationSec: 10 },
-  { src: heroVideo('chicago.mp4'),       durationSec: 10, startAt: 25 },
-  { src: heroVideo('philadelphia.mp4'),  durationSec: 10 },
-  { src: heroVideo('london.mp4'),        durationSec: 10 },
+const SLIDES: Slide[] = [
+  { id: '01_Rock-Center', label: 'Rockefeller Center' },
+  { id: '02_Savannah', label: 'Savannah' },
+  { id: '03_Terrain-Interior', label: 'Terrain' },
+  { id: '04_ALO-Brooklyn', label: 'Alo, Brooklyn' },
+  { id: '05_AN-Regent-Interior', label: 'Anthropologie, Regent Street' },
+  { id: '06_UO-Madrid', label: 'Urban Outfitters, Madrid' },
+  { id: '07_UO-Charleston', label: 'Urban Outfitters, Charleston' },
+  { id: '08_Outerknown', label: 'Outerknown' },
 ]
 
-const CROSSFADE_MS = 1500
+const SKETCH_HOLD = 1500
+const WIPE = 1800
+const PHOTO_HOLD = 3200
 
 export default function Hero({ tagline, subtitle }: HeroProps) {
-  const t = useTranslations('hero')
-  const [activeIdx, setActiveIdx] = useState(0)
-  const videoRefs = useRef<(HTMLVideoElement | null)[]>([])
+  const [index, setIndex] = useState(0)
+  const [entered, setEntered] = useState(false)
+  const [revealed, setRevealed] = useState(false)
 
   useEffect(() => {
-    const active = videoRefs.current[activeIdx]
-    const current = CLIPS[activeIdx]
+    setEntered(false)
+    setRevealed(false)
 
-    if (active) {
-      if (current.startAt && Math.abs(active.currentTime - current.startAt) > 1) {
-        try { active.currentTime = current.startAt } catch {}
-      }
-      active.play().catch(() => {/* autoplay can be blocked — overlay still works */})
+    const enter = window.setTimeout(() => setEntered(true), 40)
+    const reveal = window.setTimeout(() => setRevealed(true), SKETCH_HOLD)
+    const advance = window.setTimeout(
+      () => setIndex(i => (i + 1) % SLIDES.length),
+      SKETCH_HOLD + WIPE + PHOTO_HOLD,
+    )
+
+    return () => {
+      window.clearTimeout(enter)
+      window.clearTimeout(reveal)
+      window.clearTimeout(advance)
     }
-    const nextIdx = (activeIdx + 1) % CLIPS.length
-    const upcoming = videoRefs.current[nextIdx]
-    if (upcoming && upcoming.preload !== 'auto') {
-      upcoming.preload = 'auto'
-      upcoming.load()
-    }
+  }, [index])
 
-    const handoff = window.setTimeout(() => {
-      setActiveIdx(nextIdx)
-    }, current.durationSec * 1000)
-
-    return () => window.clearTimeout(handoff)
-  }, [activeIdx])
+  const slide = SLIDES[index]
+  const nextSlide = SLIDES[(index + 1) % SLIDES.length]
+  const photo = (s: Slide) => `/images/hero/photos/${s.id}.jpg`
+  const sketch = (s: Slide) => `/images/hero/sketches/${s.id}.svg`
 
   return (
-    <section className="relative min-h-screen min-h-[100svh] flex flex-col items-center justify-center bg-[#1D2B45] overflow-hidden">
-      {CLIPS.map((clip, i) => (
-        <video
-          key={clip.src}
-          ref={el => { videoRefs.current[i] = el }}
-          className="hero-video absolute inset-0 w-full h-full object-cover transition-opacity ease-in-out"
-          style={{
-            opacity: i === activeIdx ? 1 : 0,
-            transitionDuration: `${CROSSFADE_MS}ms`,
-          }}
-          muted
-          loop
-          playsInline
-          preload={i === 0 ? 'auto' : 'metadata'}
-          aria-hidden="true"
-        >
-          <source
-            src={clip.startAt ? `${clip.src}#t=${clip.startAt}` : clip.src}
-            type="video/mp4"
-          />
-        </video>
-      ))}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1D2B45]/25 via-[#1D2B45]/5 to-[#1D2B45]/55" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_45%_at_center,rgba(29,43,69,0.45)_0%,rgba(29,43,69,0)_100%)]" />
-
+    <section className="relative h-[60vh] min-h-[420px] w-full overflow-hidden bg-cream md:h-[82vh]">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-[0.04] mix-blend-overlay"
-        style={{ backgroundImage: "url('/graphics/woodblock-banner.jpg')" }}
-      />
+        key={slide.id}
+        className={`absolute inset-0 transition-opacity duration-700 ${entered ? 'opacity-100' : 'opacity-0'}`}
+      >
+        <img
+          src={photo(slide)}
+          alt={slide.label}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div
+          className="absolute inset-0 bg-cream transition-[clip-path] ease-[cubic-bezier(0.65,0,0.35,1)]"
+          style={{
+            transitionDuration: `${WIPE}ms`,
+            clipPath: revealed ? 'inset(0 0 0 100%)' : 'inset(0 0 0 0)',
+          }}
+        >
+          <img src={sketch(slide)} alt="" aria-hidden className="h-full w-full object-cover" />
+        </div>
+      </div>
 
-      <div className="relative z-10 flex flex-col items-center text-center px-6 hero-text-shadow">
-        <Logo color="white" className="w-32 h-32 md:w-48 md:h-48 mb-10 hero-logo-enter" />
-        <h1 className="font-sans text-sm md:text-base tracking-[0.3em] uppercase text-white mb-4 hero-text-enter">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/45" />
+
+      <div className="absolute inset-0 z-10 flex items-center justify-center px-10 text-center">
+        <h1
+          className="font-gotham text-[clamp(32px,5vw,56px)] font-bold uppercase leading-[1.1] tracking-[3px] text-white"
+          style={{ textShadow: '0 2px 24px rgba(0,0,0,0.45)' }}
+        >
           {tagline}
         </h1>
-        <p className="font-sans text-xs md:text-sm tracking-widest uppercase text-white/90 max-w-xl hero-text-enter-delay">
-          {subtitle}
-        </p>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hero-scroll-pulse">
-        <div className="w-px h-16 bg-white/30 mx-auto mb-2" />
-        <span className="font-sans text-[10px] tracking-widest uppercase text-white/40">{t('scroll')}</span>
+      {subtitle ? (
+        <p
+          className="absolute inset-x-0 bottom-[18%] z-10 px-10 text-center font-mercury text-base italic text-white/90"
+          style={{ textShadow: '0 2px 16px rgba(0,0,0,0.45)' }}
+        >
+          {subtitle}
+        </p>
+      ) : null}
+
+      <span className="absolute bottom-5 right-6 z-10 font-gotham text-[9px] font-medium uppercase tracking-[2px] text-white/45">
+        {slide.label}
+      </span>
+
+      <div className="absolute bottom-5 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+        {SLIDES.map((s, i) => (
+          <span
+            key={s.id}
+            className={`h-1 rounded-full transition-all duration-500 ${
+              i === index ? 'w-6 bg-white/80' : 'w-2 bg-white/35'
+            }`}
+          />
+        ))}
       </div>
+
+      <link rel="preload" as="image" href={photo(nextSlide)} />
     </section>
   )
 }

@@ -4,16 +4,23 @@
 
 :root {
   --ease-signature: cubic-bezier(0.16, 1, 0.3, 1);
+  --cream: #F5F0EB;
+  --navy: #1C2541;
+  --green: #4A7C6F;
+  --muted: #E8E2DB;
+  --overlay-hero: rgba(0, 0, 0, 0.4);
 }
 
 html {
+  font-size: 15px;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
-  color: #1D2B45;
-  line-height: 1.6;
+  font-family: var(--font-mercury), Georgia, 'Times New Roman', serif;
+  color: var(--navy);
+  background: var(--cream);
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -21,7 +28,64 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, nav, button, .font-sans {
-  font-family: 'Mona Sans Variable', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-gotham), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@layer components {
+  .section-wrap {
+    @apply px-10 py-[100px];
+  }
+
+  .section-inner {
+    @apply max-w-content mx-auto;
+  }
+
+  .section-label {
+    @apply font-gotham text-[10px] font-bold uppercase text-green mb-4;
+    letter-spacing: 3px;
+  }
+
+  .section-headline {
+    @apply font-gotham text-2xl font-bold uppercase text-navy leading-tight mb-5;
+    letter-spacing: 1.5px;
+  }
+
+  .divider {
+    @apply w-[60px] h-0.5 bg-green mb-6;
+  }
+
+  .btn-primary {
+    @apply font-gotham text-[10px] font-bold uppercase text-white bg-navy px-9 py-3.5 rounded-[3px] inline-block transition-colors;
+    letter-spacing: 2.5px;
+  }
+
+  .btn-primary:hover {
+    @apply bg-green -translate-y-px;
+  }
+
+  .btn-secondary {
+    @apply font-gotham text-[10px] font-bold uppercase text-navy bg-transparent border-[1.5px] border-navy px-9 py-[13px] rounded-[3px] inline-block transition-colors;
+    letter-spacing: 2.5px;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-navy text-white;
+  }
+
+  .text-link {
+    @apply font-mercury text-green transition-colors;
+    border-bottom: 1px solid rgba(74, 124, 111, 0.3);
+  }
+
+  .text-link:hover {
+    border-bottom-color: var(--green);
+  }
+
+  .hero-overlay::after {
+    content: '';
+    @apply absolute inset-0;
+    background: var(--overlay-hero);
+  }
 }
 
 /* Scroll-triggered fade-in (paired with components/ScrollAnimator.tsx).
@@ -236,7 +300,7 @@ body::after {
 }
 
 *:focus-visible {
-  outline: 2px solid #3D9B82;
+  outline: 2px solid #4A7C6F;
   outline-offset: 3px;
   border-radius: 1px;
 }

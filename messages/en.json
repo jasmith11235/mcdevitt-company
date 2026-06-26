@@ -7,13 +7,16 @@
     "news": "News",
     "readingRoom": "Reading Room",
     "offices": "Offices",
-    "contact": "Contact"
+    "contact": "Contact",
+    "home": "Home",
+    "clientLogin": "Client Login"
   },
   "hero": {
     "scroll": "Scroll"
   },
   "ourStory": {
-    "tagline": "A full service retail property firm since {year}."
+    "tagline": "A full service retail property firm since {year}.",
+    "learnMore": "Learn more about our approach"
   },
   "services": {
     "subtitle": "Skilled placemakers with the ability to curate compelling merchandising plans with unique and market-relevant leasing vision.",
@@ -49,7 +52,13 @@
       "featuredHeading": "Featured Asset",
       "rosterHeading": "Selected Clients",
       "rosterPending": "Our reconciled 2026 client roster is being finalised — available on request.",
-      "intelCta": "Explore Data Science"
+      "intelCta": "Explore Data Science",
+      "approachLabel": "Our Approach",
+      "approachHeading": "How We Work",
+      "selectedWorkLabel": "Selected Work",
+      "selectedWorkHeading": "Featured Work",
+      "ctaText": "Every great space begins with a conversation.",
+      "ctaButton": "Get in Touch"
     },
     "tenants": {
       "eyebrow": "Tenant Representation",
@@ -98,7 +107,8 @@
   },
   "projects": {
     "eyebrow": "Select Projects",
-    "subtitle": "We collaborate with select landlords and developers to create unique and distinctive retail destinations."
+    "subtitle": "We collaborate with select landlords and developers to create unique and distinctive retail destinations.",
+    "viewAll": "View All Projects"
   },
   "testimonials": {
     "eyebrow": "Testimonials"
@@ -139,6 +149,7 @@
   },
   "footer": {
     "tagline": "A full-service retail real estate advisory firm. Strategic vision, data-driven insight, and global reach since 1997.",
+    "brandLine": "Where art meets science in retail real estate.",
     "navigate": "Navigate",
     "contact": "Contact",
     "careers": "Careers",

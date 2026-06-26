@@ -7,13 +7,16 @@
     "news": "Noticias",
     "readingRoom": "Sala de lectura",
     "offices": "Oficinas",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "home": "Inicio",
+    "clientLogin": "Acceso Clientes"
   },
   "hero": {
     "scroll": "Desplazar"
   },
   "ourStory": {
-    "tagline": "Una firma inmobiliaria comercial de servicio integral desde {year}."
+    "tagline": "Una firma inmobiliaria comercial de servicio integral desde {year}.",
+    "learnMore": "Conozca nuestro enfoque"
   },
   "services": {
     "subtitle": "Creadores de lugares expertos, capaces de elaborar planes de comercialización atractivos con una visión de arrendamiento única y relevante para el mercado.",
@@ -49,7 +52,13 @@
       "featuredHeading": "Activo destacado",
       "rosterHeading": "Clientes seleccionados",
       "rosterPending": "Nuestra lista de clientes de 2026 se está finalizando — disponible a petición.",
-      "intelCta": "Explorar Ciencia de datos"
+      "intelCta": "Explorar Ciencia de datos",
+      "approachLabel": "Nuestro enfoque",
+      "approachHeading": "Cómo trabajamos",
+      "selectedWorkLabel": "Trabajos seleccionados",
+      "selectedWorkHeading": "Trabajo destacado",
+      "ctaText": "Todo gran espacio comienza con una conversación.",
+      "ctaButton": "Contáctenos"
     },
     "tenants": {
       "eyebrow": "Representación de inquilinos",
@@ -98,7 +107,8 @@
   },
   "projects": {
     "eyebrow": "Proyectos seleccionados",
-    "subtitle": "Colaboramos con propietarios y promotores seleccionados para crear destinos comerciales únicos y distintivos."
+    "subtitle": "Colaboramos con propietarios y promotores seleccionados para crear destinos comerciales únicos y distintivos.",
+    "viewAll": "Ver todos los proyectos"
   },
   "testimonials": {
     "eyebrow": "Testimonios"
@@ -139,6 +149,7 @@
   },
   "footer": {
     "tagline": "Una firma de asesoría inmobiliaria comercial de servicio integral. Visión estratégica, análisis basado en datos y alcance global desde 1997.",
+    "brandLine": "Donde el arte y la ciencia se unen en el inmobiliario comercial.",
     "navigate": "Navegar",
     "contact": "Contacto",
     "careers": "Empleo",

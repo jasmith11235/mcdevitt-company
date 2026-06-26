@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Fraunces } from 'next/font/google'
+import { Fraunces, Montserrat, Playfair_Display } from 'next/font/google'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import '@fontsource-variable/mona-sans'
@@ -12,6 +12,21 @@ const fraunces = Fraunces({
   subsets: ['latin'],
   variable: '--font-serif',
   axes: ['opsz'],
+  display: 'swap',
+})
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-gotham',
+  weight: ['400', '500', '700'],
+  display: 'swap',
+})
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-mercury',
+  weight: ['400', '500', '700'],
+  style: ['normal', 'italic'],
   display: 'swap',
 })
 
@@ -58,7 +73,7 @@ export default async function LocaleLayout({
   setRequestLocale(locale)
 
   return (
-    <html lang={locale} className={fraunces.variable}>
+    <html lang={locale} className={`${fraunces.variable} ${montserrat.variable} ${playfair.variable}`}>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>

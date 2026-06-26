@@ -49,7 +49,6 @@ export default function LanguageSwitcher({ variant = 'light' }: { variant?: Vari
   const selectLocale = (locale: Locale) => {
     setOpen(false)
     if (locale === activeLocale) return
-    // Preserve any active query string (e.g. Reading Room filters).
     const qs = typeof window !== 'undefined' ? window.location.search : ''
     router.replace(`${pathname}${qs}`, { locale })
   }
@@ -57,7 +56,7 @@ export default function LanguageSwitcher({ variant = 'light' }: { variant?: Vari
   const isDark = variant === 'dark'
   const triggerColor = isDark
     ? 'text-white/80 hover:text-white'
-    : 'text-[#1D2B45] hover:text-[#3D9B82]'
+    : 'text-navy hover:text-green'
 
   return (
     <div ref={containerRef} className="relative">
@@ -67,9 +66,9 @@ export default function LanguageSwitcher({ variant = 'light' }: { variant?: Vari
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label={t('select')}
-        className={`group inline-flex items-center gap-1.5 font-sans text-[11px] tracking-widest uppercase transition-colors duration-200 ${triggerColor}`}
+        className={`group inline-flex items-center gap-1.5 font-gotham text-[12px] font-medium tracking-[0.13em] uppercase transition-colors duration-300 ${triggerColor}`}
       >
-        <GlobeIcon className="w-4 h-4 opacity-70 transition-opacity duration-200 group-hover:opacity-100" />
+        <GlobeIcon className="w-3.5 h-3.5 opacity-70 transition-opacity duration-300 group-hover:opacity-100" />
         <span>{localeMeta[activeLocale].short}</span>
         <svg
           viewBox="0 0 12 12"
@@ -77,7 +76,7 @@ export default function LanguageSwitcher({ variant = 'light' }: { variant?: Vari
           stroke="currentColor"
           strokeWidth="1.5"
           aria-hidden
-          className={`w-2.5 h-2.5 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
+          className={`w-2 h-2 opacity-50 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
         >
           <path d="m2.5 4 3.5 3.5L9.5 4" />
         </svg>
@@ -86,7 +85,7 @@ export default function LanguageSwitcher({ variant = 'light' }: { variant?: Vari
       <div
         role="listbox"
         aria-label={t('label')}
-        className={`absolute right-0 mt-3 min-w-[160px] origin-top-right border border-[#1D2B45]/10 bg-white shadow-[0_12px_40px_-12px_rgba(29,43,69,0.35)] transition-all duration-200 ${
+        className={`absolute right-0 mt-2 min-w-[150px] origin-top-right rounded-[3px] border border-muted bg-white py-1 shadow-elevated transition-all duration-200 ${
           open
             ? 'pointer-events-auto opacity-100 translate-y-0 scale-100'
             : 'pointer-events-none opacity-0 -translate-y-1 scale-95'
@@ -101,14 +100,14 @@ export default function LanguageSwitcher({ variant = 'light' }: { variant?: Vari
               role="option"
               aria-selected={active}
               onClick={() => selectLocale(locale)}
-              className={`flex w-full items-center justify-between px-4 py-2.5 text-left font-sans text-[11px] tracking-wider uppercase transition-colors duration-150 ${
+              className={`flex w-full items-center justify-between px-4 py-2.5 text-left font-gotham text-[11px] tracking-[0.13em] uppercase transition-colors duration-200 ${
                 active
-                  ? 'text-[#3D9B82]'
-                  : 'text-[#1D2B45]/70 hover:bg-stone-50 hover:text-[#1D2B45]'
+                  ? 'font-bold text-green'
+                  : 'font-medium text-navy hover:bg-green/[0.08] hover:text-green'
               }`}
             >
               <span>{localeMeta[locale].label}</span>
-              <span className="ml-4 font-light tabular-nums text-[#1D2B45]/30">
+              <span className="ml-4 font-light tabular-nums text-navy/30">
                 {localeMeta[locale].short}
               </span>
             </button>
