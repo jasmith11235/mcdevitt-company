@@ -11,39 +11,33 @@ interface Testimonial {
 
 export default function Testimonials({ testimonials }: { testimonials: Testimonial[] }) {
   const t = useTranslations('testimonials')
+  if (!testimonials?.length) return null
+
   return (
-    <section id="testimonials" className="py-24 md:py-32 bg-stone-50">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="fade-in mb-16">
-          <div className="accent-rule mb-6" />
-          <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82]">{t('eyebrow')}</h2>
-        </div>
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
-          {/* An editorial storefront photo as a quiet vertical anchor beside the words. */}
-          <div className="fade-in hidden lg:block lg:col-span-4">
-            <div className="relative aspect-[3/4] overflow-hidden lg:sticky lg:top-28 bg-stone-100">
-              <Image
-                src="/images/anthro-regent-street.jpg"
-                alt="Anthropologie flagship, Regent Street, London"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 0px, 33vw"
-              />
-            </div>
-          </div>
-          <div className="lg:col-span-8 space-y-16">
-            {testimonials.map((t) => (
-              <div key={t.slug} className="fade-in">
-                <div className="pull-quote">
-                  <blockquote className="text-2xl md:text-3xl font-light leading-relaxed text-[#1D2B45] mb-6 pl-4">
-                    {t.quote}
-                  </blockquote>
-                  <div className="pl-4">
-                    <p className="font-sans text-sm font-medium tracking-wider uppercase text-[#1D2B45]">{t.name}</p>
-                    <p className="font-sans text-xs tracking-wider text-[#1D2B45]/60 mt-1">{t.title}, {t.company}</p>
-                  </div>
+    <section id="testimonials" className="section-wrap bg-cream">
+      <div className="section-inner">
+        <div className="section-label fade-in">{t('eyebrow')}</div>
+        <div className="grid items-center gap-12 md:grid-cols-[45%_1fr] md:gap-[60px]">
+          <figure className="fade-in relative h-[300px] overflow-hidden rounded-[4px] md:h-[400px]">
+            <Image
+              src="/images/hero/photos/05_AN-Regent-Interior.jpg"
+              alt="Anthropologie flagship, Regent Street, London"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 45vw"
+            />
+          </figure>
+          <div className="space-y-12">
+            {testimonials.map((item) => (
+              <blockquote key={item.slug} className="fade-in">
+                <p className="mb-6 font-mercury text-[20px] italic leading-[1.5] text-navy md:text-[22px]">
+                  &ldquo;{item.quote}&rdquo;
+                </p>
+                <div className="font-gotham text-[10px] font-bold uppercase tracking-[2px] text-navy">{item.name}</div>
+                <div className="mt-1 font-mercury text-[12px] text-navy/70">
+                  {item.title}, {item.company}
                 </div>
-              </div>
+              </blockquote>
             ))}
           </div>
         </div>

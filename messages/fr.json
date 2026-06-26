@@ -7,13 +7,16 @@
     "news": "Actualités",
     "readingRoom": "Salon de lecture",
     "offices": "Bureaux",
-    "contact": "Contact"
+    "contact": "Contact",
+    "home": "Accueil",
+    "clientLogin": "Espace Client"
   },
   "hero": {
     "scroll": "Défiler"
   },
   "ourStory": {
-    "tagline": "Un cabinet immobilier commercial à service complet depuis {year}."
+    "tagline": "Un cabinet immobilier commercial à service complet depuis {year}.",
+    "learnMore": "En savoir plus sur notre approche"
   },
   "services": {
     "subtitle": "Des créateurs de lieux chevronnés, capables d'élaborer des plans de merchandising convaincants avec une vision locative unique et adaptée au marché.",
@@ -49,7 +52,13 @@
       "featuredHeading": "Actif à la une",
       "rosterHeading": "Clients sélectionnés",
       "rosterPending": "Notre liste de clients 2026 est en cours de finalisation — disponible sur demande.",
-      "intelCta": "Découvrir la Data Science"
+      "intelCta": "Découvrir la Data Science",
+      "approachLabel": "Notre approche",
+      "approachHeading": "Notre méthode",
+      "selectedWorkLabel": "Travaux sélectionnés",
+      "selectedWorkHeading": "Travaux à la une",
+      "ctaText": "Chaque grand espace commence par une conversation.",
+      "ctaButton": "Nous contacter"
     },
     "tenants": {
       "eyebrow": "Représentation des preneurs",
@@ -98,7 +107,8 @@
   },
   "projects": {
     "eyebrow": "Projets sélectionnés",
-    "subtitle": "Nous collaborons avec des propriétaires et promoteurs sélectionnés pour créer des destinations commerciales uniques et distinctives."
+    "subtitle": "Nous collaborons avec des propriétaires et promoteurs sélectionnés pour créer des destinations commerciales uniques et distinctives.",
+    "viewAll": "Voir tous les projets"
   },
   "testimonials": {
     "eyebrow": "Témoignages"
@@ -139,6 +149,7 @@
   },
   "footer": {
     "tagline": "Un cabinet de conseil immobilier commercial à service complet. Vision stratégique, analyse fondée sur les données et portée mondiale depuis 1997.",
+    "brandLine": "Là où l'art rencontre la science dans l'immobilier commercial.",
     "navigate": "Naviguer",
     "contact": "Contact",
     "careers": "Carrières",

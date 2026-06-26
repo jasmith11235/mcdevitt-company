@@ -2,82 +2,85 @@ import { useTranslations } from 'next-intl'
 import Logo from './Logo'
 import TransitionLink from './TransitionLink'
 
-const footerNavLinks = [
-  { key: 'ourStory', href: '/#our-story' },
-  { key: 'services', href: '/#services' },
-  { key: 'dataScience', href: '/#data-science' },
-  { key: 'projects', href: '/#projects' },
-  { key: 'news', href: '/news' },
-  { key: 'readingRoom', href: '/reading-room' },
-  { key: 'offices', href: '/#offices' },
+const serviceLinks = [
+  { labelKey: 'practice.tenants.eyebrow', href: '/practice/tenants' },
+  { labelKey: 'practice.landlords.eyebrow', href: '/practice/landlords' },
+  { labelKey: 'practice.development.eyebrow', href: '/practice/development' },
+  { labelKey: 'practice.capital.eyebrow', href: '/practice/capital' },
 ] as const
 
-/**
- * Salesforce-owned candidate intake form. The live endpoint is dropped in via
- * env (coordinated with Janine) so the link goes live without a rebuild.
- */
-const CAREERS_URL = process.env.NEXT_PUBLIC_SALESFORCE_CAREERS_URL || '#'
+const navigateLinks = [
+  { labelKey: 'nav.ourStory', href: '/#our-story' },
+  { labelKey: 'nav.projects', href: '/#projects' },
+  { labelKey: 'nav.news', href: '/news' },
+  { labelKey: 'nav.readingRoom', href: '/reading-room' },
+  { labelKey: 'nav.contact', href: '/#contact' },
+  { labelKey: 'nav.clientLogin', href: '/#client-portal' },
+] as const
+
+const offices = [
+  'Philadelphia',
+  'Greenwich',
+  'Nashville',
+  'West Palm Beach',
+  'Chicago',
+  'Los Angeles',
+  'London',
+  'Amsterdam',
+]
+
+const footerLinkClass =
+  'block font-mercury text-[13px] leading-[1.8] text-white/70 transition-colors duration-300 hover:text-white'
+
+const footerHeadingClass =
+  'mb-4 font-gotham text-[10px] font-bold tracking-[0.3em] uppercase text-white'
 
 export default function Footer() {
   const t = useTranslations()
   const year = new Date().getFullYear()
 
   return (
-    <footer id="contact" className="bg-[#1D2B45] py-20">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
+    <footer id="contact" className="bg-navy px-10 py-[60px] text-white">
+      <div className="mx-auto max-w-content">
+        <div className="mb-10 flex justify-center">
+          <Logo color="white" className="h-16 w-16" />
+        </div>
+
+        <div className="grid grid-cols-1 gap-10 text-center md:grid-cols-3 md:text-left">
           <div>
-            <Logo color="white" className="w-20 h-20 mb-6" />
-            <p className="font-sans text-xs tracking-wider text-white/50 max-w-xs">
+            <p className="mb-3 font-gotham text-[11px] font-bold tracking-[0.25em] uppercase text-white">
+              McDevitt
+            </p>
+            <p className="mx-auto max-w-[15rem] font-mercury text-[13px] italic leading-[1.8] text-white/70 md:mx-0">
               {t('footer.tagline')}
             </p>
           </div>
+
           <div>
-            <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{t('footer.navigate')}</h4>
-            <nav className="flex flex-col gap-2">
-              {footerNavLinks.map(link => (
-                <TransitionLink
-                  key={link.key}
-                  href={link.href}
-                  className="link-underline self-start font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300"
-                >
-                  {t(`nav.${link.key}`)}
-                </TransitionLink>
-              ))}
-            </nav>
+            <h4 className={footerHeadingClass}>{t('nav.services')}</h4>
+            {serviceLinks.map(link => (
+              <TransitionLink key={link.href} href={link.href} className={footerLinkClass}>
+                {t(link.labelKey)}
+              </TransitionLink>
+            ))}
           </div>
+
           <div>
-            <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{t('footer.contact')}</h4>
-            <a href="mailto:info@mcdevittco.com" className="link-underline font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300 inline-block mb-2">
-              info@mcdevittco.com
-            </a>
-            <br />
-            <a href="https://mcdevittco.com" className="link-underline font-sans text-xs tracking-wider text-white/60 hover:text-white transition-colors duration-300 inline-block">
-              mcdevittco.com
-            </a>
-          </div>
-          <div>
-            <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{t('footer.careers')}</h4>
-            <p className="font-sans text-xs tracking-wider text-white/50 max-w-xs mb-4">
-              {t('footer.careersBlurb')}
-            </p>
-            <a
-              href={CAREERS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center font-sans text-xs tracking-wider text-white/80 border border-white/20 px-5 py-2.5 hover:border-[#3D9B82] hover:text-white transition-colors duration-300"
-            >
-              <span>{t('footer.careersCta')}</span>
-              <span aria-hidden className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
-            </a>
+            <h4 className={footerHeadingClass}>{t('footer.navigate')}</h4>
+            {navigateLinks.map(link => (
+              <TransitionLink key={link.href} href={link.href} className={footerLinkClass}>
+                {t(link.labelKey)}
+              </TransitionLink>
+            ))}
           </div>
         </div>
-        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row md:justify-between gap-4">
-          <p className="font-sans text-[10px] tracking-wider text-white/30">
+
+        <div className="mt-10 flex flex-col items-center gap-3 border-t border-white/10 pt-6 text-center">
+          <p className="font-mercury text-[11px] text-white/40">
             {t('footer.copyright', { year })}
           </p>
-          <p className="font-sans text-[10px] tracking-wider text-white/30">
-            Philadelphia &middot; Greenwich &middot; Nashville &middot; West Palm Beach &middot; Chicago &middot; Los Angeles &middot; London &middot; Amsterdam
+          <p className="font-mercury text-[11px] text-white/30">
+            {offices.join(' \u00B7 ')}
           </p>
         </div>
       </div>

@@ -10,24 +10,21 @@ interface Office {
 export default function Offices({ offices }: { offices: Office[] }) {
   const t = useTranslations('offices')
   return (
-    <section id="offices" className="relative py-24 md:py-32 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-stone-50" />
-      <div className="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-[0.06]" style={{ backgroundImage: "url('/graphics/worldmap.jpg')" }} />
-      <div className="relative z-10 max-w-6xl mx-auto px-6">
-        <div className="fade-in mb-16">
-          <div className="accent-rule mb-6" />
-          <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{t('eyebrow')}</h2>
-          <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-[#1D2B45]">
-            {t('subtitle')}
-          </p>
+    <section id="offices" className="section-wrap bg-cream pt-20">
+      <div className="section-inner">
+        <div className="fade-in mb-12">
+          <div className="section-label">{t('eyebrow')}</div>
+          <p className="max-w-[680px] font-mercury text-[16px] leading-[1.75] text-navy">{t('subtitle')}</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-8 md:gap-12">
-          {offices.map((office, i) => (
-            <div key={office.slug} className="fade-in" style={{ transitionDelay: `${i * 80}ms` }}>
-              <h3 className="font-sans text-sm tracking-widest uppercase text-[#1D2B45] mb-3">{office.city}</h3>
-              <p className="text-sm text-[#1D2B45]/70 leading-relaxed whitespace-pre-line mb-2">{office.address}</p>
-              <a href={`tel:${office.phone.replace(/\./g, '')}`} className="link-underline inline-block font-sans text-xs tracking-wider text-[#3D9B82] hover:text-[#1D2B45] transition-colors duration-300">
+        <div className="grid grid-cols-1 gap-[30px] sm:grid-cols-2 lg:grid-cols-3">
+          {offices.map((office) => (
+            <div key={office.slug} className="fade-in">
+              <h3 className="mb-3 font-gotham text-[13px] font-bold uppercase tracking-[2px] text-navy">{office.city}</h3>
+              <p className="mb-2 whitespace-pre-line font-mercury text-[13px] leading-[1.6] text-navy/75">{office.address}</p>
+              <a
+                href={`tel:${office.phone.replace(/\./g, '')}`}
+                className="font-mercury text-[13px] text-green transition-colors duration-300 hover:text-navy"
+              >
                 {office.phone}
               </a>
             </div>

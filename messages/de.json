@@ -7,13 +7,16 @@
     "news": "Neuigkeiten",
     "readingRoom": "Lesezimmer",
     "offices": "Standorte",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "home": "Startseite",
+    "clientLogin": "Kundenlogin"
   },
   "hero": {
     "scroll": "Scrollen"
   },
   "ourStory": {
-    "tagline": "Ein Full-Service-Unternehmen für Handelsimmobilien seit {year}."
+    "tagline": "Ein Full-Service-Unternehmen für Handelsimmobilien seit {year}.",
+    "learnMore": "Mehr über unseren Ansatz"
   },
   "services": {
     "subtitle": "Versierte Placemaker, die überzeugende Merchandising-Konzepte mit einer einzigartigen und marktgerechten Vermietungsvision entwickeln.",
@@ -49,7 +52,13 @@
       "featuredHeading": "Ausgewähltes Objekt",
       "rosterHeading": "Ausgewählte Kunden",
       "rosterPending": "Unsere aktualisierte Kundenliste 2026 wird finalisiert — auf Anfrage verfügbar.",
-      "intelCta": "Data Science entdecken"
+      "intelCta": "Data Science entdecken",
+      "approachLabel": "Unser Ansatz",
+      "approachHeading": "Wie wir arbeiten",
+      "selectedWorkLabel": "Ausgewählte Arbeiten",
+      "selectedWorkHeading": "Ausgewählte Projekte",
+      "ctaText": "Jeder großartige Ort beginnt mit einem Gespräch.",
+      "ctaButton": "Kontakt aufnehmen"
     },
     "tenants": {
       "eyebrow": "Mietervertretung",
@@ -98,7 +107,8 @@
   },
   "projects": {
     "eyebrow": "Ausgewählte Projekte",
-    "subtitle": "Wir arbeiten mit ausgewählten Eigentümern und Entwicklern zusammen, um einzigartige und unverwechselbare Handelsdestinationen zu schaffen."
+    "subtitle": "Wir arbeiten mit ausgewählten Eigentümern und Entwicklern zusammen, um einzigartige und unverwechselbare Handelsdestinationen zu schaffen.",
+    "viewAll": "Alle Projekte ansehen"
   },
   "testimonials": {
     "eyebrow": "Referenzen"
@@ -139,6 +149,7 @@
   },
   "footer": {
     "tagline": "Ein Full-Service-Beratungsunternehmen für Handelsimmobilien. Strategische Vision, datenbasierte Erkenntnisse und globale Reichweite seit 1997.",
+    "brandLine": "Wo Kunst und Wissenschaft in Handelsimmobilien zusammenkommen.",
     "navigate": "Navigation",
     "contact": "Kontakt",
     "careers": "Karriere",

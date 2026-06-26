@@ -7,13 +7,16 @@
     "news": "Nieuws",
     "readingRoom": "Leeskamer",
     "offices": "Kantoren",
-    "contact": "Contact"
+    "contact": "Contact",
+    "home": "Home",
+    "clientLogin": "Klantenlogin"
   },
   "hero": {
     "scroll": "Scroll"
   },
   "ourStory": {
-    "tagline": "Een full-service retailvastgoedbureau sinds {year}."
+    "tagline": "Een full-service retailvastgoedbureau sinds {year}.",
+    "learnMore": "Lees meer over onze aanpak"
   },
   "services": {
     "subtitle": "Bedreven placemakers die overtuigende merchandisingplannen samenstellen met een unieke en marktrelevante verhuurvisie.",
@@ -49,7 +52,13 @@
       "featuredHeading": "Uitgelicht object",
       "rosterHeading": "Geselecteerde klanten",
       "rosterPending": "Onze geactualiseerde klantenlijst voor 2026 wordt afgerond — op aanvraag beschikbaar.",
-      "intelCta": "Ontdek Data Science"
+      "intelCta": "Ontdek Data Science",
+      "approachLabel": "Onze aanpak",
+      "approachHeading": "Hoe wij werken",
+      "selectedWorkLabel": "Geselecteerd werk",
+      "selectedWorkHeading": "Uitgelicht werk",
+      "ctaText": "Elke geweldige ruimte begint met een gesprek.",
+      "ctaButton": "Neem contact op"
     },
     "tenants": {
       "eyebrow": "Huurdersvertegenwoordiging",
@@ -98,7 +107,8 @@
   },
   "projects": {
     "eyebrow": "Geselecteerde projecten",
-    "subtitle": "We werken samen met geselecteerde eigenaren en ontwikkelaars om unieke en onderscheidende retailbestemmingen te creëren."
+    "subtitle": "We werken samen met geselecteerde eigenaren en ontwikkelaars om unieke en onderscheidende retailbestemmingen te creëren.",
+    "viewAll": "Bekijk alle projecten"
   },
   "testimonials": {
     "eyebrow": "Referenties"
@@ -139,6 +149,7 @@
   },
   "footer": {
     "tagline": "Een full-service adviesbureau voor retailvastgoed. Strategische visie, datagedreven inzicht en wereldwijd bereik sinds 1997.",
+    "brandLine": "Waar kunst en wetenschap samenkomen in retailvastgoed.",
     "navigate": "Navigeren",
     "contact": "Contact",
     "careers": "Carrière",

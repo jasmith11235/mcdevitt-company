@@ -79,8 +79,8 @@ export default config({
       path: 'content/pages/hero',
       format: { data: 'json' },
       schema: {
-        tagline: fields.text({ label: 'Tagline', description: 'Main hero tagline' }),
-        subtitle: fields.text({ label: 'Subtitle', multiline: true }),
+        tagline: fields.text({ label: 'Headline', description: 'Main hero headline shown over the sketch-to-photo carousel, e.g. "The Art and Science of Place"' }),
+        subtitle: fields.text({ label: 'Subtitle', description: 'Optional. Shown italic under the headline. Leave empty for a clean single-line hero.', multiline: true }),
       },
     }),
     about: singleton({

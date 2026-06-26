@@ -11,7 +11,6 @@ import News from '@/components/News'
 import ReadingRoom from '@/components/ReadingRoom'
 import Offices from '@/components/Offices'
 import ClientPortal from '@/components/ClientPortal'
-import WoodblockDivider from '@/components/WoodblockDivider'
 import Footer from '@/components/Footer'
 import ScrollAnimator from '@/components/ScrollAnimator'
 
@@ -36,13 +35,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <main className="page-enter">
         <Hero tagline={hero?.tagline || ''} subtitle={hero?.subtitle || ''} />
         <OurStory {...(about || {})} />
-        <WoodblockDivider src="/graphics/woodblock-3.jpg" />
         <Services {...(services || {})} />
         <DataScience {...(dataScience || {})} />
-        <WoodblockDivider src="/graphics/woodblock-7.jpg" />
         <Projects projects={projects} />
         <Testimonials testimonials={testimonials} />
-        <WoodblockDivider src="/graphics/woodblock-4.jpg" />
         <News news={news} limit={3} />
         <ReadingRoom items={readingRoom} limit={3} />
         <Offices offices={offices} />

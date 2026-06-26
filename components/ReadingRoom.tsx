@@ -43,8 +43,8 @@ interface ReadingRoomProps {
 
 export default function ReadingRoom({ items, limit }: ReadingRoomProps) {
   return (
-    <section id="reading-room" className="py-24 md:py-32 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="reading-room" className={`section-wrap ${limit ? 'bg-cream pt-20' : 'bg-cream'}`}>
+      <div className="section-inner">
         <SectionHeader />
         {limit ? (
           <SimpleList items={items} limit={limit} />
@@ -61,10 +61,9 @@ export default function ReadingRoom({ items, limit }: ReadingRoomProps) {
 function SectionHeader() {
   const t = useTranslations('readingRoom')
   return (
-    <div className="fade-in mb-16">
-      <div className="accent-rule mb-6" />
-      <h2 className="font-sans text-xs tracking-[0.3em] uppercase text-[#3D9B82] mb-4">{t('eyebrow')}</h2>
-      <p className="text-2xl md:text-3xl font-sans font-light leading-tight tracking-tight text-[#1D2B45] max-w-2xl">
+    <div className="fade-in mb-12">
+      <div className="section-label">{t('eyebrow')}</div>
+      <p className="max-w-[680px] font-mercury text-[16px] leading-[1.75] text-navy">
         {t('subtitle')}
       </p>
     </div>

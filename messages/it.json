@@ -7,13 +7,16 @@
     "news": "Notizie",
     "readingRoom": "Sala di lettura",
     "offices": "Sedi",
-    "contact": "Contatti"
+    "contact": "Contatti",
+    "home": "Home",
+    "clientLogin": "Area Clienti"
   },
   "hero": {
     "scroll": "Scorri"
   },
   "ourStory": {
-    "tagline": "Una società immobiliare retail a servizio completo dal {year}."
+    "tagline": "Una società immobiliare retail a servizio completo dal {year}.",
+    "learnMore": "Scopri il nostro approccio"
   },
   "services": {
     "subtitle": "Placemaker esperti, capaci di curare piani di merchandising convincenti con una visione di locazione unica e in linea con il mercato.",
@@ -49,7 +52,13 @@
       "featuredHeading": "Asset in evidenza",
       "rosterHeading": "Clienti selezionati",
       "rosterPending": "Il nostro elenco clienti 2026 è in fase di finalizzazione — disponibile su richiesta.",
-      "intelCta": "Esplora la Data Science"
+      "intelCta": "Esplora la Data Science",
+      "approachLabel": "Il nostro approccio",
+      "approachHeading": "Come lavoriamo",
+      "selectedWorkLabel": "Lavori selezionati",
+      "selectedWorkHeading": "Lavori in evidenza",
+      "ctaText": "Ogni grande spazio nasce da una conversazione.",
+      "ctaButton": "Contattaci"
     },
     "tenants": {
       "eyebrow": "Rappresentanza dei conduttori",
@@ -98,7 +107,8 @@
   },
   "projects": {
     "eyebrow": "Progetti selezionati",
-    "subtitle": "Collaboriamo con proprietari e sviluppatori selezionati per creare destinazioni retail uniche e distintive."
+    "subtitle": "Collaboriamo con proprietari e sviluppatori selezionati per creare destinazioni retail uniche e distintive.",
+    "viewAll": "Vedi tutti i progetti"
   },
   "testimonials": {
     "eyebrow": "Testimonianze"
@@ -139,6 +149,7 @@
   },
   "footer": {
     "tagline": "Una società di consulenza immobiliare retail a servizio completo. Visione strategica, analisi basata sui dati e portata globale dal 1997.",
+    "brandLine": "Dove arte e scienza si incontrano nel real estate retail.",
     "navigate": "Naviga",
     "contact": "Contatti",
     "careers": "Lavora con noi",
