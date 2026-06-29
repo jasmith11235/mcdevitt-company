@@ -157,6 +157,32 @@
     "careersCta": "Word lid van ons team",
     "copyright": "© {year} The McDevitt Company. Alle rechten voorbehouden."
   },
+  "contact": {
+    "eyebrow": "Stuur een bericht",
+    "name": "Naam",
+    "namePlaceholder": "Uw volledige naam",
+    "email": "E-mail",
+    "emailPlaceholder": "u@bedrijf.com",
+    "company": "Bedrijf",
+    "companyPlaceholder": "Uw bedrijf (optioneel)",
+    "subject": "Onderwerp",
+    "subjectPlaceholder": "Selecteer een onderwerp",
+    "subjects": {
+      "general": "Algemene vraag",
+      "tenant": "Huurdersvertegenwoordiging",
+      "landlord": "Verhuurdersvertegenwoordiging",
+      "capital": "Capital Markets",
+      "development": "Ontwikkelingsadvies"
+    },
+    "message": "Bericht",
+    "messagePlaceholder": "Vertel ons over uw project of vraag",
+    "send": "Bericht verzenden",
+    "sending": "Verzenden…",
+    "sent": "Bedankt — we nemen binnenkort contact met u op.",
+    "error": "Er ging iets mis — mail ons rechtstreeks.",
+    "connectLabel": "Contact",
+    "connectBlurb": "Liever direct contact? Stuur ons een bericht en we nemen contact met u op."
+  },
   "languageSwitcher": {
     "label": "Taal",
     "select": "Taal selecteren"
