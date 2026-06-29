@@ -40,7 +40,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer id="contact" className="bg-navy px-10 py-[60px] text-white">
+    <footer id="footer" className="bg-navy px-6 py-[60px] text-white md:px-10">
       <div className="mx-auto max-w-content">
         <div className="mb-10 flex justify-center">
           <Logo color="white" className="h-16 w-16" />

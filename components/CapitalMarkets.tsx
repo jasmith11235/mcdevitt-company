@@ -121,7 +121,7 @@ function Hero({
         {backLabel}
       </TransitionLink>
 
-      <div className="relative z-10 max-w-[800px] px-10 text-center">
+      <div className="relative z-10 max-w-[800px] px-6 text-center md:px-10">
         <div className="mb-4 font-gotham text-[10px] font-bold uppercase tracking-[3px] text-white/70">{eyebrow}</div>
         <h1 className="font-gotham text-[clamp(36px,5vw,52px)] font-bold uppercase leading-[1.1] tracking-[3px] text-white">
           {content.heroLine}
@@ -150,7 +150,7 @@ function Accreditation({
 }) {
   return (
     <section className="border-y border-muted bg-cream py-16">
-      <div className="fade-in mx-auto flex max-w-content flex-col items-center gap-5 px-10 text-center">
+      <div className="fade-in mx-auto flex max-w-content flex-col items-center gap-5 px-6 text-center md:px-10">
         <RicsMark logo={logo} regulatedLabel={regulatedLabel} variant="dark" alt={alt} />
         <p className="font-gotham text-[10px] uppercase tracking-[0.3em] text-navy/60">{caption}</p>
       </div>
@@ -201,7 +201,7 @@ function Segments({
   other: string[]
 }) {
   return (
-    <section className="section-wrap bg-white pt-20">
+    <section className="section-wrap bg-white pt-12 md:pt-20">
       <div className="section-inner max-w-[960px]">
         <h2 className="section-headline fade-in">{heading}</h2>
         <div className="fade-in mt-10 grid gap-x-12 gap-y-10 md:grid-cols-2">
@@ -236,7 +236,7 @@ function Segments({
 
 function Expertise({ heading, items }: { heading: string; items: Expertise[] }) {
   return (
-    <section className="section-wrap bg-cream pt-20">
+    <section className="section-wrap bg-cream pt-12 md:pt-20">
       <div className="section-inner">
         <h2 className="section-headline fade-in">{heading}</h2>
         <div className="mt-12 grid gap-[30px] md:grid-cols-2">
@@ -267,7 +267,7 @@ interface CaseLabels {
 
 function TrackRecord({ heading, cases, labels }: { heading: string; cases: CaseStudy[]; labels: CaseLabels }) {
   return (
-    <section className="section-wrap bg-white pt-20">
+    <section className="section-wrap bg-white pt-12 md:pt-20">
       <div className="section-inner">
         <h2 className="section-headline fade-in">{heading}</h2>
         <div className="mt-12 space-y-12">
@@ -303,7 +303,7 @@ function Fact({ label, value }: { label: string; value?: string }) {
 
 function Team({ heading, members }: { heading: string; members: TeamMember[] }) {
   return (
-    <section className="section-wrap bg-cream pt-20">
+    <section className="section-wrap bg-cream pt-12 md:pt-20">
       <div className="section-inner">
         <h2 className="section-headline fade-in">{heading}</h2>
         <div className="mt-12 grid gap-[30px] md:grid-cols-2 lg:grid-cols-3">
@@ -327,15 +327,15 @@ function Team({ heading, members }: { heading: string; members: TeamMember[] }) 
 
 function Cta({ text, button }: { text: string; button: string }) {
   return (
-    <section className="fade-in border-t border-muted bg-cream px-10 py-[100px] text-center">
+    <section className="fade-in border-t border-muted bg-cream px-6 py-[72px] text-center md:px-10 md:py-[100px]">
       <div className="mx-auto max-w-[600px]">
         <p className="mb-8 font-mercury text-[24px] italic leading-[1.4] text-navy md:text-[28px]">{text}</p>
-        <a
-          href="#contact"
+        <TransitionLink
+          href="/#contact"
           className="inline-block rounded-[3px] bg-green px-9 py-3.5 font-gotham text-[10px] font-bold uppercase tracking-[2.5px] text-white transition-colors duration-300 hover:bg-navy"
         >
           {button}
-        </a>
+        </TransitionLink>
       </div>
     </section>
   )

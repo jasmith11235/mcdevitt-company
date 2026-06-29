@@ -120,7 +120,7 @@ function Hero({
         {backLabel}
       </TransitionLink>
 
-      <div className="relative z-10 max-w-[800px] px-10 text-center">
+      <div className="relative z-10 max-w-[800px] px-6 text-center md:px-10">
         <div className="mb-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
           <span className="font-gotham text-[10px] font-bold uppercase tracking-[3px] text-white/70">{eyebrow}</span>
           {walledNote && (
@@ -161,7 +161,7 @@ function Overview({ eyebrow, lead, photo }: { eyebrow: string; lead: string; pho
 function Approach({ label, heading, steps }: { label: string; heading: string; steps: Section[] }) {
   const cols = steps.length >= 4 ? 'lg:grid-cols-4' : steps.length === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'
   return (
-    <section className="section-wrap bg-white pt-20">
+    <section className="section-wrap bg-white pt-12 md:pt-20">
       <div className="section-inner">
         <div className="section-label fade-in">{label}</div>
         <h2 className="section-headline fade-in">{heading}</h2>
@@ -188,7 +188,7 @@ function Approach({ label, heading, steps }: { label: string; heading: string; s
 
 function Featured({ label, heading, cases }: { label: string; heading: string; cases: PracticeCase[] }) {
   return (
-    <section className="section-wrap bg-cream pt-20">
+    <section className="section-wrap bg-cream pt-12 md:pt-20">
       <div className="section-inner">
         <div className="section-label fade-in">{label}</div>
         <h2 className="section-headline fade-in">{heading}</h2>
@@ -228,7 +228,7 @@ function Featured({ label, heading, cases }: { label: string; heading: string; c
 
 function Quote({ quote }: { quote: PracticeQuote }) {
   return (
-    <section className="section-wrap bg-white pt-20">
+    <section className="section-wrap bg-white pt-12 md:pt-20">
       <div className="section-inner max-w-[760px]">
         <blockquote className="fade-in border-l-[3px] border-green pl-8">
           <p className="font-mercury text-[24px] italic leading-[1.4] text-navy md:text-[28px]">
@@ -246,7 +246,7 @@ function Quote({ quote }: { quote: PracticeQuote }) {
 
 function Roster({ heading, names }: { heading: string; names: string[] }) {
   return (
-    <section className="section-wrap bg-cream pt-20">
+    <section className="section-wrap bg-cream pt-12 md:pt-20">
       <div className="section-inner">
         <div className="section-label fade-in">{heading}</div>
         <div className="divider" />
@@ -258,15 +258,15 @@ function Roster({ heading, names }: { heading: string; names: string[] }) {
 
 function Cta({ text, button }: { text: string; button: string }) {
   return (
-    <section className="fade-in border-t border-muted bg-cream px-10 py-[100px] text-center">
+    <section className="fade-in border-t border-muted bg-cream px-6 py-[72px] text-center md:px-10 md:py-[100px]">
       <div className="mx-auto max-w-[600px]">
         <p className="mb-8 font-mercury text-[24px] italic leading-[1.4] text-navy md:text-[28px]">{text}</p>
-        <a
-          href="#contact"
+        <TransitionLink
+          href="/#contact"
           className="inline-block rounded-[3px] bg-green px-9 py-3.5 font-gotham text-[10px] font-bold uppercase tracking-[2.5px] text-white transition-colors duration-300 hover:bg-navy"
         >
           {button}
-        </a>
+        </TransitionLink>
       </div>
     </section>
   )
