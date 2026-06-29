@@ -16,7 +16,7 @@ export default function DataScience({ heading, intro }: DataScienceProps) {
   }))
 
   return (
-    <section id="data-science" className="section-wrap bg-cream pt-20">
+    <section id="data-science" className="section-wrap bg-cream pt-12 md:pt-20">
       <div className="section-inner">
         <div className="section-label fade-in">{heading}</div>
         <p className="fade-in mb-10 max-w-[680px] font-mercury text-[16px] leading-[1.75] text-navy">{intro}</p>

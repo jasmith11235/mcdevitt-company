@@ -79,7 +79,7 @@ export default function Hero({ tagline, subtitle }: HeroProps) {
 
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/45" />
 
-      <div className="absolute inset-0 z-10 flex items-center justify-center px-10 text-center">
+      <div className="absolute inset-0 z-10 flex items-center justify-center px-6 text-center md:px-10">
         <h1
           className="font-gotham text-[clamp(32px,5vw,56px)] font-bold uppercase leading-[1.1] tracking-[3px] text-white"
           style={{ textShadow: '0 2px 24px rgba(0,0,0,0.45)' }}
@@ -90,7 +90,7 @@ export default function Hero({ tagline, subtitle }: HeroProps) {
 
       {subtitle ? (
         <p
-          className="absolute inset-x-0 bottom-[18%] z-10 px-10 text-center font-mercury text-base italic text-white/90"
+          className="absolute inset-x-0 bottom-[18%] z-10 px-6 text-center font-mercury text-base italic text-white/90 md:px-10"
           style={{ textShadow: '0 2px 16px rgba(0,0,0,0.45)' }}
         >
           {subtitle}

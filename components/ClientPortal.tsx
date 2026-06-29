@@ -9,7 +9,7 @@ export default function ClientPortal({ heading, description, buttonText, buttonU
   return (
     <section
       id="client-portal"
-      className="fade-in border-t border-muted bg-cream px-10 py-[100px] text-center"
+      className="fade-in border-t border-muted bg-cream px-6 py-[72px] text-center md:px-10 md:py-[100px]"
     >
       <div className="mx-auto max-w-[600px]">
         <div className="section-label">{heading}</div>

@@ -17,7 +17,7 @@ export default function News({ news, limit }: { news: NewsItem[]; limit?: number
   const items = limit ? news.slice(0, limit) : news
 
   return (
-    <section id="news" className="section-wrap bg-cream pt-20">
+    <section id="news" className="section-wrap bg-cream pt-12 md:pt-20">
       <div className="section-inner">
         <div className="section-label fade-in">{t('eyebrow')}</div>
         <div className="grid gap-[30px] md:grid-cols-2 lg:grid-cols-3">
