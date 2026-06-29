@@ -10,7 +10,7 @@ interface Office {
 export default function Offices({ offices }: { offices: Office[] }) {
   const t = useTranslations('offices')
   return (
-    <section id="offices" className="section-wrap bg-cream pt-20">
+    <section id="offices" className="section-wrap bg-cream pt-12 md:pt-20">
       <div className="section-inner">
         <div className="fade-in mb-12">
           <div className="section-label">{t('eyebrow')}</div>

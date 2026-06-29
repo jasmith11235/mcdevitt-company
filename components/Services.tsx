@@ -24,7 +24,7 @@ export default function Services(props: ServicesProps) {
   ]
 
   return (
-    <section id="services" className="section-wrap bg-cream pt-20">
+    <section id="services" className="section-wrap bg-cream pt-12 md:pt-20">
       <div className="section-inner">
         <div className="section-label fade-in">{props.heading}</div>
         <div className="grid gap-[30px] sm:grid-cols-2 lg:grid-cols-4">

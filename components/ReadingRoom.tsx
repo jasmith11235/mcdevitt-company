@@ -43,7 +43,7 @@ interface ReadingRoomProps {
 
 export default function ReadingRoom({ items, limit }: ReadingRoomProps) {
   return (
-    <section id="reading-room" className={`section-wrap ${limit ? 'bg-cream pt-20' : 'bg-cream'}`}>
+    <section id="reading-room" className={`section-wrap ${limit ? 'bg-cream pt-12 md:pt-20' : 'bg-cream'}`}>
       <div className="section-inner">
         <SectionHeader />
         {limit ? (

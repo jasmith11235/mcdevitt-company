@@ -157,6 +157,32 @@
     "careersCta": "Join our team",
     "copyright": "© {year} The McDevitt Company. All rights reserved."
   },
+  "contact": {
+    "eyebrow": "Send a Message",
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email",
+    "emailPlaceholder": "you@company.com",
+    "company": "Company",
+    "companyPlaceholder": "Your company (optional)",
+    "subject": "Subject",
+    "subjectPlaceholder": "Select a topic",
+    "subjects": {
+      "general": "General Inquiry",
+      "tenant": "Tenant Representation",
+      "landlord": "Landlord Representation",
+      "capital": "Capital Markets",
+      "development": "Development Advisory"
+    },
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your project or inquiry",
+    "send": "Send Message",
+    "sending": "Sending…",
+    "sent": "Thank you — we'll be in touch shortly.",
+    "error": "Something went wrong — please email us directly.",
+    "connectLabel": "Connect",
+    "connectBlurb": "Prefer to reach us directly? Drop us a line and we'll get back to you."
+  },
   "languageSwitcher": {
     "label": "Language",
     "select": "Select language"

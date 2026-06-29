@@ -1,5 +1,5 @@
 import { setRequestLocale } from 'next-intl/server'
-import { getHero, getAbout, getServices, getDataScience, getClientPortal, getTestimonials, getProjects, getOffices, getNews, getReadingRoom } from '@/lib/content'
+import { getHero, getAbout, getServices, getDataScience, getClientPortal, getContact, getTestimonials, getProjects, getOffices, getNews, getReadingRoom } from '@/lib/content'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import OurStory from '@/components/OurStory'
@@ -11,6 +11,7 @@ import News from '@/components/News'
 import ReadingRoom from '@/components/ReadingRoom'
 import Offices from '@/components/Offices'
 import ClientPortal from '@/components/ClientPortal'
+import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
 import ScrollAnimator from '@/components/ScrollAnimator'
 
@@ -23,6 +24,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const services = getServices(locale)
   const dataScience = getDataScience(locale)
   const clientPortal = getClientPortal(locale)
+  const contact = getContact(locale)
   const testimonials = getTestimonials(locale)
   const projects = getProjects(locale)
   const offices = getOffices(locale)
@@ -43,6 +45,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <ReadingRoom items={readingRoom} limit={3} />
         <Offices offices={offices} />
         <ClientPortal {...(clientPortal || { heading: '', description: '', buttonText: '', buttonUrl: '' })} />
+        <ContactForm
+          email={contact?.email || 'info@mcdevitt.com'}
+          linkedin={contact?.linkedin}
+          instagram={contact?.instagram}
+        />
         <Footer />
       </main>
       <ScrollAnimator />

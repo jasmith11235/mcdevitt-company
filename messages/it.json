@@ -157,6 +157,32 @@
     "careersCta": "Unisciti al nostro team",
     "copyright": "© {year} The McDevitt Company. Tutti i diritti riservati."
   },
+  "contact": {
+    "eyebrow": "Invia un messaggio",
+    "name": "Nome",
+    "namePlaceholder": "Il tuo nome completo",
+    "email": "Email",
+    "emailPlaceholder": "tu@azienda.com",
+    "company": "Azienda",
+    "companyPlaceholder": "La tua azienda (facoltativo)",
+    "subject": "Oggetto",
+    "subjectPlaceholder": "Seleziona un argomento",
+    "subjects": {
+      "general": "Richiesta generale",
+      "tenant": "Rappresentanza tenant",
+      "landlord": "Rappresentanza landlord",
+      "capital": "Capital Markets",
+      "development": "Consulenza allo sviluppo"
+    },
+    "message": "Messaggio",
+    "messagePlaceholder": "Parlaci del tuo progetto o della tua richiesta",
+    "send": "Invia messaggio",
+    "sending": "Invio in corso…",
+    "sent": "Grazie — ti ricontatteremo a breve.",
+    "error": "Qualcosa è andato storto — scrivici direttamente.",
+    "connectLabel": "Contatti",
+    "connectBlurb": "Preferisci contattarci direttamente? Scrivici e ti risponderemo."
+  },
   "languageSwitcher": {
     "label": "Lingua",
     "select": "Seleziona lingua"

@@ -96,6 +96,16 @@ export default config({
         capabilities: fields.text({ label: 'Capabilities Summary', multiline: true }),
       },
     }),
+    contact: singleton({
+      label: 'Contact Section',
+      path: 'content/pages/contact',
+      format: { data: 'json' },
+      schema: {
+        email: fields.text({ label: 'Contact Email', description: 'Where the contact form opens a pre-filled message to.' }),
+        linkedin: fields.text({ label: 'LinkedIn URL', description: 'Optional. Leave empty to hide.' }),
+        instagram: fields.text({ label: 'Instagram URL', description: 'Optional. Leave empty to hide.' }),
+      },
+    }),
     services: singleton({
       label: 'Services Section',
       path: 'content/pages/services',
