@@ -155,7 +155,17 @@
     "careers": "Lavora con noi",
     "careersBlurb": "Vuoi lavorare con noi? Siamo sempre alla ricerca di persone eccezionali.",
     "careersCta": "Unisciti al nostro team",
-    "copyright": "© {year} The McDevitt Company. Tutti i diritti riservati."
+    "copyright": "© {year} The McDevitt Company. Tutti i diritti riservati.",
+    "disclosures": "Informativa sui servizi di intermediazione"
+  },
+  "disclosures": {
+    "eyebrow": "Conformità",
+    "heading": "Informativa sui servizi di intermediazione",
+    "intro": "The McDevitt Company è impegnata nella trasparenza. Di seguito sono riportate le informative sui servizi di intermediazione richieste dagli stati in cui manteniamo uffici.",
+    "viewPdf": "Visualizza PDF",
+    "legalNote": "The W. McDevitt Company, Inc. (d/b/a The McDevitt Company). Queste informative sono fornite in conformità con la legge statale applicabile e aggiornate quando i requisiti cambiano.",
+    "texasNotice": "Informazioni della Texas Real Estate Commission sui servizi di intermediazione:",
+    "texasLink": "Modulo TREC IABS"
   },
   "contact": {
     "eyebrow": "Invia un messaggio",
@@ -206,6 +216,10 @@
     "readingRoom": {
       "title": "Sala di lettura | The McDevitt Company",
       "description": "Prospettive selezionate sulle attività che plasmano l'ambiente costruito."
+    },
+    "disclosures": {
+      "title": "Informativa sui servizi di intermediazione | The McDevitt Company",
+      "description": "Informative obbligatorie sui servizi di intermediazione di The McDevitt Company."
     }
   }
 }

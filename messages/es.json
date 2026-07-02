@@ -155,7 +155,17 @@
     "careers": "Empleo",
     "careersBlurb": "¿Quieres trabajar con nosotros? Siempre buscamos a personas excepcionales.",
     "careersCta": "Únete a nuestro equipo",
-    "copyright": "© {year} The McDevitt Company. Todos los derechos reservados."
+    "copyright": "© {year} The McDevitt Company. Todos los derechos reservados.",
+    "disclosures": "Divulgaciones sobre servicios de corretaje"
+  },
+  "disclosures": {
+    "eyebrow": "Cumplimiento",
+    "heading": "Divulgaciones sobre servicios de corretaje",
+    "intro": "The McDevitt Company está comprometida con la transparencia. A continuación se encuentran las divulgaciones de servicios de corretaje exigidas por los estados en los que mantenemos oficinas.",
+    "viewPdf": "Ver PDF",
+    "legalNote": "The W. McDevitt Company, Inc. (d/b/a The McDevitt Company). Estas divulgaciones se proporcionan de conformidad con la legislación estatal aplicable y se actualizan cuando cambian los requisitos.",
+    "texasNotice": "Información de la Comisión de Bienes Raíces de Texas sobre servicios de corretaje:",
+    "texasLink": "Formulario TREC IABS"
   },
   "contact": {
     "eyebrow": "Enviar un mensaje",
@@ -206,6 +216,10 @@
     "readingRoom": {
       "title": "Sala de lectura | The McDevitt Company",
       "description": "Perspectivas seleccionadas sobre los negocios que dan forma al entorno construido."
+    },
+    "disclosures": {
+      "title": "Divulgaciones sobre servicios de corretaje | The McDevitt Company",
+      "description": "Divulgaciones estatales obligatorias sobre servicios de corretaje de The McDevitt Company."
     }
   }
 }

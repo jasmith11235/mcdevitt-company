@@ -12,6 +12,7 @@ import ReadingRoom from '@/components/ReadingRoom'
 import Offices from '@/components/Offices'
 import ClientPortal from '@/components/ClientPortal'
 import ContactForm from '@/components/ContactForm'
+import TexasIABSNotice from '@/components/TexasIABSNotice'
 import Footer from '@/components/Footer'
 import ScrollAnimator from '@/components/ScrollAnimator'
 
@@ -50,6 +51,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           linkedin={contact?.linkedin}
           instagram={contact?.instagram}
         />
+        <TexasIABSNotice />
         <Footer />
       </main>
       <ScrollAnimator />

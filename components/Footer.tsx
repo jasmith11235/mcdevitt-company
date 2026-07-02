@@ -16,6 +16,7 @@ const navigateLinks = [
   { labelKey: 'nav.readingRoom', href: '/reading-room' },
   { labelKey: 'nav.contact', href: '/#contact' },
   { labelKey: 'nav.clientLogin', href: '/#client-portal' },
+  { labelKey: 'footer.disclosures', href: '/disclosures' },
 ] as const
 
 const offices = [

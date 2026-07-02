@@ -9,8 +9,6 @@ export default async function SignInPage({ searchParams }: Props) {
 
   return (
     <div className="min-h-screen bg-fathom flex flex-col items-center justify-center p-6">
-
-      {/* Logo */}
       <div className="mb-10 flex flex-col items-center">
         <img
           src="/logos/McDevittLogo_White.svg"
@@ -20,7 +18,6 @@ export default async function SignInPage({ searchParams }: Props) {
         <div className="accent-rule" />
       </div>
 
-      {/* Card */}
       <div className="w-full max-w-[360px]">
         <div className="text-center mb-7">
           <h1 className="font-sans text-white text-xl font-light tracking-[0.12em] uppercase">

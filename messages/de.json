@@ -155,7 +155,17 @@
     "careers": "Karriere",
     "careersBlurb": "Möchten Sie mit uns arbeiten? Wir suchen stets nach außergewöhnlichen Menschen.",
     "careersCta": "Werden Sie Teil unseres Teams",
-    "copyright": "© {year} The McDevitt Company. Alle Rechte vorbehalten."
+    "copyright": "© {year} The McDevitt Company. Alle Rechte vorbehalten.",
+    "disclosures": "Offenlegungen zu Maklerdienstleistungen"
+  },
+  "disclosures": {
+    "eyebrow": "Compliance",
+    "heading": "Offenlegungen zu Maklerdienstleistungen",
+    "intro": "The McDevitt Company verpflichtet sich zu Transparenz. Nachfolgend finden Sie die in den Bundesstaaten, in denen wir Büros unterhalten, gesetzlich vorgeschriebenen Offenlegungen zu Maklerdienstleistungen.",
+    "viewPdf": "PDF ansehen",
+    "legalNote": "The W. McDevitt Company, Inc. (d/b/a The McDevitt Company). Diese Offenlegungen werden gemäß den geltenden Landesgesetzen bereitgestellt und bei Änderungen der Anforderungen aktualisiert.",
+    "texasNotice": "Informationen der Texas Real Estate Commission zu Maklerdienstleistungen:",
+    "texasLink": "TREC IABS-Formular"
   },
   "contact": {
     "eyebrow": "Nachricht senden",
@@ -206,6 +216,10 @@
     "readingRoom": {
       "title": "Lesezimmer | The McDevitt Company",
       "description": "Kuratierte Perspektiven auf die Unternehmen, die die gebaute Umwelt prägen."
+    },
+    "disclosures": {
+      "title": "Offenlegungen zu Maklerdienstleistungen | The McDevitt Company",
+      "description": "Gesetzlich vorgeschriebene Offenlegungen zu Maklerdienstleistungen der McDevitt Company."
     }
   }
 }

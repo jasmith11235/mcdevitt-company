@@ -12,6 +12,7 @@ const PAGES = [
   { path: '/practice/development', priority: 0.7 },
   { path: '/news', priority: 0.8 },
   { path: '/reading-room', priority: 0.8 },
+  { path: '/disclosures', priority: 0.5 },
 ] as const
 
 function urlFor(locale: string, path: string) {
