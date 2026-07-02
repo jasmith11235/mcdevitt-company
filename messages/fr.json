@@ -155,7 +155,17 @@
     "careers": "Carrières",
     "careersBlurb": "Envie de travailler avec nous ? Nous sommes toujours à la recherche de personnes exceptionnelles.",
     "careersCta": "Rejoindre notre équipe",
-    "copyright": "© {year} The McDevitt Company. Tous droits réservés."
+    "copyright": "© {year} The McDevitt Company. Tous droits réservés.",
+    "disclosures": "Divulgations sur les services de courtage"
+  },
+  "disclosures": {
+    "eyebrow": "Conformité",
+    "heading": "Divulgations sur les services de courtage",
+    "intro": "The McDevitt Company s'engage en faveur de la transparence. Vous trouverez ci-dessous les divulgations relatives aux services de courtage exigées par les États dans lesquels nous avons des bureaux.",
+    "viewPdf": "Voir le PDF",
+    "legalNote": "The W. McDevitt Company, Inc. (d/b/a The McDevitt Company). Ces divulgations sont fournies conformément à la législation applicable et mises à jour lorsque les exigences évoluent.",
+    "texasNotice": "Informations de la Texas Real Estate Commission sur les services de courtage :",
+    "texasLink": "Formulaire TREC IABS"
   },
   "contact": {
     "eyebrow": "Envoyer un message",
@@ -206,6 +216,10 @@
     "readingRoom": {
       "title": "Salon de lecture | The McDevitt Company",
       "description": "Perspectives sélectionnées sur les entreprises qui façonnent l'environnement bâti."
+    },
+    "disclosures": {
+      "title": "Divulgations sur les services de courtage | The McDevitt Company",
+      "description": "Divulgations obligatoires sur les services de courtage de The McDevitt Company."
     }
   }
 }

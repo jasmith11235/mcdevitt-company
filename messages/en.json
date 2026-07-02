@@ -155,7 +155,17 @@
     "careers": "Careers",
     "careersBlurb": "Want to work with us? We are always interested in exceptional people.",
     "careersCta": "Join our team",
-    "copyright": "© {year} The McDevitt Company. All rights reserved."
+    "copyright": "© {year} The McDevitt Company. All rights reserved.",
+    "disclosures": "Disclosures About Brokerage Services"
+  },
+  "disclosures": {
+    "eyebrow": "Compliance",
+    "heading": "Disclosures About Brokerage Services",
+    "intro": "The McDevitt Company is committed to transparency. Below are the brokerage services disclosures required by the states in which we maintain offices.",
+    "viewPdf": "View PDF",
+    "legalNote": "The W. McDevitt Company, Inc. (d/b/a The McDevitt Company). These disclosures are provided in compliance with applicable state law and are updated as requirements change.",
+    "texasNotice": "Texas Real Estate Commission Information About Brokerage Services:",
+    "texasLink": "TREC IABS Form"
   },
   "contact": {
     "eyebrow": "Send a Message",
@@ -206,6 +216,10 @@
     "readingRoom": {
       "title": "Reading Room | The McDevitt Company",
       "description": "Curated perspectives on the businesses that shape the built environment."
+    },
+    "disclosures": {
+      "title": "Disclosures About Brokerage Services | The McDevitt Company",
+      "description": "State-required brokerage services disclosures for The McDevitt Company."
     }
   }
 }

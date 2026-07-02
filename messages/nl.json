@@ -155,7 +155,17 @@
     "careers": "Carrière",
     "careersBlurb": "Wil je met ons werken? We zijn altijd op zoek naar uitzonderlijke mensen.",
     "careersCta": "Word lid van ons team",
-    "copyright": "© {year} The McDevitt Company. Alle rechten voorbehouden."
+    "copyright": "© {year} The McDevitt Company. Alle rechten voorbehouden.",
+    "disclosures": "Openbaarmakingen over makelaarsdiensten"
+  },
+  "disclosures": {
+    "eyebrow": "Compliance",
+    "heading": "Openbaarmakingen over makelaarsdiensten",
+    "intro": "The McDevitt Company streeft naar transparantie. Hieronder vindt u de openbaarmakingen over makelaarsdiensten die vereist zijn in de staten waarin wij kantoren hebben.",
+    "viewPdf": "PDF bekijken",
+    "legalNote": "The W. McDevitt Company, Inc. (d/b/a The McDevitt Company). Deze openbaarmakingen worden verstrekt in overeenstemming met de toepasselijke staatswetgeving en bijgewerkt wanneer de vereisten wijzigen.",
+    "texasNotice": "Informatie van de Texas Real Estate Commission over makelaarsdiensten:",
+    "texasLink": "TREC IABS-formulier"
   },
   "contact": {
     "eyebrow": "Stuur een bericht",
@@ -206,6 +216,10 @@
     "readingRoom": {
       "title": "Leeskamer | The McDevitt Company",
       "description": "Samengestelde perspectieven op de bedrijven die de gebouwde omgeving vormgeven."
+    },
+    "disclosures": {
+      "title": "Openbaarmakingen over makelaarsdiensten | The McDevitt Company",
+      "description": "Wettelijk verplichte openbaarmakingen over makelaarsdiensten van The McDevitt Company."
     }
   }
 }
