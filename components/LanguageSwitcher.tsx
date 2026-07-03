@@ -21,7 +21,16 @@ const GlobeIcon = ({ className = '' }: { className?: string }) => (
   </svg>
 )
 
-export default function LanguageSwitcher({ variant = 'light' }: { variant?: Variant }) {
+export default function LanguageSwitcher({
+  variant = 'light',
+  menuPlacement = 'bottom',
+  onLocaleChange,
+}: {
+  variant?: Variant
+  /** Use `top` in the mobile nav overlay so the list opens upward. */
+  menuPlacement?: 'bottom' | 'top'
+  onLocaleChange?: () => void
+}) {
   const t = useTranslations('languageSwitcher')
   const activeLocale = useLocale() as Locale
   const router = useRouter()
@@ -49,6 +58,7 @@ export default function LanguageSwitcher({ variant = 'light' }: { variant?: Vari
   const selectLocale = (locale: Locale) => {
     setOpen(false)
     if (locale === activeLocale) return
+    onLocaleChange?.()
     const qs = typeof window !== 'undefined' ? window.location.search : ''
     router.replace(`${pathname}${qs}`, { locale })
   }
@@ -57,6 +67,8 @@ export default function LanguageSwitcher({ variant = 'light' }: { variant?: Vari
   const triggerColor = isDark
     ? 'text-white/80 hover:text-white'
     : 'text-navy hover:text-green'
+
+  const dropUp = menuPlacement === 'top'
 
   return (
     <div ref={containerRef} className="relative">
@@ -85,10 +97,16 @@ export default function LanguageSwitcher({ variant = 'light' }: { variant?: Vari
       <div
         role="listbox"
         aria-label={t('label')}
-        className={`absolute right-0 mt-2 min-w-[150px] origin-top-right rounded-[3px] border border-muted bg-white py-1 shadow-elevated transition-all duration-200 ${
+        className={`absolute z-10 min-w-[180px] rounded-[3px] border border-muted bg-white py-1 shadow-elevated transition-all duration-200 ${
+          dropUp
+            ? 'bottom-full left-1/2 mb-2 -translate-x-1/2 origin-bottom'
+            : 'right-0 mt-2 origin-top-right'
+        } ${
           open
             ? 'pointer-events-auto opacity-100 translate-y-0 scale-100'
-            : 'pointer-events-none opacity-0 -translate-y-1 scale-95'
+            : dropUp
+              ? 'pointer-events-none opacity-0 translate-y-1 scale-95'
+              : 'pointer-events-none opacity-0 -translate-y-1 scale-95'
         }`}
       >
         {locales.map(locale => {

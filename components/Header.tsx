@@ -122,7 +122,12 @@ export default function Header() {
             {t(link.key)}
           </TransitionLink>
         ))}
-        <div className="mt-4 border-t border-muted pt-6">
+        <div className="mt-4 flex flex-col items-center gap-5 border-t border-muted pt-6">
+          <LanguageSwitcher
+            variant="light"
+            menuPlacement="top"
+            onLocaleChange={() => setMenuOpen(false)}
+          />
           <TransitionLink
             href="/#client-portal"
             onClick={() => setMenuOpen(false)}
