@@ -20,14 +20,34 @@ interface PracticeQuote {
   role: string
 }
 
+interface ClientLogo {
+  name: string
+  logo: string | null
+}
+
+interface FeaturedProject {
+  title: string
+  location: string
+  developer: string
+  summary: string
+  gla: string
+  scope: string
+  involvement: string
+  achievement: string
+  selectTenants: string
+  photo: string
+}
+
 export interface PracticeContent {
   heroLine: string
   heroCaption?: string
   heroPhoto?: string
   lead: string
   sections?: Section[]
+  featuredWork?: FeaturedProject[]
   caseStudies?: PracticeCase[]
   roster?: string[]
+  selectClients?: ClientLogo[]
   quote?: PracticeQuote
 }
 
@@ -71,7 +91,15 @@ export default function PracticePage({ slug, content }: { slug: string; content:
         />
       )}
 
-      {content.caseStudies && content.caseStudies.length > 0 && (
+      {content.featuredWork && content.featuredWork.length > 0 && (
+        <FeaturedWork
+          label={t('common.selectedWorkLabel')}
+          heading={t('common.selectedWorkHeading')}
+          projects={content.featuredWork}
+        />
+      )}
+
+      {!content.featuredWork && slug !== 'tenants' && content.caseStudies && content.caseStudies.length > 0 && (
         <Featured
           label={t('common.selectedWorkLabel')}
           heading={t('common.selectedWorkHeading')}
@@ -81,7 +109,11 @@ export default function PracticePage({ slug, content }: { slug: string; content:
 
       {content.quote && <Quote quote={content.quote} />}
 
-      {content.roster && content.roster.length > 0 && (
+      {content.selectClients && content.selectClients.length > 0 && (
+        <SelectClients heading={t('common.rosterHeading')} clients={content.selectClients} />
+      )}
+
+      {!content.selectClients && content.roster && content.roster.length > 0 && (
         <Roster heading={t('common.rosterHeading')} names={content.roster} />
       )}
 
@@ -251,6 +283,101 @@ function Roster({ heading, names }: { heading: string; names: string[] }) {
         <div className="section-label fade-in">{heading}</div>
         <div className="divider" />
         <p className="fade-in font-mercury text-[18px] leading-[1.8] text-navy/80">{names.join(' · ')}</p>
+      </div>
+    </section>
+  )
+}
+
+function FeaturedWork({ label, heading, projects }: { label: string; heading: string; projects: FeaturedProject[] }) {
+  return (
+    <section className="section-wrap bg-cream pt-12 md:pt-20">
+      <div className="section-inner">
+        <div className="section-label fade-in">{label}</div>
+        <h2 className="section-headline fade-in">{heading}</h2>
+        <div className="mt-12 flex flex-col gap-8">
+          {projects.map((p, i) => (
+            <div
+              key={i}
+              className="fade-in overflow-hidden rounded-[5px] bg-white shadow-card md:flex"
+            >
+              <div className="flex flex-col justify-between bg-[#F0E8DC] p-8 md:w-[42%]">
+                <div>
+                  <h3 className="mb-1 font-mercury text-[22px] italic leading-[1.2] text-[#C25B3B] md:text-[26px]">
+                    {p.title}
+                  </h3>
+                  <div className="mb-5 mt-4 space-y-2">
+                    {[
+                      { label: 'Location', value: p.location },
+                      { label: 'Developer / Owner', value: p.developer },
+                      { label: 'Retail GLA', value: p.gla },
+                      { label: 'TMC Scope', value: p.scope },
+                      { label: 'TMC Involvement', value: p.involvement },
+                    ].map(({ label: fl, value }) => (
+                      <div key={fl} className="flex gap-2">
+                        <span className="mt-0.5 text-[#C25B3B]" aria-hidden>•</span>
+                        <div>
+                          <span className="font-gotham text-[9px] font-bold uppercase tracking-[2px] text-[#C25B3B]">
+                            {fl}
+                          </span>
+                          <p className="font-mercury text-[13px] leading-[1.5] text-[#2C2C2C]">{value}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {p.achievement && (
+                  <div className="rounded-[3px] bg-white/60 px-5 py-4">
+                    <p className="font-mercury text-[13px] italic leading-[1.55] text-navy">
+                      &ldquo;{p.achievement}&rdquo;
+                    </p>
+                  </div>
+                )}
+
+                {p.selectTenants && (
+                  <p className="mt-4 font-gotham text-[10px] leading-[1.7] text-[#666]">
+                    {p.selectTenants}
+                  </p>
+                )}
+              </div>
+
+              <div className="relative min-h-[260px] md:w-[58%]">
+                <img
+                  src={p.photo}
+                  alt={p.title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function SelectClients({ heading, clients }: { heading: string; clients: ClientLogo[] }) {
+  return (
+    <section className="section-wrap bg-cream pt-12 md:pt-20">
+      <div className="section-inner">
+        <div className="section-label fade-in">{heading}</div>
+        <div className="divider" />
+        <div className="mt-8 grid grid-cols-3 gap-x-8 gap-y-10 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+          {clients.map((client) => (
+            <div key={client.name} className="fade-in flex items-center justify-center">
+              {client.logo ? (
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  title={client.name}
+                  className="h-8 w-auto max-w-[100px] object-contain opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+                />
+              ) : (
+                <span className="font-mercury text-[12px] text-navy/50">{client.name}</span>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

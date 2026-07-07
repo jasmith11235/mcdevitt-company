@@ -14,22 +14,81 @@
     },
     {
       "heading": "Reporting",
-      "body": "Dedicated Project Managers ensure maximum transparency. Using industry-leading software, they keep our clients' finger on the pulse with accurate, on-demand reporting and timely, consistent communication, customized to each project."
+      "body": "Dedicated project managers ensure maximum transparency. Using industry-leading software, they keep our clients' finger on the pulse with accurate, on-demand reporting and timely, consistent communication, customized to each project."
     }
   ],
-  "featured": {
-    "title": "The Shops at Sportsmen's Lodge",
-    "location": "Studio City, CA",
-    "assetType": "open-air lifestyle center",
-    "body": "An open-air retail and dining destination in the heart of Studio City, merchandised and leased to serve the surrounding community with a curated mix of lifestyle tenants.",
-    "photo": "/photos/sportsmens-lodge-grounds.jpg"
-  },
-  "caseStudies": [
+  "featuredWork": [
     {
-      "title": "URBN Portfolio",
-      "location": "P.C. Hooftstraat, Amsterdam",
-      "year": "",
-      "narrative": "Representation across the URBN portfolio on Amsterdam's premier luxury shopping street — placing the right tenants on one of Europe's most demanding high streets."
+      "title": "Sportsmen's Lodge",
+      "location": "Studio City, CA",
+      "developer": "Midwood Investment & Development",
+      "summary": "95,000 SF country-mart-inspired project transforming the iconic Sportsmen's Lodge events space into a health, wellness, beauty, dining, and shopping destination in L.A.'s San Fernando Valley.",
+      "gla": "95,000 SF",
+      "scope": "Project Leasing, Marketing Materials, Vision & Design Consulting, Merchandise Planning",
+      "involvement": "2017 – Current",
+      "achievement": "Fully leased with best-in-class tenant roster",
+      "selectTenants": "Equinox, Erewhon, ALO, Vuori, Reformation, The Great, Wittmore, COS Bar, Salt Optics, FP Movement, Madewell, Hoka, Kismet Rotisserie, Sugarfish, Roberta's Pizza, Hi-Ho Cheeseburger, Uovo, Madison Reed Color Bar, Myodetox, Tocaya, Civil Coffee, Winston Pies, Van Leeuwen",
+      "photo": "/LLRep-FeaturedWork-HighRes/sportsmens-lodge_hero_3000x2250.jpg"
+    },
+    {
+      "title": "2nd & PCH",
+      "location": "Long Beach, CA",
+      "developer": "CenterCal Properties",
+      "summary": "225,000 SF seaside shopping, dining, and lifestyle destination on an 11-acre parcel at the gateway between Los Angeles and Orange counties, anchored by Whole Foods.",
+      "gla": "225,000 SF",
+      "scope": "Project Leasing, Vision-Creation, Merchandise Planning, Site Plan & Design Consulting, Marketing & Branding",
+      "involvement": "2015 – 2019",
+      "achievement": "Fully leased 225,000 SF seaside destination",
+      "selectTenants": "Whole Foods, Bungalow Kitchen, Urban Outfitters, Nike Live, Anthropologie, Free People, Lululemon, Madewell, Sephora, Amazon, Warby Parker, Gorjana, Peloton, Athleta, Ola Mexican, Shake Shack, Urban Plates, Noble Bird, Hungry Angelina, Tocaya",
+      "photo": "/LLRep-FeaturedWork-HighRes/2nd-and-pch_hero-aerial_1700x1054.jpg"
+    },
+    {
+      "title": "Fourth Street Berkeley",
+      "location": "Berkeley, CA",
+      "developer": "Jamestown Properties",
+      "summary": "22,500 SF development (part of larger 60,000 SF Jamestown project) along Fourth and Hearst Streets creating a compelling merchandise mix of national, regional, and local merchants.",
+      "gla": "22,500 SF",
+      "scope": "Strategic Planning, Merchandise Planning, Market Analysis, Leasing, Marketing",
+      "involvement": "2015 – 2017",
+      "achievement": "Curated mix of national and local merchants in a walkable street district",
+      "selectTenants": "Lululemon, Warby Parker, Marine Layer, Cafe Reveille, Soul Cycle, Madewell, Marlowe, Saje, Stella Carakasi",
+      "photo": "/LLRep-FeaturedWork-HighRes/fourth-street-berkeley_hero_2500x1667.jpg"
+    },
+    {
+      "title": "District La Brea",
+      "location": "Los Angeles, CA",
+      "developer": "Madison Marquette",
+      "summary": "110,214 SF adaptive re-use of eleven 1930s-era buildings on La Brea Avenue, transformed into a creative retail and dining destination dubbed \"The Menswear Miracle Mile\" by GQ Magazine.",
+      "gla": "110,214 SF",
+      "scope": "Merchandising Strategy, Vision-Creation, Re-Branding, Market Analysis, Marketing, Leasing",
+      "involvement": "2013 – 2015",
+      "achievement": "Dubbed \"The Menswear Miracle Mile\" by GQ. Rents increased 60% in three years.",
+      "selectTenants": "Aether, Stone Island, Garrett Leight, Sugarfish, Bonobos, Undefeated, Gant, Steven Alan, Kelly Cole, Dr. Collector's, A+R, Odys & Penelope, Troika, Judith Bright",
+      "photo": "/LLRep-FeaturedWork-HighRes/district-la-brea_hero-collage_1920x1000.jpg"
+    },
+    {
+      "title": "Brookfield Place",
+      "location": "Lower Manhattan, NY",
+      "developer": "Brookfield Properties",
+      "summary": "$300M redevelopment and repositioning of the iconic World Financial Center, transforming outdated lower levels of four office towers into 375,000 SF of world-class shopping, dining, lifestyle amenities, and community activation.",
+      "gla": "375,000 SF",
+      "scope": "Strategic Planning, Market Analysis, Design, Vision-Creation, Re-Branding, Marketing, PR, Merchandise Planning, Leasing",
+      "involvement": "2011 – 2015",
+      "achievement": "$300M repositioning; world-class luxury and dining destination",
+      "selectTenants": "Saks 5th Avenue, Equinox, Hermes, Gucci, Bottega Veneta, Salvatore Ferragamo, Burberry, Omega, Tory Burch, Vince, Theory, DVF, Michael Kors, Paul Smith, Lululemon, Bonobos, J. Crew, Le District, L'Atelier by Joel Robuchon, Parm, Blue Ribbon Sushi, Tartinery",
+      "photo": "/LLRep-FeaturedWork-HighRes/brookfield-place_hero_4096x3200.jpg"
+    },
+    {
+      "title": "South Bay Social District",
+      "location": "Redondo Beach, CA",
+      "developer": "L Catterton Real Estate (LVMH/Arnault family)",
+      "summary": "$500M adaptive reuse transforming the existing South Bay Galleria into a social district and downtown for the region, pioneering a \"de-mall\" approach to create a naturally-ventilated, stunning, innovative space.",
+      "gla": "Large-scale mixed-use",
+      "scope": "Programming, Merchandise Planning",
+      "involvement": "2022 – Current",
+      "achievement": "$500M pioneering de-mall transformation backed by LVMH/Arnault family",
+      "selectTenants": "",
+      "photo": "/LLRep-FeaturedWork-HighRes/south-bay-social-district_hero-rendering_2500x1406.jpg"
     }
   ],
   "quote": {

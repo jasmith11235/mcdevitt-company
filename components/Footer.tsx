@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl'
+import { getContact } from '@/lib/content'
 import Logo from './Logo'
 import TransitionLink from './TransitionLink'
 
@@ -23,7 +24,7 @@ const offices = [
   'Philadelphia',
   'Greenwich',
   'Nashville',
-  'West Palm Beach',
+  'Palm Beach',
   'Chicago',
   'Los Angeles',
   'London',
@@ -39,6 +40,7 @@ const footerHeadingClass =
 export default function Footer() {
   const t = useTranslations()
   const year = new Date().getFullYear()
+  const contact = getContact() as { email?: string; linkedin?: string; instagram?: string } | null
 
   return (
     <footer id="footer" className="bg-navy px-6 py-[60px] text-white md:px-10">
@@ -77,6 +79,40 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-3 border-t border-white/10 pt-6 text-center">
+          {(contact?.linkedin || contact?.instagram) && (
+            <div className="flex items-center gap-5">
+              {contact.instagram && (
+                <a
+                  href={contact.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="text-white/50 transition-colors duration-300 hover:text-white"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+                  </svg>
+                </a>
+              )}
+              {contact.linkedin && (
+                <a
+                  href={contact.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="text-white/50 transition-colors duration-300 hover:text-white"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect width="4" height="12" x="2" y="9"/>
+                    <circle cx="4" cy="4" r="2"/>
+                  </svg>
+                </a>
+              )}
+            </div>
+          )}
           <p className="font-mercury text-[11px] text-white/40">
             {t('footer.copyright', { year })}
           </p>

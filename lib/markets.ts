@@ -16,7 +16,7 @@ export const MARKETS = [
   { value: 'los-angeles', label: 'Los Angeles' },
   { value: 'nashville', label: 'Nashville' },
   { value: 'philadelphia', label: 'Philadelphia' },
-  { value: 'west-palm-beach', label: 'West Palm Beach' },
+  { value: 'west-palm-beach', label: 'Palm Beach' },
 ] as const
 
 export type MarketValue = (typeof MARKETS)[number]['value']
