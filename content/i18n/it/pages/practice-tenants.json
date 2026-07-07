@@ -17,46 +17,92 @@
       "body": "Project Manager altamente qualificati fungono da unico punto di contatto, coordinandosi con i team di architettura, costruzione, marketing, operations, finanza e amministrazione di ciascun cliente per agevolare un efficiente processo di sviluppo dei punti vendita e mantenere ogni apertura nei tempi previsti."
     }
   ],
-  "caseStudies": [
-    {
-      "title": "Anthropologie",
-      "location": "158 Regent Street, London",
-      "year": "2019",
-      "narrative": "Un flagship in una delle strade retail più celebri di Londra — selezione della location e negoziazione del contratto di locazione per la continua espansione europea del brand."
-    },
-    {
-      "title": "Free People",
-      "location": "De Negen Straatjes, Amsterdam",
-      "year": "2025",
-      "narrative": "Una boutique tra le Nove Strade di Amsterdam, che abbina il brand a uno dei distretti commerciali più distintivi della città."
-    }
-  ],
-  "roster": [
-    "Urban Outfitters",
-    "Anthropologie",
-    "Free People",
-    "Free People Movement",
-    "Nuuly",
-    "Terrain",
-    "Sur La Table",
-    "Aimé Leon Dore",
-    "Alo Yoga",
-    "Boden",
-    "Carhartt",
-    "Dr. Martens",
-    "Nic+Zoe",
-    "RealTruck",
-    "Sitka",
-    "Backcountry",
-    "Federal Donuts",
-    "Simon Pearce",
-    "Starr Restaurant Group",
-    "Vetri"
-  ],
   "quote": {
     "quote": "Hanno una percezione intuitiva di ciò che vogliamo e di ciò che cerchiamo.",
     "name": "Dick Hayne",
-    "role": "Fondatore e CEO, URBN Inc."
+    "role": "Fondatore e CEO, URBN, Inc."
   },
-  "intelTeaser": "Segmentazione Tapestry, aree di mercato per tempi di percorrenza, correlazioni di co-tenancy. La data science dietro ogni location che consigliamo."
+  "intelTeaser": "Segmentazione Tapestry, aree di mercato per tempi di percorrenza, correlazioni di co-tenancy. La data science dietro ogni location che consigliamo.",
+  "selectClients": [
+    {
+      "name": "Urban Outfitters",
+      "logo": "/logos/clients/urban-outfitters.png"
+    },
+    {
+      "name": "Anthropologie",
+      "logo": "/logos/clients/anthropologie.svg"
+    },
+    {
+      "name": "Free People",
+      "logo": "/logos/clients/free-people.png"
+    },
+    {
+      "name": "Free People Movement",
+      "logo": "/logos/clients/fp-movement.svg"
+    },
+    {
+      "name": "Terrain",
+      "logo": "/logos/clients/terrain.svg"
+    },
+    {
+      "name": "Sur La Table",
+      "logo": "/logos/clients/sur-la-table.svg"
+    },
+    {
+      "name": "Aimé Leon Dore",
+      "logo": "/logos/clients/ald.svg"
+    },
+    {
+      "name": "Alo Yoga",
+      "logo": "/logos/clients/alo-yoga.svg"
+    },
+    {
+      "name": "Boden",
+      "logo": "/logos/clients/boden.svg"
+    },
+    {
+      "name": "Carhartt",
+      "logo": "/logos/clients/carhartt.png"
+    },
+    {
+      "name": "Dr. Martens",
+      "logo": "/logos/clients/doc-martens.png"
+    },
+    {
+      "name": "Nic+Zoe",
+      "logo": "/logos/clients/nic-zoe.svg"
+    },
+    {
+      "name": "RealTruck",
+      "logo": "/logos/clients/realtruck.svg"
+    },
+    {
+      "name": "Sitka",
+      "logo": "/logos/clients/sitka.svg"
+    },
+    {
+      "name": "Backcountry",
+      "logo": "/logos/clients/backcountry.svg"
+    },
+    {
+      "name": "Federal Donuts",
+      "logo": "/logos/clients/federal-donuts.png"
+    },
+    {
+      "name": "Simon Pearce",
+      "logo": "/logos/clients/simon-pearce.svg"
+    },
+    {
+      "name": "Starr Restaurant Group",
+      "logo": "/logos/clients/starr-restaurant-group.svg"
+    },
+    {
+      "name": "Vetri",
+      "logo": "/logos/clients/vetri.png"
+    },
+    {
+      "name": "Nuuly",
+      "logo": null
+    }
+  ]
 }

@@ -46,3 +46,9 @@ next-env.d.ts
 
 # hero carousel handoff source (raw drop — used assets are copied into /public/images/hero/)
 /public/Hero-Carousel-Assets/
+
+# client logo handoff source (raw extraction — used logos are copied into /public/logos/clients/)
+/public/Brand-Logos/
+
+# internal audit doc (reference only — never publish under /public)
+/public/McDevitt-Site-Audit-Punchlist.pdf
