@@ -204,6 +204,13 @@
     "body": "Wir haben Ihre Bewerbung erhalten. Unser Team prüft jede Einsendung und meldet sich bei Ihnen, wenn es passt.",
     "backHome": "Zurück zur Startseite"
   },
+  "contactThankYou": {
+    "metaTitle": "Danke | The McDevitt Company",
+    "eyebrow": "Kontakt",
+    "heading": "Danke — Ihre Nachricht ist unterwegs.",
+    "body": "Wir haben Ihre Anfrage erhalten und ein Mitglied unseres Teams wird sich in Kürze bei Ihnen melden.",
+    "backHome": "Zurück zur Startseite"
+  },
   "meta": {
     "home": {
       "title": "The McDevitt Company",

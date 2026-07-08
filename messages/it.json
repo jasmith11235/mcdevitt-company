@@ -204,6 +204,13 @@
     "body": "Abbiamo ricevuto la tua candidatura. Il nostro team esamina ogni richiesta e ti contatteremo se c'è un riscontro.",
     "backHome": "Torna alla home"
   },
+  "contactThankYou": {
+    "metaTitle": "Grazie | The McDevitt Company",
+    "eyebrow": "Contatti",
+    "heading": "Grazie — il tuo messaggio è in arrivo.",
+    "body": "Abbiamo ricevuto la tua richiesta e un membro del nostro team ti contatterà a breve.",
+    "backHome": "Torna alla home"
+  },
   "meta": {
     "home": {
       "title": "The McDevitt Company",

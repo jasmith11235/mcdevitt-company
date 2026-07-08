@@ -59,3 +59,16 @@ model VerificationToken {
 
   @@unique([identifier, token])
 }
+
+model ContactSubmission {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  company   String?
+  subject   String
+  message   String   @db.Text
+  source    String   @default("website-contact")
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}

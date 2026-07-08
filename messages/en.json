@@ -204,6 +204,13 @@
     "body": "We have received your application. Our team reviews every submission, and we will be in touch if there is a fit.",
     "backHome": "Back to home"
   },
+  "contactThankYou": {
+    "metaTitle": "Thank You | The McDevitt Company",
+    "eyebrow": "Contact",
+    "heading": "Thank you — your message is on its way.",
+    "body": "We've received your inquiry and a member of our team will be in touch shortly.",
+    "backHome": "Back to home"
+  },
   "meta": {
     "home": {
       "title": "The McDevitt Company",

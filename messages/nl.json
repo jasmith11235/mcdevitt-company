@@ -204,6 +204,13 @@
     "body": "We hebben je sollicitatie ontvangen. Ons team bekijkt elke inzending en we nemen contact op als er een match is.",
     "backHome": "Terug naar home"
   },
+  "contactThankYou": {
+    "metaTitle": "Bedankt | The McDevitt Company",
+    "eyebrow": "Contact",
+    "heading": "Bedankt — uw bericht is onderweg.",
+    "body": "We hebben uw aanvraag ontvangen en een lid van ons team neemt binnenkort contact met u op.",
+    "backHome": "Terug naar home"
+  },
   "meta": {
     "home": {
       "title": "The McDevitt Company",

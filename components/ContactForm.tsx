@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from 'react'
 import { useTranslations } from 'next-intl'
+import { useRouter } from '@/i18n/navigation'
 
 interface ContactProps {
   email: string
@@ -29,7 +30,8 @@ const selectStyle = {
 
 export default function ContactForm({ email, linkedin, instagram }: ContactProps) {
   const t = useTranslations('contact')
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'sent' | 'error'>('idle')
+  const router = useRouter()
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'error'>('idle')
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -41,6 +43,8 @@ export default function ContactForm({ email, linkedin, instagram }: ContactProps
       company: String(data.get('company') || ''),
       subject: String(data.get('subject') || t('subjects.general')),
       message: String(data.get('message') || ''),
+      source: 'website-contact',
+      website: String(data.get('website') || ''),
     }
 
     setStatus('submitting')
@@ -52,7 +56,7 @@ export default function ContactForm({ email, linkedin, instagram }: ContactProps
       })
       if (!res.ok) throw new Error('Request failed')
       form.reset()
-      setStatus('sent')
+      router.push('/thank-you')
     } catch {
       setStatus('error')
     }
@@ -66,6 +70,10 @@ export default function ContactForm({ email, linkedin, instagram }: ContactProps
             <div className="section-label">{t('eyebrow')}</div>
             <div className="divider" />
             <form onSubmit={handleSubmit} className="mt-6 space-y-6">
+              <div className="hidden" aria-hidden="true">
+                <label htmlFor="cf-website">Website</label>
+                <input id="cf-website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+              </div>
               <div>
                 <label htmlFor="cf-name" className={labelClass}>{t('name')}</label>
                 <input id="cf-name" name="name" type="text" required placeholder={t('namePlaceholder')} className={fieldClass} />
@@ -94,9 +102,6 @@ export default function ContactForm({ email, linkedin, instagram }: ContactProps
               <button type="submit" disabled={status === 'submitting'} className="btn-primary disabled:cursor-not-allowed disabled:opacity-60">
                 {status === 'submitting' ? t('sending') : t('send')}
               </button>
-              {status === 'sent' && (
-                <p className="font-mercury text-[13px] italic text-green" role="status">{t('sent')}</p>
-              )}
               {status === 'error' && (
                 <p className="font-mercury text-[13px] italic text-[#b4513f]" role="alert">{t('error')}</p>
               )}
