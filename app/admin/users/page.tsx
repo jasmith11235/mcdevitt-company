@@ -86,14 +86,22 @@ export default function UsersPage() {
   return (
     <div className="min-h-screen bg-[#0a1628] text-white">
       <div className="max-w-3xl mx-auto px-6 py-12">
-        <div className="mb-10">
-          <p className="text-xs tracking-[0.2em] text-white/40 uppercase mb-1">
-            McDevitt &amp; Company — Admin
-          </p>
-          <h1 className="text-2xl font-light tracking-wide">User Access</h1>
-          <p className="text-white/40 text-sm mt-1">
-            Manage who can sign in to Content Studio
-          </p>
+        <div className="mb-10 flex items-end justify-between gap-4">
+          <div>
+            <p className="text-xs tracking-[0.2em] text-white/40 uppercase mb-1">
+              McDevitt &amp; Company — Admin
+            </p>
+            <h1 className="text-2xl font-light tracking-wide">User Access</h1>
+            <p className="text-white/40 text-sm mt-1">
+              Manage who can sign in to Content Studio
+            </p>
+          </div>
+          <Link
+            href="/admin/submissions"
+            className="text-white/30 hover:text-white/60 text-sm transition-colors whitespace-nowrap"
+          >
+            Form Submissions →
+          </Link>
         </div>
 
         <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-8">

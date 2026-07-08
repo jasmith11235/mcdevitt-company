@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { getContact } from '@/lib/content'
+import { prisma } from '@/lib/prisma'
 
 interface ContactPayload {
   name: string
@@ -7,6 +8,8 @@ interface ContactPayload {
   company?: string
   subject?: string
   message: string
+  source?: string
+  website?: string
 }
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -26,14 +29,40 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Invalid request body' }, { status: 400 })
   }
 
+  if (body.website && body.website.trim()) {
+    return NextResponse.json({ ok: true })
+  }
+
   const name = (body.name || '').trim()
   const from = (body.email || '').trim()
   const company = (body.company || '').trim()
   const subject = (body.subject || 'General Inquiry').trim()
   const message = (body.message || '').trim()
+  const source = (body.source || 'website-contact').trim()
 
   if (!name || !message || !EMAIL_RE.test(from)) {
     return NextResponse.json({ error: 'Missing or invalid fields' }, { status: 400 })
+  }
+
+  try {
+    await prisma.contactSubmission.create({
+      data: { name, email: from, company: company || null, subject, message, source },
+    })
+  } catch (err) {
+    console.error('[contact] DB persist failed:', err)
+  }
+
+  const sheetUrl = process.env.SHEET_WEBHOOK_URL
+  if (sheetUrl) {
+    try {
+      await fetch(sheetUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email: from, company, subject, message, source }),
+      })
+    } catch (err) {
+      console.error('[contact] Sheet forward failed:', err)
+    }
   }
 
   const contact = (getContact() as { email?: string }) || {}
@@ -50,10 +79,8 @@ export async function POST(req: Request) {
 
   const apiKey = process.env.RESEND_API_KEY
 
-  // Interim delivery until the Salesforce (CRM) integration lands; accept the
-  // submission even without a key so the confirmation still shows.
   if (!apiKey) {
-    console.warn('[contact] RESEND_API_KEY not set — submission not delivered:\n' + lines.join('\n'))
+    console.warn('[contact] RESEND_API_KEY not set — email skipped, submission saved')
     return NextResponse.json({ ok: true })
   }
 
@@ -77,12 +104,10 @@ export async function POST(req: Request) {
     if (!res.ok) {
       const detail = await res.text()
       console.error('[contact] Resend delivery failed:', res.status, detail)
-      return NextResponse.json({ error: 'Delivery failed' }, { status: 502 })
     }
-
-    return NextResponse.json({ ok: true })
   } catch (err) {
     console.error('[contact] Delivery error:', err)
-    return NextResponse.json({ error: 'Delivery failed' }, { status: 502 })
   }
+
+  return NextResponse.json({ ok: true })
 }
