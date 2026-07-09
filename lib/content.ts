@@ -99,9 +99,13 @@ function isPublished(item: any) {
   return item.status === 'published';
 }
 
+const ROLLING_WINDOW_MS = 365 * 24 * 60 * 60 * 1000;
+
 export function getNews(locale?: string) {
+  const cutoff = Date.now() - ROLLING_WINDOW_MS;
   return readCollection('content/news', locale)
     .filter(isPublished)
+    .filter((a: any) => new Date(a.date).getTime() >= cutoff)
     .sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
