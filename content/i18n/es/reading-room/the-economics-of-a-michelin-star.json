@@ -1,17 +1,13 @@
 {
   "title": "La economía de una estrella Michelin",
   "status": "published",
-  "source": "Eater",
+  "source": "McDevitt Reading Room",
   "author": "",
   "date": "2026-01-18",
   "domain": "hospitality-fb",
   "markets": [
     "chicago",
-    "london",
-    "los-angeles",
-    "amsterdam",
-    "nashville",
-    "west-palm-beach"
+    "london"
   ],
   "verdict": "Una sola distinción gastronómica puede marcar la diferencia en la trayectoria de las rentas de toda una manzana.",
   "evidence": "Un análisis de la evolución de las rentas comerciales en barrios que recibieron su primer restaurante con estrella Michelin entre 2019 y 2024 reveló que las rentas demandadas en un radio de dos manzanas subieron de media un 12% en los 18 meses posteriores al anuncio. El efecto fue más pronunciado en barrios que ya experimentaban una leve presión de gentrificación pero carecían de un ancla cultural clara. Los inquilinos de restauración del entorno reportaron un aumento de comensales y periodos de desocupación más cortos, mientras que los propietarios observaron un repunte medible en la calidad de los inquilinos y en el volumen de consultas de arrendamiento.",
