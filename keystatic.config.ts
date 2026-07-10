@@ -69,11 +69,7 @@ function practiceSchema() {
   };
 }
 
-const useGithubStorage =
-  process.env.NODE_ENV === 'production' &&
-  !!process.env.KEYSTATIC_GITHUB_CLIENT_ID &&
-  !!process.env.KEYSTATIC_GITHUB_CLIENT_SECRET &&
-  !!process.env.KEYSTATIC_SECRET
+const useGithubStorage = process.env.NODE_ENV === 'production'
 
 export default config({
   storage: useGithubStorage
