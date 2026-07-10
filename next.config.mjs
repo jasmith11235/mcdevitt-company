@@ -27,8 +27,6 @@ const nextConfig = {
         '.git/**',
         'scripts/**',
         'node_modules/.cache/**',
-        'node_modules/@keystatic/**',
-        'node_modules/isomorphic-git/**',
       ],
     },
   },
