@@ -47,6 +47,12 @@ export default function News({ news, limit }: { news: NewsItem[]; limit?: number
     <section id="news" className="section-wrap bg-cream pt-12 md:pt-20">
       <div className="section-inner">
         <div className="section-label fade-in">{t('eyebrow')}</div>
+        {items.length === 0 ? (
+          <p className="fade-in max-w-[680px] font-mercury text-[16px] italic leading-[1.75] text-navy/55">
+            {t('comingSoon')}
+          </p>
+        ) : (
+        <>
         <div className="grid gap-[30px] md:grid-cols-2 lg:grid-cols-3">
           {items.map((item) => {
             const categoryLabel = t.has(`categories.${item.category}`)
@@ -84,6 +90,8 @@ export default function News({ news, limit }: { news: NewsItem[]; limit?: number
               {t('allNews')}
             </TransitionLink>
           </div>
+        )}
+        </>
         )}
       </div>
     </section>
