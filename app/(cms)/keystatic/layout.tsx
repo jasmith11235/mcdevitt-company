@@ -1,5 +1,3 @@
-import KeystaticApp from './keystatic'
-
-export default function Layout() {
-  return <KeystaticApp />
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>
 }
