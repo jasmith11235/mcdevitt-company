@@ -122,7 +122,8 @@
       "company": "Company News",
       "insight": "Market Insight",
       "project": "Project Update"
-    }
+    },
+    "comingSoon": "Company news and deal announcements — coming soon."
   },
   "readingRoom": {
     "eyebrow": "Reading Room",
