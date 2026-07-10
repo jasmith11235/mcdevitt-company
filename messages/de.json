@@ -101,7 +101,7 @@
       },
       "trips": {
         "title": "Wegedaten",
-        "desc": "Die Analyse von Start- und Endpunkten liefert tatsächliche Fahrzeiten und genauere Volumenprognosen."
+        "desc": "Die Analyse von Start- und Endpunkten liefert tatsächliche Fahrzeiten und genauere Volumenprognosen. Unterstützt von Placer.ai."
       }
     }
   },

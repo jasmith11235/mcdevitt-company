@@ -101,7 +101,7 @@
       },
       "trips": {
         "title": "Verplaatsingsdata",
-        "desc": "Analyse van begin- en eindpunten levert werkelijke reistijden en nauwkeurigere volumeprognoses op."
+        "desc": "Analyse van begin- en eindpunten levert werkelijke reistijden en nauwkeurigere volumeprognoses op. Mogelijk gemaakt door Placer.ai."
       }
     }
   },

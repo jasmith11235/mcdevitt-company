@@ -54,7 +54,7 @@ export interface PracticeContent {
 /** Secondary editorial photo for the overview spread, one per practice. */
 const OVERVIEW_PHOTOS: Record<string, string> = {
   tenants: '/images/hero/photos/07_UO-Charleston.jpg',
-  landlords: '/images/hero/photos/01_Rock-Center.jpg',
+  landlords: '/images/projects/brookfield-place.jpg',
   development: '/images/hero/photos/04_ALO-Brooklyn.jpg',
 }
 

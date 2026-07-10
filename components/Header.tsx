@@ -25,7 +25,7 @@ const mobileLinks = [
 ] as const
 
 const navLinkClass =
-  'whitespace-nowrap font-gotham text-[12px] font-medium tracking-[0.25em] uppercase text-[#161E36] hover:text-green transition-colors duration-300 px-3.5'
+  'whitespace-nowrap font-gotham text-[12px] font-medium tracking-[0.16em] 2xl:tracking-[0.25em] uppercase text-[#161E36] hover:text-green transition-colors duration-300 px-2.5 2xl:px-3.5'
 
 export default function Header() {
   const t = useTranslations('nav')
@@ -77,7 +77,7 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="absolute right-10 top-1/2 hidden -translate-y-1/2 items-center gap-7 md:flex">
+          <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 items-center gap-4 md:flex 2xl:right-10 2xl:gap-7">
             <LanguageSwitcher variant="light" />
             <TransitionLink
               href="/#client-portal"

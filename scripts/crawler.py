@@ -151,6 +151,11 @@ def is_excluded(title, url):
     return bool(EXCLUDE_PATTERNS.search(combined))
 
 
+
+def strip_source_suffix(title):
+    """Google News appends ' - Publication' to titles; drop it (source shown separately)."""
+    return re.sub(r"\s+[-\u2013\u2014]\s+[^-\u2013\u2014]{1,40}$", "", title).strip()
+
 def guess_news_category(title, source):
     """Simple keyword heuristic for news categories."""
     t = title.lower()
@@ -245,7 +250,7 @@ def crawl_news(max_items, ssl_ctx):
                     continue
                 seen_urls.add(norm)
                 results.append({
-                    "title": title,
+                    "title": strip_source_suffix(title),
                     "source": source_name,
                     "date": pub_date or today_str(),
                     "category": guess_news_category(title, source_name),
@@ -283,7 +288,7 @@ def crawl_reading_room(max_items, ssl_ctx):
                     continue
                 seen_urls.add(norm)
                 results.append({
-                    "title": title,
+                    "title": strip_source_suffix(title),
                     "source": source_name,
                     "author": "",
                     "date": pub_date or today_str(),

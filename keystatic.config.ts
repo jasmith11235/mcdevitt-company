@@ -69,10 +69,13 @@ function practiceSchema() {
   };
 }
 
+const useGithubStorage =
+  process.env.NODE_ENV === 'production' && !!process.env.KEYSTATIC_GITHUB_CLIENT_ID
+
 export default config({
-  storage: {
-    kind: 'local',
-  },
+  storage: useGithubStorage
+    ? { kind: 'github', repo: { owner: 'jasmith11235', name: 'mcdevitt-company' } }
+    : { kind: 'local' },
   singletons: {
     hero: singleton({
       label: 'Hero Section',

@@ -101,7 +101,7 @@
       },
       "trips": {
         "title": "Dati sugli spostamenti",
-        "desc": "L'analisi dei punti di partenza e di arrivo fornisce tempi di percorrenza reali e proiezioni di volume più accurate."
+        "desc": "L'analisi dei punti di partenza e di arrivo fornisce tempi di percorrenza reali e proiezioni di volume più accurate. Basato su Placer.ai."
       }
     }
   },
