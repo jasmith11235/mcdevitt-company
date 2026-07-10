@@ -101,7 +101,7 @@
       },
       "trips": {
         "title": "Trips Data",
-        "desc": "Start and end point analytics give actual drive times and more accurate volume projections."
+        "desc": "Start and end point analytics give actual drive times and more accurate volume projections. Powered by Placer.ai."
       }
     }
   },

@@ -67,7 +67,9 @@ export default function News({ news, limit }: { news: NewsItem[]; limit?: number
                       item.title
                     )}
                   </h3>
-                  <p className="mb-3 font-mercury text-[13px] leading-[1.6] text-navy/75">{item.summary}</p>
+                  {item.summary && (
+                    <p className="mb-3 font-mercury text-[13px] leading-[1.6] text-navy/75">{item.summary}</p>
+                  )}
                   <time className="mt-auto font-mercury text-[12px] text-green">
                     {new Date(item.date).toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })}
                   </time>

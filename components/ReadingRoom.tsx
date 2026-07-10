@@ -4,7 +4,7 @@ import { Suspense, useMemo, type ReactNode } from 'react'
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 import { useTranslations, useLocale } from 'next-intl'
 import TransitionLink from './TransitionLink'
-import { MARKETS, MARKET_LABELS, isMarketValue, type MarketValue } from '@/lib/markets'
+import { MARKETS, isMarketValue, type MarketValue } from '@/lib/markets'
 
 interface ReadingRoomItem {
   slug: string
@@ -272,7 +272,6 @@ function FilterChip({ active, count, onClick, children }: FilterChipProps) {
 function Article({ item, index }: { item: ReadingRoomItem; index: number }) {
   const t = useTranslations('readingRoom')
   const locale = useLocale()
-  const markets = item.markets ?? []
   const domainLabel = isDomainValue(item.domain) ? t(`domains.${item.domain}`) : item.domain
   const formattedDate = new Date(item.date).toLocaleDateString(locale, {
     year: 'numeric',
@@ -293,14 +292,6 @@ function Article({ item, index }: { item: ReadingRoomItem; index: number }) {
             <>
               <MetaSeparator />
               <span className="font-sans text-[10px] tracking-wider text-[#1D2B45]/50">{item.author}</span>
-            </>
-          )}
-          {markets.length > 0 && (
-            <>
-              <MetaSeparator />
-              <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-[#1D2B45]/60">
-                {markets.map(m => MARKET_LABELS[m] ?? m).join(' · ')}
-              </span>
             </>
           )}
         </div>

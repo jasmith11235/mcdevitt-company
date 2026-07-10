@@ -101,7 +101,7 @@
       },
       "trips": {
         "title": "Données de déplacements",
-        "desc": "L'analyse des points de départ et d'arrivée fournit des temps de trajet réels et des projections de volume plus précises."
+        "desc": "L'analyse des points de départ et d'arrivée fournit des temps de trajet réels et des projections de volume plus précises. Propulsé par Placer.ai."
       }
     }
   },
