@@ -3,8 +3,9 @@ import { useTranslations } from 'next-intl'
 interface Office {
   slug: string
   city: string
-  address: string
-  phone: string
+  address?: string
+  phone?: string
+  comingSoon?: boolean
 }
 
 export default function Offices({ offices }: { offices: Office[] }) {
@@ -20,13 +21,19 @@ export default function Offices({ offices }: { offices: Office[] }) {
           {offices.map((office) => (
             <div key={office.slug} className="fade-in">
               <h3 className="mb-3 font-gotham text-[13px] font-bold uppercase tracking-[2px] text-navy">{office.city}</h3>
-              <p className="mb-2 whitespace-pre-line font-mercury text-[13px] leading-[1.6] text-navy/75">{office.address}</p>
-              <a
-                href={`tel:${office.phone.replace(/\./g, '')}`}
-                className="font-mercury text-[13px] text-green transition-colors duration-300 hover:text-navy"
-              >
-                {office.phone}
-              </a>
+              {office.comingSoon ? (
+                <p className="mb-2 font-mercury text-[13px] italic leading-[1.6] text-navy/50">{t('comingSoon')}</p>
+              ) : (
+                <>
+                  <p className="mb-2 whitespace-pre-line font-mercury text-[13px] leading-[1.6] text-navy/75">{office.address}</p>
+                  <a
+                    href={`tel:${(office.phone ?? '').replace(/\./g, '')}`}
+                    className="font-mercury text-[13px] text-green transition-colors duration-300 hover:text-navy"
+                  >
+                    {office.phone}
+                  </a>
+                </>
+              )}
             </div>
           ))}
         </div>
